@@ -1,0 +1,23 @@
+CC=/opt/nxt/sdk/agleader-display-886/nxt/sysroots/x86_64-agleader-linux/usr/bin/arm-agleader-linux-gnueabi/arm-agleader-linux-gnueabi-gcc
+
+CCFLAGS=-Dlinux --sysroot=/opt/nxt/sdk/agleader-display-886/nxt/sysroots/cortexa9hf-vfp-neon-agleader-linux-gnueabi -c -w -fpermissive -mhard-float -pipe -O -fno-omit-frame-pointer -g -pipe -fvisibility-inlines-hidden -pipe -Wall -Wextra -Wundef -Wwrite-strings -Wcast-qual -Wshadow -g -std=c++0x -Wno-deprecated -fno-rtti -fno-exceptions -g
+LDFLAGS=-march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/nxt/sdk/agleader-display-886/nxt/sysroots/cortexa9hf-vfp-neon-agleader-linux-gnueabi -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,-O1 -Wl,-rpath-link,/opt/nxt/sdk/agleader-display-886/nxt/sysroots/cortexa9hf-vfp-neon-agleader-linux-gnueabi/usr/lib -Wl,-rpath,/lib -L/home/oosman/projects/team3/Mcp/Application/../../lib/arm-agleader-linux-gnueabi/ -Wl,-rpath,/home/oosman/projects/team3/Mcp/Application/../../lib/arm-agleader-linux-gnueabi/ -lrt -lpthread -pthread -L/opt/nxt/sdk/agleader-display-886/nxt/sysroots/cortexa9hf-vfp-neon-agleader-linux-gnueabi/usr/lib
+
+SOURCES=linuxcpu.c ../common/util.c comm.c cpumon.c
+OBJECTS=$(SOURCES:.c=.o)
+EXECUTABLE=rtm
+
+all: clear $(SOURCES) $(EXECUTABLE)
+
+clear:
+	clear
+	echo ####################################################################################################
+clean:
+	rm -rf *o $(EXECUTABLE)
+		
+$(EXECUTABLE): $(OBJECTS)
+	$(LD) $(LDFLAGS) $(OBJECTS) -o $@
+
+.c.o:
+	$(CC) $(CCFLAGS) $< -o $@
+

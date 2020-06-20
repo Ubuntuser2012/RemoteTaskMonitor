@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C082E240-EFB5-4EAF-B421-2CFFB07D7F5E}</ProjectGuid>
+    <RootNamespace>remotecpu2</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25420.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)out\win32\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
+    <TargetName>rtmonitor</TargetName>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest />
+    <TargetName>rtmonitor</TargetName>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/remotecpu2.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\libs\libgd\src;..\libs\zlib-1.2.8;..\libs\libpng-1.6.21;..\libs\jpeg-9b;..\Python32\include;..\libs\curl-7.32.0\include;..\libs\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UNICODE;WINVER=0x05010300;windows;OPENSSL_NO_SCTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Release/remotecpu2.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;libcurl_imp.lib;python32.lib;libeay32.lib;ssleay32.lib;uafxcw.lib;libjpeg.dll.a;liblibgd.dll.a;libz.dll.a;libpng.dll.a;libssl.lib;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\work\remotecpu\out\win32\rtmonitor.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../libs/build/win32/bin;../Python32/libs;../libs/curl-7.32.0/vs/vc6/lib/dll-release;../libs/openssl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)out\win32\rtmonitor.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>uafxcw.lib</IgnoreSpecificDefaultLibraries>
+      <EnableUAC>
+      </EnableUAC>
+      <UACUIAccess>
+      </UACUIAccess>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/remotecpu2.bsc</OutputFile>
+    </Bscmake>
+    <Manifest>
+      <InputResourceManifests>
+      </InputResourceManifests>
+      <AdditionalManifestFiles>
+      </AdditionalManifestFiles>
+    </Manifest>
+    <ManifestResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+    </ManifestResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/remotecpu2.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\libs\libgd\src;..\libs\zlib-1.2.8;..\libs\libpng-1.6.21;..\libs\jpeg-9b;..\Python32\include;..\libs\curl-7.32.0\include;..\libs\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UNICODE;WINVER=0x05010300;windows;OPENSSL_NO_SCTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Release/remotecpu2.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;libcurl_imp.lib;python32.lib;libeay32.lib;ssleay32.lib;uafxcw.lib;libjpeg.dll.a;liblibgd.dll.a;libz.dll.a;libpng.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\work\remotecpu\out\win64\rtmonitor.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../libs/curl-7.32.0/vs/vc6/lib/dll-release;../Python32/libs;../libs/build/win32/bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)out\win64\rtmonitor.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>uafxcw.lib</IgnoreSpecificDefaultLibraries>
+      <EnableUAC>
+      </EnableUAC>
+      <UACUIAccess>
+      </UACUIAccess>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/remotecpu2.bsc</OutputFile>
+    </Bscmake>
+    <Manifest>
+      <InputResourceManifests>
+      </InputResourceManifests>
+      <AdditionalManifestFiles>
+      </AdditionalManifestFiles>
+    </Manifest>
+    <ManifestResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+    </ManifestResourceCompile>
+    <PostBuildEvent>
+      <Command>"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\mt.exe" -nologo -manifest "$(ProjectDir)res\$(TargetName)$(TargetExt).manifest" -outputresource:"$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/remotecpu2.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\work\libs\openssl\include;..\libs\openssl\include;..\libs\libgd\src;..\libs\curl-7.32.0\include;..\libs\zlib-1.2.8;..\libs\libpng-1.6.21;..\libs\libjpeg-master;..\Python32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;WINVER=0x05010300;windows;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Debug/remotecpu2.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;libeay32.lib;ssleay32.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>out/win32/rtmonitor.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\libs\build\win32\bin;..\Python32\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/rtmonitor.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/remotecpu2.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/remotecpu2.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\libs\openssl-1.0.1e\inc32;..\curl-7.32.0\include;..\imagelib\libgd-733361a31aab\src;..\imagelib\zlib-1.2.5;..\imagelib\lpng157;..\imagelib\libjpeg-8d;..\Python32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;WINVER=0x05010300;windows;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Debug/remotecpu2.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Iphlpapi.lib;Ws2_32.lib;libeay32.lib;ssleay32.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>out/win32/rtmonitor.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\curl-7.32.0\vs\vc6\lib\dll-release;..\libs\openssl-1.0.1e\out32dll;..\Python32\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/rtmonitor.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/remotecpu2.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\base64\base64.c" />
+    <ClCompile Include="..\common\util.c" />
+    <ClCompile Include="..\cubicspline\CubicSpline.c" />
+    <ClCompile Include="..\cubicspline\GaussJordan.c" />
+    <ClCompile Include="..\DS\ds.cpp" />
+    <ClCompile Include="..\FILEIO\FILEIO.cpp" />
+    <ClCompile Include="..\libs\openssl\ms\applink.c" />
+    <ClCompile Include="..\libs\openssl\ms\uplink.c" />
+    <ClCompile Include="..\XML\xml.cpp" />
+    <ClCompile Include="1-LNK2005-remedy.cpp" />
+    <ClCompile Include="comm.c" />
+    <ClCompile Include="CpuGraphs.cpp" />
+    <ClCompile Include="DeviceDiscoverer.cpp" />
+    <ClCompile Include="DlgSelectCore.cpp" />
+    <ClCompile Include="GraphView.cpp" />
+    <ClCompile Include="MemGraph.cpp" />
+    <ClCompile Include="NetworkAdapter.cpp" />
+    <ClCompile Include="PropPageCpuGraphs.cpp" />
+    <ClCompile Include="Device.cpp" />
+    <ClCompile Include="DeviceList.cpp" />
+    <ClCompile Include="dialog2.cpp" />
+    <ClCompile Include="DlgDbgPs1.cpp" />
+    <ClCompile Include="DlgDbgPs2.cpp" />
+    <ClCompile Include="DlgDbgPs3.cpp" />
+    <ClCompile Include="DlgDbgPsInfo.cpp" />
+    <ClCompile Include="DlgError.cpp" />
+    <ClCompile Include="dlgLoadingData.cpp" />
+    <ClCompile Include="dlgRemotecpu.cpp" />
+    <ClCompile Include="DlgSaved.cpp" />
+    <ClCompile Include="dlgStartProcess.cpp" />
+    <ClCompile Include="dlgThreadPriority.cpp" />
+    <ClCompile Include="DlgTrialValidation.cpp" />
+    <ClCompile Include="DlgWatchBase.cpp" />
+    <ClCompile Include="DlgWatchCfg.cpp" />
+    <ClCompile Include="DlgWatchCPU.cpp" />
+    <ClCompile Include="DlgWatchCPUAlert.cpp" />
+    <ClCompile Include="DlgWatchCPUTotal.cpp" />
+    <ClCompile Include="DlgWatchCPUTotalAlert.cpp" />
+    <ClCompile Include="DlgWatchMem.cpp" />
+    <ClCompile Include="DlgWatchMemAlert.cpp" />
+    <ClCompile Include="EditUrl.cpp" />
+    <ClCompile Include="ExecObj.cpp" />
+    <ClCompile Include="gdgraph.cpp" />
+    <ClCompile Include="Plot.cpp" />
+    <ClCompile Include="GraphBox.cpp" />
+    <ClCompile Include="graphwnd.cpp" />
+    <ClCompile Include="graphwnd2.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="LegendCtrl.cpp" />
+    <ClCompile Include="License.cpp" />
+    <ClCompile Include="ListCtrl2.cpp" />
+    <ClCompile Include="PropPageMemGraphs.cpp" />
+    <ClCompile Include="Process.cpp" />
+    <ClCompile Include="ProcessList.cpp" />
+    <ClCompile Include="PropPageAbout.cpp" />
+    <ClCompile Include="PropPageBase.cpp" />
+    <ClCompile Include="PropPageDevice.cpp" />
+    <ClCompile Include="PropPageGraphs.cpp" />
+    <ClCompile Include="PropPageOptions.cpp" />
+    <ClCompile Include="PropPageProcesses.cpp" />
+    <ClCompile Include="PropPagePython.cpp" />
+    <ClCompile Include="PropSheet.cpp" />
+    <ClCompile Include="PythonWrapper.cpp" />
+    <ClCompile Include="raphael.cpp" />
+    <ClCompile Include="remotecpu.cpp" />
+    <ClCompile Include="SMTP.CPP" />
+    <ClCompile Include="SplitPane.cpp" />
+    <ClCompile Include="Splitter.cpp" />
+    <ClCompile Include="SplitterFrame.cpp" />
+    <ClCompile Include="startps.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="ThreadList.cpp" />
+    <ClCompile Include="WatchList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="remotecpu.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\base64\base64.h" />
+    <ClInclude Include="..\common\types.h" />
+    <ClInclude Include="..\common\util.h" />
+    <ClInclude Include="..\DS\ds.h" />
+    <ClInclude Include="..\FILEIO\fileio.h" />
+    <ClInclude Include="..\libs\openssl-1.0.1e\ms\tlhelp32.h" />
+    <ClInclude Include="..\libs\openssl-1.0.1e\ms\uplink.h" />
+    <ClInclude Include="..\XML\xml.h" />
+    <ClInclude Include="comm.h" />
+    <ClInclude Include="CpuGraphs.h" />
+    <ClInclude Include="DeviceDiscoverer.h" />
+    <ClInclude Include="DlgSelectCore.h" />
+    <ClInclude Include="GraphView.h" />
+    <ClInclude Include="LicenseType.h" />
+    <ClInclude Include="MemGraph.h" />
+    <ClInclude Include="NetworkAdapter.h" />
+    <ClInclude Include="PropPageCpuGraphs.h" />
+    <ClInclude Include="datapoint.h" />
+    <ClInclude Include="Device.h" />
+    <ClInclude Include="DeviceList.h" />
+    <ClInclude Include="dialog2.h" />
+    <ClInclude Include="DlgDbgPs1.h" />
+    <ClInclude Include="DlgDbgPs2.h" />
+    <ClInclude Include="DlgDbgPs3.h" />
+    <ClInclude Include="DlgDbgPsInfo.h" />
+    <ClInclude Include="DlgError.h" />
+    <ClInclude Include="dlgLoadingData.h" />
+    <ClInclude Include="dlgRemotecpu.h" />
+    <ClInclude Include="DlgSaved.h" />
+    <ClInclude Include="dlgStartProcess.h" />
+    <ClInclude Include="dlgThreadPriority.h" />
+    <ClInclude Include="DlgTrialValidation.h" />
+    <ClInclude Include="DlgWatchBase.h" />
+    <ClInclude Include="DlgWatchCfg.h" />
+    <ClInclude Include="DlgWatchCPU.h" />
+    <ClInclude Include="DlgWatchCPUAlert.h" />
+    <ClInclude Include="DlgWatchCPUTotal.h" />
+    <ClInclude Include="DlgWatchCPUTotalAlert.h" />
+    <ClInclude Include="DlgWatchMem.h" />
+    <ClInclude Include="DlgWatchMemAlert.h" />
+    <ClInclude Include="EditUrl.h" />
+    <ClInclude Include="ExecObj.h" />
+    <ClInclude Include="gdgraph.h" />
+    <ClInclude Include="Plot.h" />
+    <ClInclude Include="GraphBox.h" />
+    <ClInclude Include="graphwnd.h" />
+    <ClInclude Include="graphwnd2.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="LegendCtrl.h" />
+    <ClInclude Include="License.h" />
+    <ClInclude Include="ListCtrl2.h" />
+    <ClInclude Include="PropPageMemGraphs.h" />
+    <ClInclude Include="minorversion.h" />
+    <ClInclude Include="Process.h" />
+    <ClInclude Include="ProcessList.h" />
+    <ClInclude Include="PropPageAbout.h" />
+    <ClInclude Include="PropPageBase.h" />
+    <ClInclude Include="PropPageDevice.h" />
+    <ClInclude Include="PropPageGraphs.h" />
+    <ClInclude Include="PropPageOptions.h" />
+    <ClInclude Include="PropPageProcesses.h" />
+    <ClInclude Include="PropPagePython.h" />
+    <ClInclude Include="PropSheet.h" />
+    <ClInclude Include="raphael.h" />
+    <ClInclude Include="remotecpu.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SMTP.H" />
+    <ClInclude Include="SplitPane.h" />
+    <ClInclude Include="Splitter.h" />
+    <ClInclude Include="SplitterFrame.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="ThreadList.h" />
+    <ClInclude Include="WatchList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\alert_triangle.bmp" />
+    <Image Include="res\battery-charging.bmp" />
+    <Image Include="res\battery0.bmp" />
+    <Image Include="res\battery10.bmp" />
+    <Image Include="res\battery100.bmp" />
+    <Image Include="res\battery20.bmp" />
+    <Image Include="res\battery30.bmp" />
+    <Image Include="res\battery40.bmp" />
+    <Image Include="res\battery50.bmp" />
+    <Image Include="res\battery60.bmp" />
+    <Image Include="res\battery70.bmp" />
+    <Image Include="res\battery80.bmp" />
+    <Image Include="res\battery90.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bluesqr.bmp" />
+    <Image Include="res\crash_triangle.bmp" />
+    <Image Include="res\device.bmp" />
+    <Image Include="res\green-bar-graph0.bmp" />
+    <Image Include="res\green-bar-graph10.bmp" />
+    <Image Include="res\green-bar-graph100.bmp" />
+    <Image Include="res\green-bar-graph20.bmp" />
+    <Image Include="res\green-bar-graph30.bmp" />
+    <Image Include="res\green-bar-graph40.bmp" />
+    <Image Include="res\green-bar-graph50.bmp" />
+    <Image Include="res\green-bar-graph60.bmp" />
+    <Image Include="res\green-bar-graph70.bmp" />
+    <Image Include="res\green-bar-graph80.bmp" />
+    <Image Include="res\green-bar-graph90.bmp" />
+    <Image Include="res\greensqr.bmp" />
+    <Image Include="res\headerbg.png" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\ico00002.ico" />
+    <Image Include="res\ico00003.ico" />
+    <Image Include="res\ico00004.ico" />
+    <Image Include="res\ico00005.ico" />
+    <Image Include="res\icon.bmp" />
+    <Image Include="res\icon.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon3.ico" />
+    <Image Include="res\listicon.bmp" />
+    <Image Include="res\pbg.png" />
+    <Image Include="res\power-plug-connected-gray.png" />
+    <Image Include="res\power-plug-connected-talking1.png" />
+    <Image Include="res\power-plug-connected-talking2.png" />
+    <Image Include="res\power-plug-connected-talking3.png" />
+    <Image Include="res\power-plug-connected-talking4.png" />
+    <Image Include="res\power-plug-connected-yellow.png" />
+    <Image Include="res\power-plug-connected.bmp" />
+    <Image Include="res\power-plug-connected1.bmp" />
+    <Image Include="res\power-plug-connected1.png" />
+    <Image Include="res\power-plug-connected2.bmp" />
+    <Image Include="res\power-plug-connected2.png" />
+    <Image Include="res\power-plug-disconnected.bmp" />
+    <Image Include="res\power-plug-disconnected.png" />
+    <Image Include="res\power-plug-talking1.bmp" />
+    <Image Include="res\power-plug-talking1.png" />
+    <Image Include="res\power-plug-talking2.bmp" />
+    <Image Include="res\power-plug-talking2.png" />
+    <Image Include="res\power-plug-talking3.bmp" />
+    <Image Include="res\power-plug-talking3.png" />
+    <Image Include="res\power-plug-talking4.bmp" />
+    <Image Include="res\power-plug-talking4.png" />
+    <Image Include="res\ps1.ico" />
+    <Image Include="res\purple-bar-graph0.bmp" />
+    <Image Include="res\purple-bar-graph10.bmp" />
+    <Image Include="res\purple-bar-graph100.bmp" />
+    <Image Include="res\purple-bar-graph20.bmp" />
+    <Image Include="res\purple-bar-graph30.bmp" />
+    <Image Include="res\purple-bar-graph40.bmp" />
+    <Image Include="res\purple-bar-graph50.bmp" />
+    <Image Include="res\purple-bar-graph60.bmp" />
+    <Image Include="res\purple-bar-graph70.bmp" />
+    <Image Include="res\purple-bar-graph80.bmp" />
+    <Image Include="res\purple-bar-graph90.bmp" />
+    <Image Include="res\remotecpu.ico" />
+    <Image Include="res\remotecpu2.ico" />
+    <Image Include="res\remotepcu.ico" />
+    <Image Include="res\remotetaskmontorlogo.png" />
+    <Image Include="res\report.bmp" />
+    <Image Include="res\reset.bmp" />
+    <Image Include="res\sanpshot.bmp" />
+    <Image Include="res\skull.bmp" />
+    <Image Include="res\spy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\htdocs\remotetaskmonitor\keys\private.key" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="res\css.htm" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\html1.htm" />
+    <None Include="res\html2.htm" />
+    <None Include="res\html3.htm" />
+    <None Include="res\html4.htm" />
+    <None Include="res\plot_js.htm" />
+    <None Include="res\private.key" />
+    <None Include="res\raphael.js" />
+    <None Include="res\remotecpu.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="res\padding.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="remotecpu.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

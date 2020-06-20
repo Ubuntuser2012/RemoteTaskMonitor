@@ -1,0 +1,70 @@
+   {"wait", rtm_wait, METH_VARARGS, "rtm.wait()"},
+	{"connect", rtm_connect, METH_VARARGS, "rtm.connect(ip, 45)"},
+	{"isconnected", rtm_isconnected, METH_VARARGS, "rtm.isconnected()"},
+	{"disconnect", rtm_disconnect, METH_VARARGS, "rtm.disconnect()"},
+	{"startcapture", rtm_startcapture, METH_VARARGS, "rtm.startcapture()"},
+	{"stopcapture", rtm_stopcapture, METH_VARARGS, "rtm.stopcapture()"},
+	{"getcaptureinterval", rtm_getcaptureinterval, METH_VARARGS, "rtm.getcaptureinterval()"},
+	{"setcaptureinterval", rtm_setcaptureinterval, METH_VARARGS, "rtm.setcaptureinterval(int)"},
+	{"enablepsmemstats", rtm_enablepsmemstats, METH_VARARGS, "rtm.enablepsmemstats(1|0)"},
+	{"saveondev", rtm_saveondev, METH_VARARGS, "rtm.saveondev(1|0)"},
+	{"resetdevice", rtm_resetdevice, METH_VARARGS, "rtm.resetdevice()"},
+	{"getnumprocessors", rtm_getnumprocessors, METH_VARARGS, "rtm.getnumprocessors()"},
+	{"gettotalmem", rtm_gettotalmem, METH_VARARGS, "rtm.gettotalmem()"},
+	{"getavailmem", rtm_getavailmem, METH_VARARGS, "rtm.getavailmem()"},
+	{"gettotalcpu", rtm_gettotalcpu, METH_VARARGS, "rtm.gettotalcpu()"},
+	{"restartcemon", rtm_restartcemon, METH_VARARGS, "rtm.restartcemon()"},
+	{"killps", rtm_killps, METH_VARARGS, "rtm.killps(pid)"},
+	{"startps", rtm_startps, METH_VARARGS, "rtm.startps(path)"},
+	{"cloneps", rtm_cloneps, METH_VARARGS, "rtm.cloneps(pid)"},
+	{"restartps", rtm_restartps, METH_VARARGS, "rtm.restartps(pid)"},
+	{"getnumps", rtm_getnumps, METH_VARARGS, "rtm.getnumps()"},
+	{"getpss", rtm_getpss, METH_VARARGS, "rtm.getpss()"},
+	{"getpsids", rtm_getpsids, METH_VARARGS, "rtm.getpsids()"},
+	{"getpsname", rtm_getpsname, METH_VARARGS, "rtm.getpsname(pid)"},
+	{"getpspath", rtm_getpspath, METH_VARARGS, "rtm.getpspath(pid)"},
+	{"getpscpu", rtm_getpscpu, METH_VARARGS, "rtm.getpscpu(pid)"},
+	{"getpsavgcpu", rtm_getpsavgcpu, METH_VARARGS, "rtm.getpsavgcpu(pid)"},
+	{"getpsmaxcpu", rtm_getpsmaxcpu, METH_VARARGS, "rtm.getpsmaxcpu(pid)"},
+	{"getpsmemused", rtm_getpsmemused, METH_VARARGS, "rtm.getpsmemused(pid)"},
+	{"getpsnumthreads", rtm_getpsnumthreads, METH_VARARGS, "rtm.getpsnumthreads(pid)"},
+	{"getthreads", rtm_getthreads, METH_VARARGS, "rtm.getthreads(pid)"},
+	{"getthreadids", rtm_getthreadids, METH_VARARGS, "rtm.getthreadids(pid)"},
+	{"getthreadname", rtm_getthreadname, METH_VARARGS, "rtm.getthreadname(pid, tid)"},
+	{"setthreadname", rtm_setthreadname, METH_VARARGS, "rtm.setthreadname(pid, tid, tname)"},
+	{"getthreadcpu", rtm_getthreadcpu, METH_VARARGS, "rtm.getthreadcpu(pid, tid)"},
+	{"getthreadavgcpu", rtm_getthreadavgcpu, METH_VARARGS, "rtm.getthreadavgcpu(pid, tid)"},
+	{"getthreadmaxcpu", rtm_getthreadmaxcpu, METH_VARARGS, "rtm.getthreadmaxcpu(pid, tid)"},
+	{"getthreadpriority", rtm_getthreadpriority, METH_VARARGS, "rtm.getthreadpriority(pid, tid)"},
+	{"setthreadpriority", rtm_setthreadpriority, METH_VARARGS, "rtm.setthreadpriority(pid, tid, priority)"},
+	{"crashwatchps", rtm_crashwatchps, METH_VARARGS, "rtm.crashwatchps(pid, mapfile)"},
+	{"crashwatchnewps", rtm_crashwatchnewps, METH_VARARGS, "rtm.crashwatchnewps(pspath, mapfile)"},
+	{"cpuwatch", rtm_cpuwatch, METH_VARARGS, "rtm.cpuwatch(more_than_cpu_percent, for_so_many_seconds)"},
+	{"cpuwatchcancel", rtm_cpuwatchcancel, METH_VARARGS, "rtm.cpuwatchcancel()"},
+	{"cpuwatchps", rtm_cpuwatchps, METH_VARARGS, "rtm.cpuwatchps(pid, more_than_cpu_percent, for_so_many_seconds)"},
+	{"cpuwatchpscancel", rtm_cpuwatchpscancel, METH_VARARGS, "rtm.cpuwatchpscancel(pid)"},
+	{"cpuwatchth", rtm_cpuwatchth, METH_VARARGS, "rtm.cpuwatchth(pid, tid, more_than_cpu_percent, for_so_many_seconds)"},
+	{"cpuwatchthcancel", rtm_cpuwatchthcancel, METH_VARARGS, "rtm.cpuwatchthcancel(pid, tid)"},
+	{"memwatch", rtm_memwatch, METH_VARARGS, "rtm.memwatch(less_than_bytes, for_so_many_seconds)"},
+	{"memwatchcancel", rtm_memwatchcancel, METH_VARARGS, "rtm.memwatchcancel()"},
+	{"email", rtm_email, METH_VARARGS, "rtm.email(to, subject, msg)"},
+   {"write", rtm_write, METH_VARARGS, "rtm.write(msg)"},
+   {"flush", rtm_flush, METH_VARARGS, "rtm.flush(msg)"},
+   
+   
+   rtm_wait
+   
+   "reason", "quit"
+   "reason", "timedout"
+   "reason", "disconnected", "log", str
+   "reason", "connected"
+   "reason", "pspath", "log", str
+   "reason", "gotsnapshot"
+   "reason", "crashwatchack", "pid", pid, "pspath", str
+   "reason", "crashwatchnack", "pid", pid, "pspath", str
+   "reason", "exception", "pid", pid, "pspath", str, "callstack", str
+   "reason", "memalert", "msg", str
+   "reason", "totalcpualert", "msg", str
+   "reason", "pscpualert", "pid", pid, "msg", str
+   "reason", "thcpualert", "pid", pid, "tid", tid, "msg", str
+   

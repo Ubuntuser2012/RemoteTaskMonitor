@@ -1,0 +1,487 @@
+ cemon Intel E660 SDK (x86)
+
+ Timestamp is 57ccd3ac (Sun Sep 04 21:08:44 2016)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00004bf4H .text                   CODE
+ 0002:00000000 00000004H .CRT$XCA                DATA
+ 0002:00000004 00000004H .CRT$XCZ                DATA
+ 0002:00000008 00000004H .CRT$XIA                DATA
+ 0002:0000000c 00000004H .CRT$XIZ                DATA
+ 0002:00000010 00000004H .CRT$XPA                DATA
+ 0002:00000014 00000004H .CRT$XPZ                DATA
+ 0002:00000018 00000004H .CRT$XTA                DATA
+ 0002:0000001c 00000004H .CRT$XTZ                DATA
+ 0002:00000020 00002420H .rdata                  DATA
+ 0002:00002440 00000060H .rdata$debug            DATA
+ 0002:000024a0 00000004H .rdata$sxdata           DATA
+ 0002:000024a8 0000001cH .xdata$x                DATA
+ 0002:000024c4 0000003cH .idata$2                DATA
+ 0002:00002500 00000014H .idata$3                DATA
+ 0002:00002514 00000198H .idata$4                DATA
+ 0002:000026ac 000001b8H .idata$6                DATA
+ 0002:00002864 00000000H .edata                  DATA
+ 0003:00000000 00000198H .idata$5                DATA
+ 0003:00000198 00000008H .data                   DATA
+ 0003:000001a0 000077a8H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0001:00000000       _GetNumClients             00011000 f   comm.obj
+ 0001:00000010       _winsock_end               00011010 f   comm.obj
+ 0001:00000020       _winsock_init              00011020 f   comm.obj
+ 0001:00000070       _socket_write              00011070 f   comm.obj
+ 0001:000001b0       _socket_read               000111b0 f   comm.obj
+ 0001:00000210       _socket_server_end         00011210 f   comm.obj
+ 0001:000002c0       _socket_server_init        000112c0 f   comm.obj
+ 0001:00000450       _socket_accept             00011450 f   comm.obj
+ 0001:000005d0       _socket_set_client_state   000115d0 f   comm.obj
+ 0001:00000600       _socket_unset_client_state 00011600 f   comm.obj
+ 0001:00000640       _socket_unset_clients_state 00011640 f   comm.obj
+ 0001:00000670       _socket_is_any_client_state 00011670 f   comm.obj
+ 0001:000006b0       _socket_close_client       000116b0 f   comm.obj
+ 0001:00000760       _socket_nonblocking        00011760 f   comm.obj
+ 0001:000007b0       _socket_remove_overdue_clients 000117b0 f   comm.obj
+ 0001:00000830       _socket_read_clienti       00011830 f   comm.obj
+ 0001:00000960       _socket_write_clients      00011960 f   comm.obj
+ 0001:000009f0       _socket_write_client       000119f0 f   comm.obj
+ 0001:00000af0       _saveSettings              00011af0 f   cpumon.obj
+ 0001:00000bb0       _readSettings              00011bb0 f   cpumon.obj
+ 0001:00000f20       _readThreadsFile           00011f20 f   cpumon.obj
+ 0001:000010b0       _alloc_parray              000120b0 f   cpumon.obj
+ 0001:00001110       _increasePsList            00012110 f   cpumon.obj
+ 0001:00001190       _alloc_tarray              00012190 f   cpumon.obj
+ 0001:000011f0       _get_ps_path               000121f0 f   cpumon.obj
+ 0001:000012d0       _KillProcess               000122d0 f   cpumon.obj
+ 0001:00001410       _handle_process            00012410 f   cpumon.obj
+ 0001:000017a0       _set_thread_priority       000127a0 f   cpumon.obj
+ 0001:00001810       _get_thread_names          00012810 f   cpumon.obj
+ 0001:00001850       _process_client_request    00012850 f   cpumon.obj
+ 0001:00001e20       _service_clients           00012e20 f   cpumon.obj
+ 0001:00001fb0       _createToolHelpSnapshot    00012fb0 f   cpumon.obj
+ 0001:00001fe0       _deleteToolHelpSnapshot    00012fe0 f   cpumon.obj
+ 0001:00002000       _getPsStats                00013000 f   cpumon.obj
+ 0001:00002180       _getThStats                00013180 f   cpumon.obj
+ 0001:000024f0       _wmain                     000134f0 f   cpumon.obj
+ 0001:00002dc0       _set_kdump_dir             00013dc0 f   debugger.obj
+ 0001:00002e30       _get_kdump_dir             00013e30 f   debugger.obj
+ 0001:00002ef0       _delete_cinfo              00013ef0 f   debugger.obj
+ 0001:00002f20       _delete_dinfo              00013f20 f   debugger.obj
+ 0001:00002f40       _debug_ack                 00013f40 f   debugger.obj
+ 0001:00002fa0       _debug_crashed             00013fa0 f   debugger.obj
+ 0001:00003000       _debug_done                00014000 f   debugger.obj
+ 0001:00003110       _debug_check               00014110 f   debugger.obj
+ 0001:00003190       _create_dbgr_handles       00014190 f   debugger.obj
+ 0001:00003240       _close_dbgr_handles        00014240 f   debugger.obj
+ 0001:00003290       _process_frames            00014290 f   debugger.obj
+ 0001:000032d0       _get_callstack             000142d0 f   debugger.obj
+ 0001:00003350       _continue_processing_debug_events 00014350 f   debugger.obj
+ 0001:00003790       _handle_exception          00014790 f   debugger.obj
+ 0001:000038f0       _continue_debug            000148f0 f   debugger.obj
+ 0001:00003a30       _debuger_proc              00014a30 f   debugger.obj
+ 0001:00003c00       _debug_process             00014c00 f   debugger.obj
+ 0001:00003e20       _mytime                    00014e20 f   util.obj
+ 0001:00003e40       _localTime                 00014e40 f   util.obj
+ 0001:00003ea0       _myswprintf                00014ea0 f   util.obj
+ 0001:00003ec0       _logg_end                  00014ec0 f   util.obj
+ 0001:00003ee0       _logg                      00014ee0 f   util.obj
+ 0001:00003f40       _logt                      00014f40 f   util.obj
+ 0001:00003fd0       _wcscpy2                   00014fd0 f   util.obj
+ 0001:00004000       _wcscpy3                   00015000 f   util.obj
+ 0001:00004030       _full_path                 00015030 f   util.obj
+ 0001:00004180       _reallocf                  00015180 f   util.obj
+ 0001:000041b0       _addFileTime               000151b0 f   util.obj
+ 0001:000041e0       _subFileTime               000151e0 f   util.obj
+ 0001:00004210       _strtime                   00015210 f   util.obj
+ 0001:00004260       _logg_begin                00015260 f   util.obj
+ 0001:000042c0       _DiscoveryServerInit       000152c0 f   DiscoveryServer.obj
+ 0001:000043c0       _DiscoveryServerServe      000153c0 f   DiscoveryServer.obj
+ 0001:0000451c       _OpenProcess               0001551c f   coredll:COREDLL.dll
+ 0001:00004522       _GetModuleFileNameW        00015522 f   coredll:COREDLL.dll
+ 0001:00004528       _CreateProcessW            00015528 f   coredll:COREDLL.dll
+ 0001:0000452e       _TerminateThread           0001552e f   coredll:COREDLL.dll
+ 0001:00004534       _SetSystemPowerState       00015534 f   coredll:COREDLL.dll
+ 0001:0000453a       _QueryPerformanceFrequency 0001553a f   coredll:COREDLL.dll
+ 0001:00004540       _LoadLibraryW              00015540 f   coredll:COREDLL.dll
+ 0001:00004546       _EventModify               00015546 f   coredll:COREDLL.dll
+ 0001:0000454c       _DeleteCriticalSection     0001554c f   coredll:COREDLL.dll
+ 0001:00004552       _LeaveCriticalSection      00015552 f   coredll:COREDLL.dll
+ 0001:00004558       _EnterCriticalSection      00015558 f   coredll:COREDLL.dll
+ 0001:0000455e       _DebugActiveProcess        0001555e f   coredll:COREDLL.dll
+ 0001:00004564       _CreateThread              00015564 f   coredll:COREDLL.dll
+ 0001:0000456a       _InitializeCriticalSection 0001556a f   coredll:COREDLL.dll
+ 0001:00004570       _SystemTimeToFileTime      00015570 f   coredll:COREDLL.dll
+ 0001:00004576       _GetLocalTime              00015576 f   coredll:COREDLL.dll
+ 0001:0000457c       _StringCbPrintfW           0001557c f   coredll:COREDLL.dll
+ 0001:00004582       _OutputDebugStringW        00015582 f   coredll:COREDLL.dll
+ 0001:00004808       _mainWCRTStartup           00015808 f   corelibc:mainwcrt.obj
+ 0001:0000481c       _memmove                   0001581c f   corelibc:COREDLL.dll
+ 0001:00004822       __aulldiv                  00015822 f   corelibc:COREDLL.dll
+ 0001:00004828       _free                      00015828 f   corelibc:COREDLL.dll
+ 0001:0000482e       _fclose                    0001582e f   corelibc:COREDLL.dll
+ 0001:00004834       _fprintf                   00015834 f   corelibc:COREDLL.dll
+ 0001:0000483a       _fopen                     0001583a f   corelibc:COREDLL.dll
+ 0001:00004840       _sprintf                   00015840 f   corelibc:COREDLL.dll
+ 0001:00004846       _sscanf                    00015846 f   corelibc:COREDLL.dll
+ 0001:0000484c       _fgets                     0001584c f   corelibc:COREDLL.dll
+ 0001:00004852       _feof                      00015852 f   corelibc:COREDLL.dll
+ 0001:00004858       __chkstk                   00015858 f   corelibc:COREDLL.dll
+ 0001:0000485e       _realloc                   0001585e f   corelibc:COREDLL.dll
+ 0001:00004864       _memset                    00015864 f   corelibc:COREDLL.dll
+ 0001:0000486a       _malloc                    0001586a f   corelibc:COREDLL.dll
+ 0001:00004870       __wtoi                     00015870 f   corelibc:COREDLL.dll
+ 0001:00004876       _rand                      00015876 f   corelibc:COREDLL.dll
+ 0001:0000487c       _fwrite                    0001587c f   corelibc:COREDLL.dll
+ 0001:00004882       _srand                     00015882 f   corelibc:COREDLL.dll
+ 0001:00004888       _fflush                    00015888 f   corelibc:COREDLL.dll
+ 0001:0000488e       _fwprintf                  0001588e f   corelibc:COREDLL.dll
+ 0001:00004894       _wprintf                   00015894 f   corelibc:COREDLL.dll
+ 0001:0000489a       _vswprintf                 0001589a f   corelibc:COREDLL.dll
+ 0001:000048a0       _printf                    000158a0 f   corelibc:COREDLL.dll
+ 0001:000048a6       _vsprintf                  000158a6 f   corelibc:COREDLL.dll
+ 0001:000048ac       _wcsrchr                   000158ac f   corelibc:COREDLL.dll
+ 0001:000048b2       _memcpy                    000158b2 f   corelibc:COREDLL.dll
+ 0001:000048b8       _iswctype                  000158b8 f   corelibc:COREDLL.dll
+ 0001:000048be       __XcptFilter               000158be f   corelibc:COREDLL.dll
+ 0001:00004942       _exit                      00015942 f   corelibc:cexit.obj
+ 0001:00004957       __exit                     00015957 f   corelibc:cexit.obj
+ 0001:0000496c       __initterm                 0001596c f   corelibc:crt0dat.obj
+ 0001:00004988       __cinit                    00015988 f   corelibc:crt0dat.obj
+ 0001:000049aa       __onexit                   000159aa f   corelibc:onexit.obj
+ 0001:00004a47       _atexit                    00015a47 f   corelibc:onexit.obj
+ 0001:00004a5c       __SEH_prolog4_GS           00015a5c f   corelibc:sehprolg4gs.obj
+ 0001:00004aa4       __SEH_epilog4_GS           00015aa4 f   corelibc:sehprolg4gs.obj
+ 0001:00004ab3       __except_handler4          00015ab3 f   corelibc:chandler4gs.obj
+ 0001:00004ad6       ___security_init_cookie    00015ad6 f   corelibc:seccinit.obj
+ 0001:00004b01       ___crt_ExitProcess         00015b01 f   corelibc:exitproc_proxy.obj
+ 0001:00004b14       __msize                    00015b14 f   corelibc:COREDLL.dll
+ 0001:00004b1a       @__security_check_cookie@4 00015b1a f   corelibc:x86secgs.obj
+ 0001:00004b40       __SEH_prolog4              00015b40 f   corelibc:sehprolg4.obj
+ 0001:00004b85       __SEH_epilog4              00015b85 f   corelibc:sehprolg4.obj
+ 0001:00004b9a       __except_handler4_common   00015b9a f   corelibc:COREDLL.dll
+ 0001:00004ba0       ___security_gen_cookie2    00015ba0 f   corelibc:COREDLL.dll
+ 0001:00004ba6       ___report_gsfailure        00015ba6 f   corelibc:COREDLL.dll
+ 0001:00004bac       _CloseToolhelp32Snapshot   00015bac f   toolhelp:toolhelp.dll
+ 0001:00004bb2       _Module32Next              00015bb2 f   toolhelp:toolhelp.dll
+ 0001:00004bb8       _Module32First             00015bb8 f   toolhelp:toolhelp.dll
+ 0001:00004bbe       _CreateToolhelp32Snapshot  00015bbe f   toolhelp:toolhelp.dll
+ 0001:00004bc4       _Heap32ListNext            00015bc4 f   toolhelp:toolhelp.dll
+ 0001:00004bca       _Heap32Next                00015bca f   toolhelp:toolhelp.dll
+ 0001:00004bd0       _Heap32First               00015bd0 f   toolhelp:toolhelp.dll
+ 0001:00004bd6       _Heap32ListFirst           00015bd6 f   toolhelp:toolhelp.dll
+ 0001:00004bdc       _Process32Next             00015bdc f   toolhelp:toolhelp.dll
+ 0001:00004be2       _Process32First            00015be2 f   toolhelp:toolhelp.dll
+ 0001:00004be8       _Thread32Next              00015be8 f   toolhelp:toolhelp.dll
+ 0001:00004bee       _Thread32First             00015bee f   toolhelp:toolhelp.dll
+ 0002:00000000       ___xc_a                    00016000     corelibc:crt0init.obj
+ 0002:00000004       ___xc_z                    00016004     corelibc:crt0init.obj
+ 0002:00000008       ___xi_a                    00016008     corelibc:crt0init.obj
+ 0002:0000000c       ___xi_z                    0001600c     corelibc:crt0init.obj
+ 0002:00000010       ___xp_a                    00016010     corelibc:crt0init.obj
+ 0002:00000014       ___xp_z                    00016014     corelibc:crt0init.obj
+ 0002:00000018       ___xt_a                    00016018     corelibc:crt0init.obj
+ 0002:0000001c       ___xt_z                    0001601c     corelibc:crt0init.obj
+ 0002:0000003c       ??_C@_1CG@MODGNIFD@?$AAW?$AAS?$AAA?$AAS?$AAt?$AAa?$AAr?$AAt?$AAu?$AAp?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0001603c     comm.obj
+ 0002:00000064       ??_C@_1CG@PEEJGJGN@?$AAs?$AAe?$AAn?$AAd?$AA?$CI?$AA?$CJ?$AA?5?$AAi?$AAn?$AAc?$AAo?$AAm?$AAp?$AAl?$AAe?$AAt?$AAe?$AA?6?$AA?$AA@ 00016064     comm.obj
+ 0002:0000008c       ??_C@_1CE@CCLNFDHF@?$AAs?$AAe?$AAn?$AAd?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0001608c     comm.obj
+ 0002:000000b0       ??_C@_1CE@NMKEFGCG@?$AAr?$AAe?$AAc?$AAv?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 000160b0     comm.obj
+ 0002:000000d4       ??_C@_1CG@OKJEHAPN@?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA_?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA_?$AAe?$AAn?$AAd?$AA?6?$AA?$AA@ 000160d4     comm.obj
+ 0002:000000fc       ??_C@_1DK@CFFDLIFF@?$AAc?$AAl?$AAo?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?6?$AA?$AA@ 000160fc     comm.obj
+ 0002:00000138       ??_C@_1CM@MADNOPIO@?$AAl?$AAi?$AAs?$AAt?$AAe?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAo?$AAn?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00016138     comm.obj
+ 0002:00000164       ??_C@_1CK@HGPNCABH@?$AAl?$AAi?$AAs?$AAt?$AAe?$AAn?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00016164     comm.obj
+ 0002:00000190       ??_C@_1DK@MGCIHDEA@?$AAb?$AAi?$AAn?$AAd?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?5?$AA?9?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?3?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00016190     comm.obj
+ 0002:000001cc       ??_C@_1DE@FOMDKOLF@?$AAi?$AAo?$AAc?$AAt?$AAl?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 000161cc     comm.obj
+ 0002:00000200       ??_C@_1CO@OKAIGIFP@?$AAc?$AAa?$AAn?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?6?$AA?$AA@ 00016200     comm.obj
+ 0002:00000230       ??_C@_1EG@JJLAHAKE@?$AAc?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAt?$AAh?$AAa?$AAn?$AA?5?$AA?$CF?$AAi?$AA?5?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt@ 00016230     comm.obj
+ 0002:00000278       ??_C@_1GE@JIMABGLN@?$AAa?$AAc?$AAc?$AAe?$AAp?$AAt?$AAe?$AAd?$AA?5?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AA?5?$AA?$CD?$AA?5?$AA?$CF?$AAi?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AAi@ 00016278     comm.obj
+ 0002:000002dc       ??_C@_1DA@BACKKFON@?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAa?$AAc?$AAc?$AAe?$AAp?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 000162dc     comm.obj
+ 0002:0000030c       ??_C@_1CA@BPHIFFH@?$AAn?$AAu?$AAm?$AA_?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AAs?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0001630c     comm.obj
+ 0002:00000330       ??_C@_1EG@CEDLMFGN@?$AAc?$AAl?$AAo?$AAs?$AAe?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA?5?$AAn?$AAu?$AAm?$AA_?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AAs?$AA?5?$AA?$CF@ 00016330     comm.obj
+ 0002:00000378       ??_C@_1DC@DDCBHJCF@?$AAi?$AAo?$AAc?$AAt?$AAl?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00016378     comm.obj
+ 0002:000003ac       ??_C@_1DM@DDLGKLOK@?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAi?$AAn?$AA?5?$AAr?$AAe?$AAc?$AAv?$AA?0?$AA?5?$AAr?$AAe?$AAt?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 000163ac     comm.obj
+ 0002:000003ec       ??_C@_06DEBEKHOP@rtmcli?$AA@ 000163ec     cpumon.obj
+ 0002:000003f4       ??_C@_06LPOPHAJE@rtmsrv?$AA@ 000163f4     cpumon.obj
+ 0002:00000400       ??_C@_1FA@IBINMCNL@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi@ 00016400     cpumon.obj
+ 0002:00000450       ??_C@_1DO@OHFDLDMD@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAd?$AA?4?$AA?6?$AA?$AA@ 00016450     cpumon.obj
+ 0002:00000490       ??_C@_0CN@IAMCNGEK@?$CFlu?3priority?6?$CFi?3capture_on_dev?6?$CF@ 00016490     cpumon.obj
+ 0002:000004c0       ??_C@_02BKFDOEMK@wt?$AA@   000164c0     cpumon.obj
+ 0002:000004c4       ??_C@_1BG@OLIJNHBC@?$AAs?$AAa?$AAv?$AAi?$AAn?$AAg?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 000164c4     cpumon.obj
+ 0002:000004e0       ??_C@_1EO@MIJBIFOE@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAg?$AAe?$AAt?$AA?5?$AAw?$AAo?$AAr?$AAk?$AAi?$AAn?$AAg?$AA?5?$AAd?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?5@ 000164e0     cpumon.obj
+ 0002:00000530       ??_C@_1BA@HJBAMEKO@?$AAr?$AAt?$AAm?$AA?4?$AAc?$AAf?$AAg?$AA?$AA@ 00016530     cpumon.obj
+ 0002:00000540       ??_C@_07OJGBNNLN@rtm?4cfg?$AA@ 00016540     cpumon.obj
+ 0002:00000548       ??_C@_0CI@OHCEMNMB@RTM?5file?5?$CC?$CFs?$CC?5set?5to?5record?5data@ 00016548     cpumon.obj
+ 0002:00000570       ??_C@_1BE@CFBJDAHI@?$AAl?$AAo?$AAg?$AA?$CF?$AAs?$AA?4?$AAr?$AAt?$AAm?$AA?$AA@ 00016570     cpumon.obj
+ 0002:00000584       ??_C@_09KCAFNBOA@log?$CFs?4rtm?$AA@ 00016584     cpumon.obj
+ 0002:00000590       ??_C@_1CK@LNCOGGAC@?$AAs?$AAa?$AAv?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAt?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 00016590     cpumon.obj
+ 0002:000005bc       ??_C@_0P@GGEAEIJE@capture_on_dev?$AA@ 000165bc     cpumon.obj
+ 0002:000005cc       ??_C@_1CA@NCKJGCLH@?$AAl?$AAo?$AAg?$AA?5?$AAt?$AAo?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 000165cc     cpumon.obj
+ 0002:000005ec       ??_C@_1BC@LGPIFEA@?$AAd?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAd?$AA?$AA@ 000165ec     cpumon.obj
+ 0002:00000600       ??_C@_1BA@BKMGIBPB@?$AAe?$AAn?$AAa?$AAb?$AAl?$AAe?$AAd?$AA?$AA@ 00016600     cpumon.obj
+ 0002:00000610       ??_C@_07HAFPJOBC@logging?$AA@ 00016610     cpumon.obj
+ 0002:00000618       ??_C@_1CM@IGGFOAJN@?$AAs?$AAe?$AAt?$AA?5?$AAs?$AAn?$AAa?$AAp?$AA?5?$AAi?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00016618     cpumon.obj
+ 0002:00000644       ??_C@_08CBFCMNKF@interval?$AA@ 00016644     cpumon.obj
+ 0002:00000650       ??_C@_1CC@FGEJKKIN@?$AAs?$AAe?$AAt?$AA?5?$AAp?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00016650     cpumon.obj
+ 0002:00000674       ??_C@_08IIJFADMF@priority?$AA@ 00016674     cpumon.obj
+ 0002:00000680       ??_C@_05CIHMGJBO@?$CFi?3?$CFs?$AA@ 00016680     cpumon.obj
+ 0002:00000688       ??_C@_02BMJICGCB@rt?$AA@   00016688     cpumon.obj
+ 0002:0000068c       ??_C@_1BI@OEACMCCG@?$AAl?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0001668c     cpumon.obj
+ 0002:000006a4       ??_C@_1O@PODECHNM@?$AA?$CF?$AAi?$AA?3?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 000166a4     cpumon.obj
+ 0002:000006b4       ??_C@_06BEBACANP@?$CFlu?3?$CFs?$AA@ 000166b4     cpumon.obj
+ 0002:000006bc       ??_C@_1BO@NKKAKFGC@?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAi?$AAn?$AAg?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 000166bc     cpumon.obj
+ 0002:000006e0       ??_C@_1IA@PCCHHOA@?$AAN?$AAo?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?4?$AA?5?$AAY?$AAo?$AAu?$AA?5?$AAc?$AAa?$AAn?$AA?5?$AAs?$AAp?$AAe?$AAc@ 000166e0     cpumon.obj
+ 0002:00000760       ??_C@_13HGPDMIBE@?$AA?$DP?$AA?$AA@ 00016760     cpumon.obj
+ 0002:00000764       ??_C@_1BI@EENIJIDL@?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AAs?$AA?4?$AAt?$AAx?$AAt?$AA?$AA@ 00016764     cpumon.obj
+ 0002:0000077c       ??_C@_0M@MICKPBCA@threads?4txt?$AA@ 0001677c     cpumon.obj
+ 0002:00000788       ??_C@_1HC@EKKBFGIN@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAp@ 00016788     cpumon.obj
+ 0002:000007fc       ??_C@_1BE@PAKAHDCL@?$AA?$CF?$AAi?$AA?5?$AA?9?$AA?$DO?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 000167fc     cpumon.obj
+ 0002:00000810       ??_C@_1FK@JHGKFFNC@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr@ 00016810     cpumon.obj
+ 0002:0000086c       ??_C@_1DE@HKBKDOAF@?$AAi?$AAn?$AAc?$AAr?$AAe?$AAa?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAp?$AAs?$AA?5?$AAa?$AAr?$AAr?$AAa?$AAy?$AA?5?$AAs?$AAi?$AAz?$AAe?$AA?6?$AA?$AA@ 0001686c     cpumon.obj
+ 0002:000008a0       ??_C@_1HA@NFJNHHPN@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAt@ 000168a0     cpumon.obj
+ 0002:00000910       ??_C@_1FI@KGNCKKMH@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy@ 00016910     cpumon.obj
+ 0002:00000968       ??_C@_1FA@CCNNIALB@?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAt?$AAe?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAe?$AAr?$AAr@ 00016968     cpumon.obj
+ 0002:000009b8       ??_C@_1FE@EPGCFHGG@?$AAG?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAe@ 000169b8     cpumon.obj
+ 0002:00000a10       ??_C@_1EM@PEBGCLG@?$AAS?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAe@ 00016a10     cpumon.obj
+ 0002:00000a60       ??_C@_1EK@EOKIMMGJ@?$AAS?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAe?$AAr@ 00016a60     cpumon.obj
+ 0002:00000ab0       ??_C@_1EO@LEFPAMMO@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAc?$AAe?$AAm?$AAo?$AAn?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr@ 00016ab0     cpumon.obj
+ 0002:00000b00       ??_C@_1EO@IBOCFPH@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr@ 00016b00     cpumon.obj
+ 0002:00000b50       ??_C@_1EK@LFJPEHJB@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAc?$AAl?$AAo?$AAn?$AAe?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AA?3@ 00016b50     cpumon.obj
+ 0002:00000ba0       ??_C@_1EC@DDKJKCEG@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?6@ 00016ba0     cpumon.obj
+ 0002:00000be8       ??_C@_1FA@CPFAMMNK@?$AAC?$AAe?$AAS?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5@ 00016be8     cpumon.obj
+ 0002:00000c38       ??_C@_1FM@FGKJKAPP@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAn?$AAa?$AAp?$AAs?$AAh?$AAo?$AAt?$AA?4?$AA?5?$AAE?$AAr?$AAr?$AA?3?$AA?5@ 00016c38     cpumon.obj
+ 0002:00000c94       ??_C@_1DA@GONFPKP@?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA3?$AA2?$AAF?$AAi?$AAr?$AAs?$AAt?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?6?$AA?$AA@ 00016c94     cpumon.obj
+ 0002:00000cc4       ??_C@_1DO@JKIGBADO@?$AAG?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAT?$AAi?$AAm?$AAe?$AAs?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00016cc4     cpumon.obj
+ 0002:00000d04       ??_C@_1CO@HIJODEKL@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA3?$AA2?$AAF?$AAi?$AAr?$AAs?$AAt?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?6?$AA?$AA@ 00016d04     cpumon.obj
+ 0002:00000d38       ??_C@_1EI@LPFEBCLL@?$AAC?$AAe?$AAG?$AAe?$AAt?$AAI?$AAd?$AAl?$AAe?$AAT?$AAi?$AAm?$AAe?$AAE?$AAx?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAc?$AAo?$AAr?$AAe?$AA?5@ 00016d38     cpumon.obj
+ 0002:00000d80       ??_C@_1BA@LANPECLJ@?$AAE?$AAx?$AAi?$AAt?$AAe?$AAd?$AA?6?$AA?$AA@ 00016d80     cpumon.obj
+ 0002:00000d90       ??_C@_17CHOLIMHJ@?$AA1?$AA0?$AA0?$AA?$AA@ 00016d90     cpumon.obj
+ 0002:00000d98       ??_C@_03DOPCBAKB@a?$CLb?$AA@ 00016d98     cpumon.obj
+ 0002:00000da0       ??_C@_1HG@PCMNBLAM@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAs@ 00016da0     cpumon.obj
+ 0002:00000e18       ??_C@_1HE@BOMJIMCC@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAs@ 00016e18     cpumon.obj
+ 0002:00000e8c       ??_C@_1DA@FMEKCBD@?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA_?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA_?$AAi?$AAn?$AAi?$AAt?$AA?5?$AAo?$AAk?$AA?4?$AA?6?$AA?$AA@ 00016e8c     cpumon.obj
+ 0002:00000ebc       ??_C@_1CE@PDMFPDAA@?$AAw?$AAi?$AAn?$AAs?$AAo?$AAc?$AAk?$AA_?$AAi?$AAn?$AAi?$AAt?$AA?5?$AAo?$AAk?$AA?4?$AA?6?$AA?$AA@ 00016ebc     cpumon.obj
+ 0002:00000ee0       ??_C@_1HA@FDAHHHJB@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAi@ 00016ee0     cpumon.obj
+ 0002:00000f50       ??_C@_1EC@FBILDOPH@?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAo?$AAk?$AA?4?$AA?5?$AAC?$AAe?$AAm?$AAo?$AAn?$AA?5?$AAv?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AA0?$AA2?$AAi?$AA?6@ 00016f50     cpumon.obj
+ 0002:00000f94       ??_C@_1DM@JNMABEBD@?$AAS?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 00016f94     cpumon.obj
+ 0002:00000fd0       ??_C@_1CE@CMDOKAEM@?$AAS?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?$AA@ 00016fd0     cpumon.obj
+ 0002:00000ff4       ??_C@_1DO@CAGCAEEJ@?$AAS?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 00016ff4     cpumon.obj
+ 0002:00001034       ??_C@_1CG@EBPENHJM@?$AAS?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?$AA@ 00017034     cpumon.obj
+ 0002:0000105c       ??_C@_1DM@BLEPPCJG@?$AAG?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 0001705c     cpumon.obj
+ 0002:00001098       ??_C@_1CE@PFCPJKIH@?$AAG?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?$AA@ 00017098     cpumon.obj
+ 0002:000010bc       ??_C@_1DO@CPPPKJIF@?$AAG?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 000170bc     cpumon.obj
+ 0002:000010fc       ??_C@_1CG@KPPGNJLK@?$AAG?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?$AA@ 000170fc     cpumon.obj
+ 0002:00001124       ??_C@_1DO@DENMCJDM@?$AAG?$AAl?$AAo?$AAb?$AAa?$AAl?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 00017124     cpumon.obj
+ 0002:00001164       ??_C@_1CG@JOGHHDDK@?$AAG?$AAl?$AAo?$AAb?$AAa?$AAl?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?$AA@ 00017164     cpumon.obj
+ 0002:00001190       ??_C@_1EG@CJAJLDNF@?$AAG?$AAe?$AAt?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AAP?$AAo?$AAw?$AAe?$AAr?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AAE?$AAx?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd@ 00017190     cpumon.obj
+ 0002:000011d8       ??_C@_1CO@DOEJNFOA@?$AAG?$AAe?$AAt?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AAP?$AAo?$AAw?$AAe?$AAr?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AAE?$AAx?$AA?$AA@ 000171d8     cpumon.obj
+ 0002:00001208       ??_C@_1DE@KNEADIAB@?$AAG?$AAe?$AAt?$AAI?$AAd?$AAl?$AAe?$AAT?$AAi?$AAm?$AAe?$AAE?$AAx?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 00017208     cpumon.obj
+ 0002:0000123c       ??_C@_1CA@DEFEPFGN@?$AAC?$AAe?$AAG?$AAe?$AAt?$AAI?$AAd?$AAl?$AAe?$AAT?$AAi?$AAm?$AAe?$AAE?$AAx?$AA?$AA@ 0001723c     cpumon.obj
+ 0002:0000125c       ??_C@_1DO@BHCODAPL@?$AAG?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAC?$AAa?$AAl?$AAl?$AAS?$AAt?$AAa?$AAc?$AAk?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 0001725c     cpumon.obj
+ 0002:0000129c       ??_C@_1CG@BNAPHKFC@?$AAG?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAC?$AAa?$AAl?$AAl?$AAS?$AAt?$AAa?$AAc?$AAk?$AA?$AA@ 0001729c     cpumon.obj
+ 0002:000012c4       ??_C@_1DO@PCIGGKCA@?$AAC?$AAo?$AAn?$AAt?$AAi?$AAn?$AAu?$AAe?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 000172c4     cpumon.obj
+ 0002:00001304       ??_C@_1CG@NOCDNAMN@?$AAC?$AAo?$AAn?$AAt?$AAi?$AAn?$AAu?$AAe?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?$AA@ 00017304     cpumon.obj
+ 0002:0000132c       ??_C@_1DM@FEHNNPCO@?$AAW?$AAa?$AAi?$AAt?$AAF?$AAo?$AAr?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 0001732c     cpumon.obj
+ 0002:00001368       ??_C@_1CE@DGBECBPM@?$AAW?$AAa?$AAi?$AAt?$AAF?$AAo?$AAr?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?$AA@ 00017368     cpumon.obj
+ 0002:00001390       ??_C@_1EC@HCMIAPMK@?$AAS?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAP?$AAe?$AAr?$AAm?$AAi?$AAs?$AAs?$AAi?$AAo?$AAn?$AAs?$AA?$CI?$AA0?$AAx?$AAF?$AAF?$AAF?$AAF?$AAF?$AAF?$AAF?$AAF?$AA?$CJ?$AA?4?$AA?6@ 00017390     cpumon.obj
+ 0002:000013d8       ??_C@_1FA@MECFMHLK@?$AAS?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAP?$AAe?$AAr?$AAm?$AAi?$AAs?$AAs?$AAi?$AAo?$AAn?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?4?$AA?5?$AAE?$AAx@ 000173d8     cpumon.obj
+ 0002:00001428       ??_C@_1CG@LECDKENP@?$AAS?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAP?$AAe?$AAr?$AAm?$AAi?$AAs?$AAs?$AAi?$AAo?$AAn?$AAs?$AA?$AA@ 00017428     cpumon.obj
+ 0002:00001450       ??_C@_1CO@MIGKOGOI@?$AAO?$AAp?$AAe?$AAn?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 00017450     cpumon.obj
+ 0002:00001480       ??_C@_1BG@JJJAOFJK@?$AAO?$AAp?$AAe?$AAn?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?$AA@ 00017480     cpumon.obj
+ 0002:00001498       ??_C@_1CC@EPECNINB@?$AAc?$AAo?$AAr?$AAe?$AAd?$AAl?$AAl?$AA?5?$AAl?$AAo?$AAa?$AAd?$AAe?$AAd?$AA?4?$AA?6?$AA?$AA@ 00017498     cpumon.obj
+ 0002:000014c0       ??_C@_1FE@KCDABPLD@?$AAL?$AAo?$AAa?$AAd?$AAL?$AAi?$AAb?$AAr?$AAa?$AAr?$AAy?$AA?5?$AAc?$AAo?$AAr?$AAe?$AAd?$AAl?$AAl?$AA?4?$AAd?$AAl?$AAl?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?4?$AA?5@ 000174c0     cpumon.obj
+ 0002:00001514       ??_C@_1BI@CJKPFBEK@?$AAc?$AAo?$AAr?$AAe?$AAd?$AAl?$AAl?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 00017514     cpumon.obj
+ 0002:00001530       ??_C@_1EM@FDPIGOIB@?$AAR?$AAe?$AAg?$AAQ?$AAu?$AAe?$AAr?$AAy?$AAV?$AAa?$AAl?$AAu?$AAe?$AAE?$AAx?$AA?5?$AAD?$AAu?$AAm?$AAp?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?5?$AAe?$AAr@ 00017530     debugger.obj
+ 0002:0000157c       ??_C@_1BM@PMOMDJNA@?$AAD?$AAu?$AAm?$AAp?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?$AA@ 0001757c     debugger.obj
+ 0002:00001598       ??_C@_1EG@PJHCPOF@?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?2?$AAE?$AAr?$AAr?$AAo?$AAr?$AAR?$AAe?$AAp?$AAo?$AAr?$AAt?$AAi?$AAn?$AAg?$AA?2?$AAD?$AAu?$AAm?$AAp?$AAS?$AAe?$AAt?$AAt?$AAi?$AAn@ 00017598     debugger.obj
+ 0002:000015e0       ??_C@_1FE@IJCJIENB@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAg?$AAd?$AAb?$AAg?$AAc?$AAt?$AAx?$AA?4?$AAc?$AAr?$AAa?$AAs?$AAh?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd@ 000175e0     debugger.obj
+ 0002:00001638       ??_C@_1FA@KGPHMICH@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAg?$AAd?$AAb?$AAg?$AAc?$AAt?$AAx?$AA?4?$AAa?$AAc?$AAk?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAe@ 00017638     debugger.obj
+ 0002:00001688       ??_C@_1FC@LGGHJIKL@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAg?$AAd?$AAb?$AAg?$AAc?$AAt?$AAx?$AA?4?$AAd?$AAo?$AAn?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5@ 00017688     debugger.obj
+ 0002:000016dc       ??_C@_1CC@EEPOGMAL@?$AA0?$AAx?$AA?$CF?$AAx?$AA?7?$AA0?$AAx?$AA?$CF?$AAx?$AA?7?$AA0?$AAx?$AA?$CF?$AAx?$AA?7?$AA?6?$AA?$AA@ 000176dc     debugger.obj
+ 0002:00001700       ??_C@_1KI@BGMDJNBA@?$AA?$CD?$AA?$CD?$AA?$CD?$AA?5?$AA?$CF?$AAi?$AA?5?$AAc?$AAh?$AAa?$AAn?$AAc?$AAe?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AAa?$AAt?$AA?5?$AAa?$AAd@ 00017700     debugger.obj
+ 0002:000017a8       ??_C@_1BA@LEPJIIOK@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?$AA@ 000177a8     debugger.obj
+ 0002:000017b8       ??_C@_1DC@FCIJDDJO@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAS?$AAT?$AAA?$AAC?$AAK?$AA_?$AAO?$AAV?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 000177b8     debugger.obj
+ 0002:000017ec       ??_C@_1DG@PNCKAKMD@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAP?$AAR?$AAI?$AAV?$AA_?$AAI?$AAN?$AAS?$AAT?$AAR?$AAU?$AAC?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 000177ec     debugger.obj
+ 0002:00001828       ??_C@_1EG@DMGAABDE@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAN?$AAO?$AAN?$AAC?$AAO?$AAN?$AAT?$AAI?$AAN?$AAU?$AAA?$AAB?$AAL?$AAE?$AA_?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI@ 00017828     debugger.obj
+ 0002:00001870       ??_C@_1DM@BHMFAFLP@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AA_?$AAD?$AAI?$AAS?$AAP?$AAO?$AAS?$AAI?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 00017870     debugger.obj
+ 0002:000018ac       ??_C@_1CO@FMAJHLPF@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AAT?$AA_?$AAO?$AAV?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 000178ac     debugger.obj
+ 0002:000018dc       ??_C@_1DK@EEPECJJJ@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AAT?$AA_?$AAD?$AAI?$AAV?$AAI?$AAD?$AAE?$AA_?$AAB?$AAY?$AA_?$AAZ?$AAE?$AAR?$AAO?$AA?$AA@ 000178dc     debugger.obj
+ 0002:00001918       ??_C@_1DA@LAKALNNI@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AA_?$AAP?$AAA?$AAG?$AAE?$AA_?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$AA@ 00017918     debugger.obj
+ 0002:00001948       ??_C@_1DM@JDMIPLGJ@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAL?$AAL?$AAE?$AAG?$AAA?$AAL?$AA_?$AAI?$AAN?$AAS?$AAT?$AAR?$AAU?$AAC?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 00017948     debugger.obj
+ 0002:00001984       ??_C@_1DA@LOCKLJOH@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAU?$AAN?$AAD?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 00017984     debugger.obj
+ 0002:000019b4       ??_C@_1DE@PBANJDHK@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAS?$AAT?$AAA?$AAC?$AAK?$AA_?$AAC?$AAH?$AAE?$AAC?$AAK?$AA?$AA@ 000179b4     debugger.obj
+ 0002:000019e8       ??_C@_1CO@INIOBGA@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAO?$AAV?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 000179e8     debugger.obj
+ 0002:00001a18       ??_C@_1EA@GFBMCNAN@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AA_?$AAO?$AAP?$AAE?$AAR?$AAA?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 00017a18     debugger.obj
+ 0002:00001a58       ??_C@_1DK@JOHFNPA@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAI?$AAN?$AAE?$AAX?$AAA?$AAC?$AAT?$AA_?$AAR?$AAE?$AAS?$AAU?$AAL?$AAT?$AA?$AA@ 00017a58     debugger.obj
+ 0002:00001a94       ??_C@_1DK@BEFNIBEI@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAD?$AAI?$AAV?$AAI?$AAD?$AAE?$AA_?$AAB?$AAY?$AA_?$AAZ?$AAE?$AAR?$AAO?$AA?$AA@ 00017a94     debugger.obj
+ 0002:00001ad0       ??_C@_1DO@EGNONNCH@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAD?$AAE?$AAN?$AAO?$AAR?$AAM?$AAA?$AAL?$AA_?$AAO?$AAP?$AAE?$AAR?$AAA?$AAN?$AAD?$AA?$AA@ 00017ad0     debugger.obj
+ 0002:00001b10       ??_C@_1EA@KCJEJHHM@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAA?$AAR?$AAR?$AAA?$AAY?$AA_?$AAB?$AAO?$AAU?$AAN?$AAD?$AAS?$AA_?$AAE?$AAX?$AAC?$AAE?$AAE?$AAD?$AAE?$AAD?$AA?$AA@ 00017b10     debugger.obj
+ 0002:00001b50       ??_C@_1DG@MBKEFPAE@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAA?$AAC?$AAC?$AAE?$AAS?$AAS?$AA_?$AAV?$AAI?$AAO?$AAL?$AAA?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 00017b50     debugger.obj
+ 0002:00001b88       ??_C@_1EA@DPJMAOIB@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAD?$AAA?$AAT?$AAA?$AAT?$AAY?$AAP?$AAE?$AA_?$AAM?$AAI?$AAS?$AAA?$AAL?$AAI?$AAG?$AAN?$AAM?$AAE?$AAN?$AAT?$AA?$AA@ 00017b88     debugger.obj
+ 0002:00001bc8       ??_C@_1CK@GFOKFPCI@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAB?$AAR?$AAE?$AAA?$AAK?$AAP?$AAO?$AAI?$AAN?$AAT?$AA?$AA@ 00017bc8     debugger.obj
+ 0002:00001bf4       ??_C@_1CM@IAIFNOBF@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAS?$AAI?$AAN?$AAG?$AAL?$AAE?$AA_?$AAS?$AAT?$AAE?$AAP?$AA?$AA@ 00017bf4     debugger.obj
+ 0002:00001c20       ??_C@_1EE@FHAKOAB@?$AAE?$AAx?$AAi?$AAt?$AAe?$AAd?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAi?$AAd?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?$FL?$AA?$CF?$AAi?$AA?$FN@ 00017c20     debugger.obj
+ 0002:00001c68       ??_C@_1GK@KPOOENNK@?$AAE?$AAx?$AAi?$AAt?$AAe?$AAd?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAi?$AAd?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?$FL?$AA?$CF?$AAi@ 00017c68     debugger.obj
+ 0002:00001cd8       ??_C@_1FM@JNHMKDOD@?$AAS?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?$FL?$AA?$CF?$AAi?$AA?$FN?$AA?0?$AA?5?$AAd?$AAe?$AAb?$AAu@ 00017cd8     debugger.obj
+ 0002:00001d34       ??_C@_1DE@FNCEJJLM@?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAc?$AAr?$AAa?$AAs?$AAh?$AA?5?$AA?$CF?$AAx?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00017d34     debugger.obj
+ 0002:00001d68       ??_C@_1DM@BMHIECBM@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAC?$AAR?$AAA?$AAS?$AAH?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?4?$AA?6?$AA?$AA@ 00017d68     debugger.obj
+ 0002:00001da4       ??_C@_1DK@PHJNMOPP@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAC?$AAR?$AAA?$AAS?$AAH?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?6?$AA?$AA@ 00017da4     debugger.obj
+ 0002:00001de0       ??_C@_1GE@CJFFGJHP@?$AAC?$AAo?$AAn?$AAt?$AAi?$AAn?$AAu?$AAe?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAe?$AAr?$AAr?$AA?3?$AA?$CF?$AAi@ 00017de0     debugger.obj
+ 0002:00001e48       ??_C@_1GC@BDLLOADH@?$AAW?$AAa?$AAi?$AAt?$AAF?$AAo?$AAr?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAe?$AAr?$AAr?$AA?3?$AA?$CF?$AAi?$AA?5@ 00017e48     debugger.obj
+ 0002:00001eac       ??_C@_1DC@BMJPEHON@?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAd?$AAo?$AAn?$AAe?$AA?5?$AA?$CF?$AAx?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00017eac     debugger.obj
+ 0002:00001ee0       ??_C@_1CI@MKOAGPAI@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?6?$AA?$AA@ 00017ee0     debugger.obj
+ 0002:00001f08       ??_C@_1DO@LBDOCCKK@?$AAD?$AAe?$AAb?$AAu?$AAg?$AAA?$AAc?$AAt?$AAi?$AAv?$AAe?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAi?$AAd?$AA?5?$AA?$CF?$AAu?$AA?6?$AA?$AA@ 00017f08     debugger.obj
+ 0002:00001f48       ??_C@_1DA@PIDFLMCJ@?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAa?$AAc?$AAk?$AA?5?$AA?$CF?$AAx?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00017f48     debugger.obj
+ 0002:00001f78       ??_C@_1EO@FCMPJEPN@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAd?$AAe?$AAb?$AAu?$AAg?$AAe?$AAe?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr@ 00017f78     debugger.obj
+ 0002:00001fc8       ??_C@_1GC@GEOCJNAF@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAt?$AAt?$AAa?$AAc?$AAh?$AA?5?$AAt?$AAo?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAw?$AAi?$AAt?$AAh@ 00017fc8     debugger.obj
+ 0002:00002030       ??_C@_1FA@FJKPLPIA@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAd?$AAe?$AAb?$AAu?$AAg?$AAe?$AAr?$AA_?$AAp@ 00018030     debugger.obj
+ 0002:00002080       ??_C@_1EI@ENMAAMFP@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAD?$AAE?$AAB?$AAU?$AAG?$AA_?$AAP?$AAR?$AAO?$AAC?$AAE?$AAS?$AAS?$AA_?$AAA@ 00018080     debugger.obj
+ 0002:000020c8       ??_C@_1EA@CLOFCKMF@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAD?$AAE?$AAB?$AAU?$AAG?$AA_?$AAS?$AAE?$AAS?$AAS?$AAI?$AAO?$AAN?$AA?6?$AA?$AA@ 000180c8     debugger.obj
+ 0002:00002108       ??_C@_1EC@LGMDNKJI@?$AAC?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAd?$AAe?$AAb?$AAu?$AAg?$AA?5?$AAa?$AAn?$AAy?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAe?$AAs?$AA?6@ 00018108     debugger.obj
+ 0002:0000214c       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 0001814c     util.obj
+ 0002:00002154       ??_C@_02DKCKIIND@?$CFs?$AA@ 00018154     util.obj
+ 0002:00002158       ??_C@_1DO@EFPLHCOB@?$AAG?$AAe?$AAt?$AAM?$AAo?$AAd?$AAu?$AAl?$AAe?$AAF?$AAi?$AAl?$AAe?$AAN?$AAa?$AAm?$AAe?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 00018158     util.obj
+ 0002:00002198       ??_C@_1EM@JIAKEEKE@?$AA?$FL?$AA?$CF?$AA0?$AA4?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9@ 00018198     util.obj
+ 0002:000021e8       ??_C@_1EI@DAJEJNDF@?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$FL?$AA?$CF?$AAs?$AA?$FN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN?$AA?$DN@ 000181e8     util.obj
+ 0002:00002230       ??_C@_09FCIJKDPO@cemon?4log?$AA@ 00018230     util.obj
+ 0002:0000223c       ??_C@_03CCGKKFHG@a?$CLt?$AA@ 0001823c     util.obj
+ 0002:00002240       ??_C@_1EG@NBOAGFNM@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAb?$AAo?$AAu?$AAn?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AA?$CF@ 00018240     DiscoveryServer.obj
+ 0002:00002288       ??_C@_1FI@KAALOPDA@?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAb?$AAi?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAD?$AAP?$AA?5?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAo?$AAc?$AAk@ 00018288     DiscoveryServer.obj
+ 0002:000022e0       ??_C@_1GG@CBMIAEFM@?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAD?$AAP?$AA?5?$AAd?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv@ 000182e0     DiscoveryServer.obj
+ 0002:00002348       ??_C@_1FI@FLBFICLB@?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAs?$AAe?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAD?$AAP?$AA?5?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAp?$AAa?$AAc?$AAk@ 00018348     DiscoveryServer.obj
+ 0002:000023a0       ??_C@_1FC@CKPLABON@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AA?5?$AAr?$AAe?$AAc?$AAv?$AAf?$AAr?$AAo?$AAm?$AA?5@ 000183a0     DiscoveryServer.obj
+ 0002:000023f8       __load_config_used         000183f8     corelibc:loadcfg.obj
+ 0002:000024a0       ___safe_se_handler_table   000184a0     <linker-defined>
+ 0002:000024c4       __IMPORT_DESCRIPTOR_COREDLL 000184c4     coredll:COREDLL.dll
+ 0002:000024d8       __IMPORT_DESCRIPTOR_toolhelp 000184d8     toolhelp:toolhelp.dll
+ 0002:000024ec       __IMPORT_DESCRIPTOR_WINSOCK 000184ec     winsock:WINSOCK.dll
+ 0002:00002500       __NULL_IMPORT_DESCRIPTOR   00018500     coredll:COREDLL.dll
+ 0003:00000000       __imp__GetLastError        00019000     coredll:COREDLL.dll
+ 0003:00000004       __imp__CloseHandle         00019004     coredll:COREDLL.dll
+ 0003:00000008       __imp__TerminateProcess    00019008     coredll:COREDLL.dll
+ 0003:0000000c       __imp__OpenProcess         0001900c     coredll:COREDLL.dll
+ 0003:00000010       __imp__GetModuleFileNameW  00019010     coredll:COREDLL.dll
+ 0003:00000014       __imp__CreateProcessW      00019014     coredll:COREDLL.dll
+ 0003:00000018       __imp__TerminateThread     00019018     coredll:COREDLL.dll
+ 0003:0000001c       __imp__SuspendThread       0001901c     coredll:COREDLL.dll
+ 0003:00000020       __imp__ResumeThread        00019020     coredll:COREDLL.dll
+ 0003:00000024       __imp__CeSetThreadPriority 00019024     coredll:COREDLL.dll
+ 0003:00000028       __imp__CeGetThreadPriority 00019028     coredll:COREDLL.dll
+ 0003:0000002c       __imp__SetSystemPowerState 0001902c     coredll:COREDLL.dll
+ 0003:00000030       __imp__GetTickCount        00019030     coredll:COREDLL.dll
+ 0003:00000034       __imp__GetThreadTimes      00019034     coredll:COREDLL.dll
+ 0003:00000038       __imp__QueryPerformanceFrequency 00019038     coredll:COREDLL.dll
+ 0003:0000003c       __imp__FreeLibrary         0001903c     coredll:COREDLL.dll
+ 0003:00000040       __imp__Sleep               00019040     coredll:COREDLL.dll
+ 0003:00000044       __imp__GetSystemInfo       00019044     coredll:COREDLL.dll
+ 0003:00000048       __imp__GetProcAddressW     00019048     coredll:COREDLL.dll
+ 0003:0000004c       __imp__LoadLibraryW        0001904c     coredll:COREDLL.dll
+ 0003:00000050       __imp__EventModify         00019050     coredll:COREDLL.dll
+ 0003:00000054       __imp__RegCloseKey         00019054     coredll:COREDLL.dll
+ 0003:00000058       __imp__RegQueryValueExW    00019058     coredll:COREDLL.dll
+ 0003:0000005c       __imp__RegOpenKeyExW       0001905c     coredll:COREDLL.dll
+ 0003:00000060       __imp__DeleteCriticalSection 00019060     coredll:COREDLL.dll
+ 0003:00000064       __imp__LeaveCriticalSection 00019064     coredll:COREDLL.dll
+ 0003:00000068       __imp__EnterCriticalSection 00019068     coredll:COREDLL.dll
+ 0003:0000006c       __imp__WaitForMultipleObjects 0001906c     coredll:COREDLL.dll
+ 0003:00000070       __imp__CreateEventW        00019070     coredll:COREDLL.dll
+ 0003:00000074       __imp__SetLastError        00019074     coredll:COREDLL.dll
+ 0003:00000078       __imp__DebugActiveProcess  00019078     coredll:COREDLL.dll
+ 0003:0000007c       __imp__CreateThread        0001907c     coredll:COREDLL.dll
+ 0003:00000080       __imp__InitializeCriticalSection 00019080     coredll:COREDLL.dll
+ 0003:00000084       __imp__SystemTimeToFileTime 00019084     coredll:COREDLL.dll
+ 0003:00000088       __imp__GetLocalTime        00019088     coredll:COREDLL.dll
+ 0003:0000008c       __imp__StringCbPrintfW     0001908c     coredll:COREDLL.dll
+ 0003:00000090       __imp__OutputDebugStringW  00019090     coredll:COREDLL.dll
+ 0003:00000094       __imp__memmove             00019094     corelibc:COREDLL.dll
+ 0003:00000098       __imp___aulldiv            00019098     corelibc:COREDLL.dll
+ 0003:0000009c       __imp__free                0001909c     corelibc:COREDLL.dll
+ 0003:000000a0       __imp__fclose              000190a0     corelibc:COREDLL.dll
+ 0003:000000a4       __imp__fprintf             000190a4     corelibc:COREDLL.dll
+ 0003:000000a8       __imp__fopen               000190a8     corelibc:COREDLL.dll
+ 0003:000000ac       __imp__sprintf             000190ac     corelibc:COREDLL.dll
+ 0003:000000b0       __imp__sscanf              000190b0     corelibc:COREDLL.dll
+ 0003:000000b4       __imp__fgets               000190b4     corelibc:COREDLL.dll
+ 0003:000000b8       __imp__feof                000190b8     corelibc:COREDLL.dll
+ 0003:000000bc       __imp___chkstk             000190bc     corelibc:COREDLL.dll
+ 0003:000000c0       __imp__realloc             000190c0     corelibc:COREDLL.dll
+ 0003:000000c4       __imp__memset              000190c4     corelibc:COREDLL.dll
+ 0003:000000c8       __imp__malloc              000190c8     corelibc:COREDLL.dll
+ 0003:000000cc       __imp___wtoi               000190cc     corelibc:COREDLL.dll
+ 0003:000000d0       __imp__rand                000190d0     corelibc:COREDLL.dll
+ 0003:000000d4       __imp__fwrite              000190d4     corelibc:COREDLL.dll
+ 0003:000000d8       __imp__srand               000190d8     corelibc:COREDLL.dll
+ 0003:000000dc       __imp__fflush              000190dc     corelibc:COREDLL.dll
+ 0003:000000e0       __imp__fwprintf            000190e0     corelibc:COREDLL.dll
+ 0003:000000e4       __imp__wprintf             000190e4     corelibc:COREDLL.dll
+ 0003:000000e8       __imp__vswprintf           000190e8     corelibc:COREDLL.dll
+ 0003:000000ec       __imp__printf              000190ec     corelibc:COREDLL.dll
+ 0003:000000f0       __imp__vsprintf            000190f0     corelibc:COREDLL.dll
+ 0003:000000f4       __imp__wcsrchr             000190f4     corelibc:COREDLL.dll
+ 0003:000000f8       __imp__memcpy              000190f8     corelibc:COREDLL.dll
+ 0003:000000fc       __imp__iswctype            000190fc     corelibc:COREDLL.dll
+ 0003:00000100       __imp___XcptFilter         00019100     corelibc:COREDLL.dll
+ 0003:00000104       __imp___msize              00019104     corelibc:COREDLL.dll
+ 0003:00000108       __imp___except_handler4_common 00019108     corelibc:COREDLL.dll
+ 0003:0000010c       __imp____security_gen_cookie2 0001910c     corelibc:COREDLL.dll
+ 0003:00000110       __imp____report_gsfailure  00019110     corelibc:COREDLL.dll
+ 0003:00000114       \177COREDLL_NULL_THUNK_DATA 00019114     coredll:COREDLL.dll
+ 0003:00000118       __imp__recv                00019118     winsock:WINSOCK.dll
+ 0003:0000011c       __imp__recvfrom            0001911c     winsock:WINSOCK.dll
+ 0003:00000120       __imp__sendto              00019120     winsock:WINSOCK.dll
+ 0003:00000124       __imp__htonl               00019124     winsock:WINSOCK.dll
+ 0003:00000128       __imp__accept              00019128     winsock:WINSOCK.dll
+ 0003:0000012c       __imp__socket              0001912c     winsock:WINSOCK.dll
+ 0003:00000130       __imp__ioctlsocket         00019130     winsock:WINSOCK.dll
+ 0003:00000134       __imp__htons               00019134     winsock:WINSOCK.dll
+ 0003:00000138       __imp__bind                00019138     winsock:WINSOCK.dll
+ 0003:0000013c       __imp__ntohs               0001913c     winsock:WINSOCK.dll
+ 0003:00000140       __imp__WSACleanup          00019140     winsock:WINSOCK.dll
+ 0003:00000144       __imp__WSAStartup          00019144     winsock:WINSOCK.dll
+ 0003:00000148       __imp__send                00019148     winsock:WINSOCK.dll
+ 0003:0000014c       __imp__select              0001914c     winsock:WINSOCK.dll
+ 0003:00000150       __imp__closesocket         00019150     winsock:WINSOCK.dll
+ 0003:00000154       __imp__shutdown            00019154     winsock:WINSOCK.dll
+ 0003:00000158       __imp__listen              00019158     winsock:WINSOCK.dll
+ 0003:0000015c       __imp__ntohl               0001915c     winsock:WINSOCK.dll
+ 0003:00000160       \177WINSOCK_NULL_THUNK_DATA 00019160     winsock:WINSOCK.dll
+ 0003:00000164       __imp__Thread32First       00019164     toolhelp:toolhelp.dll
+ 0003:00000168       __imp__Thread32Next        00019168     toolhelp:toolhelp.dll
+ 0003:0000016c       __imp__Process32First      0001916c     toolhelp:toolhelp.dll
+ 0003:00000170       __imp__Process32Next       00019170     toolhelp:toolhelp.dll
+ 0003:00000174       __imp__Heap32ListFirst     00019174     toolhelp:toolhelp.dll
+ 0003:00000178       __imp__Heap32First         00019178     toolhelp:toolhelp.dll
+ 0003:0000017c       __imp__Heap32Next          0001917c     toolhelp:toolhelp.dll
+ 0003:00000180       __imp__Heap32ListNext      00019180     toolhelp:toolhelp.dll
+ 0003:00000184       __imp__CreateToolhelp32Snapshot 00019184     toolhelp:toolhelp.dll
+ 0003:00000188       __imp__Module32First       00019188     toolhelp:toolhelp.dll
+ 0003:0000018c       __imp__Module32Next        0001918c     toolhelp:toolhelp.dll
+ 0003:00000190       __imp__CloseToolhelp32Snapshot 00019190     toolhelp:toolhelp.dll
+ 0003:00000194       \177toolhelp_NULL_THUNK_DATA 00019194     toolhelp:toolhelp.dll
+ 0003:00000198       ___security_cookie         00019198     corelibc:seccinit.obj
+ 0003:0000019c       ___security_cookie_complement 0001919c     corelibc:seccinit.obj
+ 0003:00007930       ___argc                    00020930     corelibc:crtstrtg.obj
+ 0003:00007934       ___wargv                   00020934     corelibc:crtstrtg.obj
+ 0003:00007938       ___argv                    00020938     corelibc:crtstrtg.obj
+ 0003:0000793c       __exitflag                 0002093c     corelibc:cexit.obj
+ 0003:00007940       ___onexitend               00020940     <common>
+ 0003:00007944       ___onexitbegin             00020944     <common>
+
+ entry point at        0001:00004808
+
+ Static symbols
+
+ 0001:00000a20       _do_discovery              00011a20 f   cpumon.obj
+ 0001:00001320       _SetProcessAffinity        00012320 f   cpumon.obj
+ 0001:00001390       _SetThreadAffinity         00012390 f   cpumon.obj
+ 0001:00001ea0       _GetMemoryInfo             00012ea0 f   cpumon.obj
+ 0001:000023a0       _GetPowerStatus            000133a0 f   cpumon.obj
+ 0001:00002430       _GetMemoryStatus           00013430 f   cpumon.obj
+ 0001:00002490       _GetCpuIdleTime            00013490 f   cpumon.obj
+ 0001:00004588       ?crtstart_FreeArguments@@YAXXZ 00015588 f   corelibc:mainwcrt.obj
+ 0001:00004599       ?crtstart_SkipWhiteW@@YAHPBG@Z 00015599 f   corelibc:mainwcrt.obj
+ 0001:000045c2       ?crtstart_SkipNonWhiteQuotesW@@YAHPBG@Z 000155c2 f   corelibc:mainwcrt.obj
+ 0001:000045fe       ?crtstart_ParseArgsWW@@YAHPBG0AAHAAPAPAG@Z 000155fe f   corelibc:mainwcrt.obj
+ 0001:0000472d       ?mainCRTStartupHelper@@YAXPAUHINSTANCE__@@PBG@Z 0001572d f   corelibc:mainwcrt.obj
+ 0001:000048c4       _doexit                    000158c4 f   corelibc:cexit.obj

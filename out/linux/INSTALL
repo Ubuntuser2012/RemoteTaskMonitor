@@ -1,0 +1,41 @@
+#!/bin/bash
+#set -x
+#service linuxrtm stop
+echo "Installing linuxrtm"
+installdir=""
+yn="y"
+echo "Install in /usr/local/linuxrtm [y|n]?"
+read yn
+#echo "input $yn"
+if [ "$yn" == "y" ] || [ "$yn" == "Y" ]; then
+	installdir="/usr/local/linuxrtm"
+else
+	echo "Where would you like to install?"
+	read installdir
+fi
+if [ ! -d "$installdir" ]; then
+	mkdir $installdir
+fi
+search="SCRIPT_BASE="
+replace="SCRIPT_BASE=$installdir"
+cmd="s|$search|$replace|g"
+cp etc-init.d-linuxrtm etc-init.d-linuxrtm~
+sed -i $cmd etc-init.d-linuxrtm~
+mv etc-init.d-linuxrtm~ /etc/init.d/linuxrtm
+s1="echo linuxrtm is starting"
+s2=$installdir"/linuxrtm &"
+s3="echo done starting linuxrtm"
+ss=$s1$'\n'$s2$'\n'$s3$'\n'
+echo "$ss" > $installdir/startup.sh
+cp shutdown.sh $installdir/shutdown.sh
+cp linuxrtm $installdir/linuxrtm
+chmod 755 $installdir/startup.sh
+chmod 755 $installdir/shutdown.sh
+chmod 755 $installdir/linuxrtm
+chmod 755 /etc/init.d/linuxrtm
+echo "Fininshed installing"
+echo " To start, type "
+echo "   sudo service linuxrtm start"
+echo " To stop, type "
+echo "   sudo service linuxrtm stop"
+#set +x

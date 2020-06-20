@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by remotecpu.rc
+//
+#define HIDC_BUTTON_SET_CEMON_PRIORITY  0x41c    // IDD_OPTIONS

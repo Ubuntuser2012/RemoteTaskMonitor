@@ -1,0 +1,15 @@
+//
+// grep.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+#define RT_MANIFEST 24
+#define APP_MANIFEST 1
+APP_MANIFEST RT_MANIFEST "res\\rtmonitor.exe.manifest"
+/////////////////////////////////////////////////////////////////////////////

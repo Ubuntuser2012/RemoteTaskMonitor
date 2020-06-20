@@ -1,0 +1,1165 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\remotecpu.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON                    "res\\remotecpu2.ico"
+IDI_REPORT              ICON                    "res\\ico00002.ico"
+IDI_PS                  ICON                    "res\\ico00001.ico"
+IDI_TH                  ICON                    "res\\ps1.ico"
+IDI_WATCH_CPU           ICON                    "res\\ico00004.ico"
+IDI_WATCH_CRASH         ICON                    "res\\ico00003.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REMOTECPU_DIALOG DIALOGEX 0, 0, 326, 258
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Remote Task Monitor"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PROPSHEET,7,7,312,244,NOT WS_VISIBLE
+END
+
+IDD_THREAD_PRIORITY DIALOGEX 0, 0, 121, 55
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "Set Thread Priority"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,34,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,64,33,50,14,BS_FLAT
+    LTEXT           "Priority",IDC_STATIC_THREAD_PRIORITY,7,10,37,10
+    EDITTEXT        IDC_EDIT_THREAD_PRIORITY,48,7,66,12,ES_RIGHT | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_START_PROCESS DIALOGEX 0, 0, 207, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "Start Remote Process"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,34,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,150,34,50,14,BS_FLAT
+    LTEXT           "Absolute path of executable on remote device",IDC_STATIC_THREAD_PRIORITY,7,10,183,10
+    EDITTEXT        IDC_EDIT_PROCESS_PATH,7,20,193,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 247, 191
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_CHILD | WS_DISABLED | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_KEY,48,77,182,13,ES_MULTILINE | ES_AUTOHSCROLL
+    GROUPBOX        "About",IDC_ABOUT,7,7,233,177
+    CONTROL         IDB_LOGO,IDC_STATIC_LOGO,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_BORDER,26,31,66,44
+    LTEXT           "Remote Task Monitor",IDC_STATIC_ABOUT,97,31,85,9
+    LTEXT           "",IDC_STATIC_VERSION,97,40,85,9
+    EDITTEXT        IDC_EDIT_URL1,97,52,129,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "",IDC_STATIC_KEYSTR,26,131,198,9
+    EDITTEXT        IDC_STATIC_MY_MAC,45,115,185,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "MAC",IDC_STATIC_MAC,26,115,17,10
+    LTEXT           "",IDC_STATIC_KEYSTR2,26,146,198,31
+    PUSHBUTTON      "Validate Key",IDC_BUTTON_VALIDATE_KEY,180,93,50,13,BS_FLAT
+    LTEXT           "Key",IDC_STATIC_KEY,26,79,17,10
+    PUSHBUTTON      "Start Trial",IDC_BUTTON_START_TRIAL,120,93,50,13,BS_FLAT
+    PUSHBUTTON      "Buy License",IDC_BUTTON_PURCHASE_LICENSE,48,93,68,13,BS_FLAT
+END
+
+IDD_DEVICE DIALOGEX 0, 0, 273, 226
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Device"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Report",IDC_BUTTON_REPORT,"MfcButton",WS_DISABLED | WS_TABSTOP,15,154,70,65
+    CONTROL         "Take Snapshot",IDC_BUTTON_SNAPSHOT,"MfcButton",WS_DISABLED | WS_TABSTOP,103,154,70,65
+    CONTROL         "Reset Device",IDC_BUTTON_RESET,"MfcButton",WS_DISABLED | WS_TABSTOP,192,154,70,65
+    LTEXT           "",IDC_STATIC_CONNECT_MESG,93,20,149,22
+    GROUPBOX        "Remote Device",IDC_STATIC_DEVICE,7,7,263,212
+    CONTROL         "CPU",IDC_BUTTON_CPU,"MfcButton",WS_DISABLED | WS_TABSTOP,15,85,70,65
+    CONTROL         "Memory",IDC_BUTTON_MEMORY,"MfcButton",WS_DISABLED | WS_TABSTOP,103,85,70,65
+    CONTROL         "Battery",IDC_BUTTON_BATTERY,"MfcButton",WS_DISABLED | WS_TABSTOP,192,85,70,65
+    LTEXT           "",IDC_STATIC_PROCESSOR_INFO,93,47,149,10
+    COMBOBOX        IDC_COMBO_CEMONS,93,65,168,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Connect",IDC_BUTTON_CONN,"MfcButton",WS_TABSTOP | 0x1,15,17,71,62
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 223, 217
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SNAP_INTERVAL,14,26,63,13,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Polling interval in milliseconds",IDC_STATIC_PERIODIC_SNAPSHOTS,13,13,163,9
+    DEFPUSHBUTTON   "Start Capture",IDC_BUTTON_CAPTURE_START,114,23,63,15,BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "Stop Capture",IDC_BUTTON_CAPTURE_STOP,114,40,63,15,BS_FLAT | WS_DISABLED
+    CONTROL         "Save RTM file on device",IDC_CHECK_CAPTURE_ON_DEV,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_DISABLED | WS_TABSTOP,14,66,95,10
+    GROUPBOX        "",IDC_STATIC,7,3,209,55
+    GROUPBOX        "",IDC_STATIC,7,140,209,30
+    GROUPBOX        "",IDC_STATIC,7,56,209,28
+    CONTROL         "Do not prompt to open report at end of session",IDC_CHECK_DONT_PROMPT_SHOW_REPORT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,157,194,11
+    GROUPBOX        "",IDC_STATIC,7,83,209,58
+    LTEXT           "Outgoing Email Server (SMTP server)",IDC_STATIC,13,92,124,8
+    LTEXT           "Port",IDC_STATIC,158,92,18,8
+    EDITTEXT        IDC_EDIT_SMTP_SERVER,14,103,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SMTP_PORT,156,103,20,15,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Load RTM file",IDC_BUTTON_LOAD_CAPTURED_DATA,113,64,63,15,BS_FLAT
+    EDITTEXT        IDC_EDIT_EMAILTO,37,120,114,13,ES_AUTOHSCROLL
+    LTEXT           "To:",IDC_STATIC,20,121,12,9
+    PUSHBUTTON      "Test",IDC_BUTTON_EMAIL_TEST,156,120,20,15,BS_FLAT
+END
+
+IDD_CPU_GRAPHS_PROP_PAGE DIALOGEX 0, 0, 283, 195
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "CPU"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_MEM_GRAPH DIALOGEX 0, 0, 283, 195
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Memory"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_POWER_GRAPH DIALOGEX 0, 0, 283, 195
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Power"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_PROCESSES DIALOGEX 0, 0, 283, 195
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Processes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Show Threads",IDC_CHECK_SHOW_THREADS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,173,106,10
+    CONTROL         "Show Memory",IDC_CHECK_SHOW_MEMORY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,175,64,10
+END
+
+IDD_LOADING_DATA DIALOG 0, 0, 305, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Loading"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,124,72,50,14,BS_FLAT
+    CONTROL         "Progress1",IDC_PROGRESS_LOAD_DATA,"msctls_progress32",WS_BORDER,7,54,291,9
+    LTEXT           "Loading data. Please wait...",IDC_STATIC_LOADING_RTM,7,19,291,15
+END
+
+IDD_WATCH DIALOGEX 0, 0, 240, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "Crash Watch"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,12,160,50,14,BS_FLAT
+    PUSHBUTTON      "< &Previous",IDPREVIOUS,124,160,50,14,BS_FLAT
+    PUSHBUTTON      "&Next >",IDNEXT,177,160,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,65,160,50,14,BS_FLAT
+END
+
+IDD_DEBUG_PROCESS2 DIALOGEX 0, 0, 230, 62
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MAP_FILE_PATH,27,36,177,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "If you have the map file, enter its location so function names can be displayed in the call stack.",IDC_STATIC_MAP_FILE,10,15,183,17
+    GROUPBOX        "Symbols for call stack",IDC_STATIC_DBG2,7,3,216,51
+    PUSHBUTTON      "...",ID_GET_MAP_FILE,208,36,13,12,BS_FLAT
+END
+
+IDD_DEBUG_PROCESS3 DIALOGEX 0, 0, 230, 158
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_EMAIL_TO,27,31,191,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Email report to",IDC_STATIC_EMAIL,15,20,183,10
+    GROUPBOX        "Postmortem action",IDC_STATIC_DBG3,7,7,216,144
+    CONTROL         "Reset device",IDC_CHECK_RESET_DEVICE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,121,177,10
+    CONTROL         "Do not prompt when process crashes",IDC_CHECK_SILENT_AFTER_CRASH,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,134,177,10
+    EDITTEXT        IDC_EDIT_PROCESS_PATH,27,73,190,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Launch this process after the crash",IDC_STATIC_ENTER_PATH,15,62,200,9
+    CONTROL         "Put this also on a crash watch",IDC_CHECK_PS_WATCH,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,92,177,10
+    GROUPBOX        "",IDC_STATIC,7,54,216,54
+END
+
+IDD_DEBUG_PROCESS1 DIALOGEX 0, 0, 230, 119
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PROCESS_PATH,27,90,190,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Monitor running process",IDC_RADIO_DEBUG_ACTIVE_PROCESS,
+                    "Button",BS_AUTORADIOBUTTON | BS_FLAT,15,40,91,9
+    CONTROL         "Start new process and monitor it.",IDC_RADIO_DEBUG_NEW_PROCESS,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | BS_FLAT,15,65,200,10
+    GROUPBOX        "Select a process",IDC_STATIC_DBG1,7,3,216,105
+    LTEXT           "Enter the absolute path of executable on remote device",IDC_STATIC_ENTER_PATH,15,77,200,11
+    LTEXT           "",IDC_STATIC_PID,27,50,190,12,0,WS_EX_STATICEDGE
+    LTEXT           "Try to get the crash address, exception type and the call stack if the process crashes",IDC_STATIC_TRY_TO_GET_CRASH,15,19,183,20
+END
+
+IDD_DEBUG_PROCESS_ALERT DIALOGEX 0, 0, 421, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "Process Watch"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Dismiss",IDOK,269,209,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel All Crash Watches",IDCANCEL,323,209,91,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_MESG,7,76,407,122,ES_MULTILINE | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MAP_FILE_PATH,7,209,168,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Parse Map File",ID_PARSE_MAP_FILE,193,209,63,14,BS_FLAT
+    PUSHBUTTON      "...",ID_GET_MAP_FILE,178,209,13,14,BS_FLAT
+    LTEXT           "An application on the device has crashed.",IDC_STATIC_ENTER_PATH,83,10,313,11
+    CONTROL         IDD_CPU_WATCH_ALERT,IDC_STATIC,"Static",SS_BITMAP,9,8,71,65,WS_EX_DLGMODALFRAME
+    LTEXT           "The call stack information may or may not be accurate, it depends on the validity of the stack at the time of crash and the map file you provide.",IDC_STATIC_CALLSTACK_DISCLAIMER,83,30,324,19,NOT WS_VISIBLE
+END
+
+IDD_MEMORY_WATCH DIALOGEX 0, 0, 297, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "Memory Watch"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MEMORY_LIMIT,172,18,64,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TIME_LIMIT,172,33,64,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_EMAIL_TO,96,68,191,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,184,114,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,238,114,50,14,BS_FLAT
+    LTEXT           "Email to",IDC_STATIC_EMAIL,84,57,183,10
+    GROUPBOX        "",IDC_STATIC,7,7,283,123
+    CONTROL         "Reset device",IDC_CHECK_RESET_DEVICE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,84,92,177,10
+    LTEXT           "When total free memory  <",IDC_STATIC,83,18,84,11
+    LTEXT           "kB",IDC_STATIC,240,18,44,13
+    LTEXT           "for more than",IDC_STATIC,124,33,43,11
+    LTEXT           "seconds",IDC_STATIC,240,33,44,13
+    CONTROL         IDB_SPY,IDC_STATIC,"Static",SS_BITMAP,10,14,67,62
+END
+
+IDD_MEMORY_WATCH_ALERT DIALOGEX 0, 0, 233, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "Memory Watch"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Memory alert triggered",IDC_STATIC,84,10,142,10
+    DEFPUSHBUTTON   "Dismiss",IDCANCEL,87,63,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel Memory Watch",IDCANCELALL,139,63,87,14,BS_FLAT
+    LTEXT           "",IDC_STATIC_ALERT_MSG,85,26,141,33
+    CONTROL         IDB_ALERT,IDC_STATIC,"Static",SS_BITMAP,7,7,71,65,WS_EX_DLGMODALFRAME
+END
+
+IDD_CPU_WATCH DIALOGEX 0, 0, 274, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "CPU Watch"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_CPU_LIMIT,149,97,64,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TIME_LIMIT,149,113,64,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_EMAIL_TO,73,143,184,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,158,205,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,212,205,50,14,BS_FLAT
+    LTEXT           "Email to",IDC_STATIC_EMAIL,61,132,183,10
+    GROUPBOX        "",IDC_STATIC,7,7,260,214
+    CONTROL         "Reset device",IDC_CHECK_RESET_DEVICE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,63,167,177,10
+    LTEXT           "When CPU %  >",IDC_STATIC,88,100,57,9
+    LTEXT           "%",IDC_STATIC,217,97,32,13
+    LTEXT           "for more than",IDC_STATIC,101,115,43,10
+    LTEXT           "seconds",IDC_STATIC,217,113,39,13
+    CONTROL         "Kill Process",IDC_CHECK_KILL_PS,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,63,178,177,10
+    CONTROL         "Restart Process",IDC_CHECK_RESTART_PS,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,63,190,177,10
+    LISTBOX         IDC_WATCH_LIST,81,27,176,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Selected processes and threads for CPU watch:",IDC_STATIC_TITLE,10,14,183,10
+    CONTROL         IDB_SPY,IDC_STATIC,"Static",SS_BITMAP,10,27,67,62
+END
+
+IDD_CPU_WATCH_ALERT DIALOGEX 0, 0, 255, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "CPU Watch"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Dismiss",IDCANCEL,29,79,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel All CPU Watches",IDCANCELALL,157,79,91,14,BS_FLAT
+    LTEXT           "CPU alert triggered",IDC_STATIC,85,10,163,10
+    LTEXT           "",IDC_STATIC_ALERT_MSG,86,26,162,34
+    PUSHBUTTON      "Cancel This Watch",IDCANCELTHIS,84,79,68,14,BS_FLAT
+    CONTROL         IDB_ALERT,IDC_STATIC,"Static",SS_BITMAP,7,8,71,65,WS_EX_DLGMODALFRAME
+END
+
+IDD_TOTAL_CPU_WATCH DIALOGEX 0, 0, 274, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+CAPTION "Overall CPU Watch"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_CPU_LIMIT,159,12,64,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TIME_LIMIT,159,28,64,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_EMAIL_TO,83,57,178,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,159,77,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,213,77,50,14,BS_FLAT
+    LTEXT           "Email to",IDC_STATIC_EMAIL,83,47,171,10
+    GROUPBOX        "",IDC_STATIC,7,7,260,86
+    CONTROL         "Reset device",IDC_CHECK_RESET_DEVICE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,83,77,72,10
+    LTEXT           "When total CPU %  >",IDC_STATIC,83,15,70,9
+    LTEXT           "%",IDC_STATIC,227,12,32,13
+    LTEXT           "for more than",IDC_STATIC,111,30,43,10
+    LTEXT           "seconds",IDC_STATIC,227,28,39,13
+    CONTROL         IDB_SPY,IDC_STATIC,"Static",SS_BITMAP,10,11,67,62
+END
+
+IDD_TOTAL_CPU_WATCH_ALERT DIALOGEX 0, 0, 255, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Total CPU Watch"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Dismiss",IDCANCEL,125,66,50,14,BS_FLAT
+    LTEXT           "CPU alert triggered",IDC_STATIC,85,10,163,10
+    LTEXT           "",IDC_STATIC_ALERT_MSG,86,26,162,34
+    PUSHBUTTON      "Cancel This Watch",IDCANCELTHIS,180,66,68,14,BS_FLAT
+    CONTROL         IDB_ALERT,IDC_STATIC,"Static",SS_BITMAP,9,8,71,65,WS_EX_DLGMODALFRAME
+END
+
+IDD_DIALOG_SAVED DIALOG 0, 0, 257, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Saved"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,108,61,68,14,BS_FLAT
+    LTEXT           "",IDC_STATIC_MESG,7,7,241,50
+    PUSHBUTTON      "No",IDCANCEL,180,61,68,14,BS_FLAT
+    CONTROL         "Do not prompt again",IDC_CHECK_DO_NOT_PROMPT_AGAIN,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,7,61,97,10
+END
+
+IDD_ERROR DIALOGEX 0, 0, 257, 100
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Error"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,187,79,63,14,BS_FLAT
+    LTEXT           "",IDC_STATIC_MESG1,7,7,241,50
+    EDITTEXT        IDC_EDIT_URL1,7,65,174,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_PYTHON DIALOGEX 0, 0, 252, 189
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Python"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PY,16,28,196,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "...",IDC_BUTTON_LOAD_PY,220,27,18,15,BS_FLAT
+    LTEXT           "Path to Python script",IDC_STATIC_IP,12,14,85,9
+    GROUPBOX        "",IDC_STATIC_PY_PATH,7,7,238,66
+    DEFPUSHBUTTON   "Run",IDC_BUTTON_RUN_PY,182,49,56,15,BS_FLAT
+    CONTROL         "Run automatically at startup",IDC_CHECK_RUN_PY_AT_STARTUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,44,136,10
+    EDITTEXT        IDC_EDIT_PY_OUTPUT,7,76,238,106,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_URL_PYTHON,16,57,159,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_TRIAL_VALIDATION DIALOGEX 0, 0, 209, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "Trial Validation - Remot Task Monitor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Validate",IDOK,136,60,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,79,60,50,14,BS_FLAT
+    LTEXT           "Remote Task Monitor needs to validate your trial before you can start.\n\nTo validate the trial, your network ID will be submitted to www.osletek.com.",IDC_STATIC_VALIDATE,13,12,182,44
+    CONTROL         "Use Proxy",IDC_CHECK_PROXY_USE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,63,53,8
+    EDITTEXT        IDC_EDIT_IP,39,94,85,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PORT,148,94,38,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Proxy",IDC_STATIC_IP,15,96,23,9
+    LTEXT           "Port",IDC_STATIC_PORT,131,96,15,10
+    EDITTEXT        IDC_EDIT_USER,69,111,117,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Username",IDC_STATIC_USER,15,114,40,9
+    EDITTEXT        IDC_EDIT_PASS,70,128,116,12,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Password",IDC_STATIC_PASS,15,131,40,9
+    GROUPBOX        "Proxy",IDC_STATIC_PROXY,7,80,195,71
+    GROUPBOX        "",IDC_STATIC,7,7,195,72
+END
+
+IDD_GRAPH_BOX DIALOGEX 0, 0, 231, 124
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_GRAPH_BOX,7,7,217,110
+END
+
+IDD_CORE_GRAPHS DIALOGEX 0, 0, 226, 130
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_SELECT_CORE DIALOGEX 0, 0, 125, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Core"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,58,50,14
+    LTEXT           "Make the selected processes or threads run on this core: ",IDC_STATIC,7,7,97,25
+    COMBOBOX        IDC_COMBO_CORE,55,37,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Core",IDC_STATIC,7,37,44,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "remotecpu MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "remotecpu"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "remotecpu.EXE"
+            VALUE "ProductName", "remotecpu Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_REMOTECPU_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_THREAD_PRIORITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_START_PROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DEVICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_CPU_GRAPHS_PROP_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_MEM_GRAPH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_POWER_GRAPH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_PROCESSES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_LOADING_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_WATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DEBUG_PROCESS2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DEBUG_PROCESS3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DEBUG_PROCESS1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DEBUG_PROCESS_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_MEMORY_WATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_MEMORY_WATCH_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_CPU_WATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_CPU_WATCH_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_TOTAL_CPU_WATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_TOTAL_CPU_WATCH_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG_SAVED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_ERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_PYTHON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_TRIAL_VALIDATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_GRAPH_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_CORE_GRAPHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_SELECT_CORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "res\\icon.bmp"
+IDB_GREENSQR            BITMAP                  "res\\greensqr.bmp"
+IDB_BLUESQR             BITMAP                  "res\\bluesqr.bmp"
+IDB_LISTICON            BITMAP                  "res\\listicon.bmp"
+IDB_SPY                 BITMAP                  "res\\spy.bmp"
+IDB_DEVICE              BITMAP                  "res\\device.bmp"
+IDB_ALERT               BITMAP                  "res\\alert_triangle.bmp"
+IDB_CRASH               BITMAP                  "res\\crash_triangle.bmp"
+IDB_POWER_PLUG_CONNECTED BITMAP                  "res\\power-plug-connected.bmp"
+IDB_POWER_PLUG_DISCONNECTED BITMAP                  "res\\power-plug-disconnected.bmp"
+IDB_POWER_PLUG_TALKING1 BITMAP                  "res\\power-plug-talking1.bmp"
+IDB_POWER_PLUG_TALKING2 BITMAP                  "res\\power-plug-talking2.bmp"
+IDB_POWER_PLUG_TALKING3 BITMAP                  "res\\power-plug-talking3.bmp"
+IDB_POWER_PLUG_TALKING4 BITMAP                  "res\\power-plug-talking4.bmp"
+IDB_SNAPSHOT            BITMAP                  "res\\sanpshot.bmp"
+IDB_RESET               BITMAP                  "res\\reset.bmp"
+IDB_REPORT              BITMAP                  "res\\report.bmp"
+IDB_BATTERY0            BITMAP                  "res\\battery0.bmp"
+IDB_BATTERY10           BITMAP                  "res\\battery10.bmp"
+IDB_BATTERY20           BITMAP                  "res\\battery20.bmp"
+IDB_BATTERY30           BITMAP                  "res\\battery30.bmp"
+IDB_BATTERY40           BITMAP                  "res\\battery40.bmp"
+IDB_BATTERY50           BITMAP                  "res\\battery50.bmp"
+IDB_BATTERY60           BITMAP                  "res\\battery60.bmp"
+IDB_BATTERY70           BITMAP                  "res\\battery70.bmp"
+IDB_BATTERY80           BITMAP                  "res\\battery80.bmp"
+IDB_BATTERY90           BITMAP                  "res\\battery90.bmp"
+IDB_BATTERY100          BITMAP                  "res\\battery100.bmp"
+IDB_BATTERY_CHARGING    BITMAP                  "res\\battery-charging.bmp"
+IDB_GREEN_BAR_GRAPH0    BITMAP                  "res\\green-bar-graph0.bmp"
+IDB_GREEN_BAR_GRAPH10   BITMAP                  "res\\green-bar-graph10.bmp"
+IDB_GREEN_BAR_GRAPH20   BITMAP                  "res\\green-bar-graph20.bmp"
+IDB_GREEN_BAR_GRAPH30   BITMAP                  "res\\green-bar-graph30.bmp"
+IDB_GREEN_BAR_GRAPH40   BITMAP                  "res\\green-bar-graph40.bmp"
+IDB_GREEN_BAR_GRAPH50   BITMAP                  "res\\green-bar-graph50.bmp"
+IDB_GREEN_BAR_GRAPH60   BITMAP                  "res\\green-bar-graph60.bmp"
+IDB_GREEN_BAR_GRAPH70   BITMAP                  "res\\green-bar-graph70.bmp"
+IDB_GREEN_BAR_GRAPH80   BITMAP                  "res\\green-bar-graph80.bmp"
+IDB_GREEN_BAR_GRAPH90   BITMAP                  "res\\green-bar-graph90.bmp"
+IDB_GREEN_BAR_GRAPH100  BITMAP                  "res\\green-bar-graph100.bmp"
+IDB_PURPLE_BAR_GRAPH0   BITMAP                  "res\\purple-bar-graph0.bmp"
+IDB_PURPLE_BAR_GRAPH10  BITMAP                  "res\\purple-bar-graph10.bmp"
+IDB_PURPLE_BAR_GRAPH20  BITMAP                  "res\\purple-bar-graph20.bmp"
+IDB_PURPLE_BAR_GRAPH30  BITMAP                  "res\\purple-bar-graph30.bmp"
+IDB_PURPLE_BAR_GRAPH40  BITMAP                  "res\\purple-bar-graph40.bmp"
+IDB_PURPLE_BAR_GRAPH50  BITMAP                  "res\\purple-bar-graph50.bmp"
+IDB_PURPLE_BAR_GRAPH60  BITMAP                  "res\\purple-bar-graph60.bmp"
+IDB_PURPLE_BAR_GRAPH70  BITMAP                  "res\\purple-bar-graph70.bmp"
+IDB_PURPLE_BAR_GRAPH80  BITMAP                  "res\\purple-bar-graph80.bmp"
+IDB_PURPLE_BAR_GRAPH90  BITMAP                  "res\\purple-bar-graph90.bmp"
+IDB_PURPLE_BAR_GRAPH100 BITMAP                  "res\\purple-bar-graph100.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_PROCESS MENU
+BEGIN
+    POPUP "Proces list menu"
+    BEGIN
+        MENUITEM "&Kill Process\tCtrl K",       ID_PROCESS_KILL
+        MENUITEM "&Start Process\tCtrl S",      ID_PROCESS_START
+        MENUITEM "&Clone Process\tCtrl C",      ID_PROCESS_CLONE
+        MENUITEM "&Restart Process\tCtrl R",    ID_PROCESS_RESTART
+        MENUITEM SEPARATOR
+        MENUITEM "K&ill Thread\tCtrl I",        ID_THREAD_KILL
+        MENUITEM "Suspe&nd Thread\tCtrl N",     ID_THREAD_SUSPEND
+        MENUITEM "Resu&me Thread\tCtrl M",      ID_THREAD_RESUME
+        MENUITEM "Set &Thread Priority\tCtrl T", ID_THREAD_PRIORITY
+        MENUITEM SEPARATOR
+        MENUITEM "Cor&e\tCtrl E",               ID_SELECT_CORE
+        POPUP "Watch For"
+        BEGIN
+            MENUITEM "Process Crash\tCtrl W",       ID_CRASH_WATCH
+            MENUITEM "Max CP&U By Processs\tCtrl U", ID_CPU_WATCH
+            MENUITEM "Max CP&U Overall\tCtrl V",    ID_TOTAL_CPU_WATCH
+            MENUITEM "Max Memory\tCtrl H",          ID_MEMORY_WATCH
+        END
+        MENUITEM "Add to CPU &Graph\tCtrl G",   ID_PLOT_CPU
+        MENUITEM "Add to M&emory Graph\tCtrl E", ID_PLOT_MEM
+    END
+    POPUP "Graph legend menu"
+    BEGIN
+        MENUITEM "&Remove Graph\tDEL",          ID_GRAPHLEGENDMENU_REMOVEGRAPH
+        MENUITEM "Change Color\tCtrl C",        ID_GRAPHLEGENDMENU_CHANGECOLOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_FINGER              CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML1               HTML                    "res\\html1.htm"
+IDR_HTML2               HTML                    "res\\html2.htm"
+IDR_HTML3               HTML                    "res\\html3.htm"
+IDR_RAPHAEL_JS          HTML                    "res\\raphael.js"
+IDR_CSS                 HTML                    "res\\css.htm"
+IDR_PLOT_JS             HTML                    "res\\plot_js.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_HEADERBG_PNG        PNG                     "res\\headerbg.png"
+IDR_PBG_PNG             PNG                     "res\\pbg.png"
+IDR_LOGO_PNG            PNG                     "res\\remotetaskmontorlogo.png"
+IDR_PRIVATE_KEY         PNG                     "C:\\work\\remotecpu\\res\\power-plug-talking1.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// KEY
+//
+
+IDR_PRIVATE_KEY         KEY                     "res\\private.key"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CPU_GRAPHS_PROP_PAGE AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_MEM_GRAPH AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_POWER_GRAPH AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_GRAPH_BOX AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_CORE_GRAPHS AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_DEVICE AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_ABOUT AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_SELECT_CORE AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DEVICE DLGINIT
+BEGIN
+    IDC_BUTTON_REPORT, 0x37c, 456, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x353e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3031, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x5465, 0x7079, 0x3e65, 0x4d3c, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x4449, 0x323e, 0x3436, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4965, 
+0x3e44, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x493e, 0x4244, 0x525f, 0x5045, 0x524f, 0x3c54, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x3c3e, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 0x546e, 0x706f, 0x543e, 0x5552, 
+0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x6e4f, 0x6f54, 0x3e70, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 
+0x616d, 0x6567, 0x6e4f, 0x6952, 0x6867, 0x3e74, 0x4146, 0x534c, 0x3c45, 
+0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 
+0x6952, 0x6867, 0x3e74, 
+    IDC_BUTTON_SNAPSHOT, 0x37c, 458, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x353e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3031, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x5465, 0x7079, 0x3e65, 0x4d3c, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x4449, 0x323e, 0x3236, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4965, 
+0x3e44, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x493e, 0x4244, 0x535f, 0x414e, 0x5350, 0x4f48, 0x3c54, 0x4d2f, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 0x546e, 0x706f, 0x543e, 
+0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 
+0x6567, 0x6e4f, 0x6f54, 0x3e70, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x495f, 0x616d, 0x6567, 0x6e4f, 0x6952, 0x6867, 0x3e74, 0x4146, 0x534c, 
+0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x6e4f, 0x6952, 0x6867, 0x3e74, 
+    IDC_BUTTON_RESET, 0x37c, 455, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x353e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3031, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x5465, 0x7079, 0x3e65, 0x4d3c, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x4449, 0x323e, 0x3336, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4965, 
+0x3e44, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x493e, 0x4244, 0x525f, 0x5345, 0x5445, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6f54, 0x3e70, 0x5254, 0x4555, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 
+0x546e, 0x706f, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x4f65, 0x526e, 0x6769, 0x7468, 0x463e, 0x4c41, 0x4553, 0x2f3c, 
+0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 0x526e, 
+0x6769, 0x7468, "\076" 
+    IDC_BUTTON_CPU, 0x37c, 466, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x353e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3031, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x5465, 0x7079, 0x3e65, 0x4d3c, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x4449, 0x323e, 0x3737, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4965, 
+0x3e44, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x493e, 0x4244, 0x475f, 0x4552, 0x4e45, 0x425f, 0x5241, 0x475f, 0x4152, 
+0x4850, 0x3c30, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 
+0x6567, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 
+0x4f65, 0x546e, 0x706f, 0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6f54, 0x3e70, 0x4d3c, 
+0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6952, 
+0x6867, 0x3e74, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6952, 0x6867, 0x3e74, 
+    IDC_BUTTON_MEMORY, 0x37c, 466, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x353e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3031, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x5465, 0x7079, 0x3e65, 0x4d3c, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x4449, 0x323e, 0x3737, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4965, 
+0x3e44, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x493e, 0x4244, 0x475f, 0x4552, 0x4e45, 0x425f, 0x5241, 0x475f, 0x4152, 
+0x4850, 0x3c30, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 
+0x6567, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 
+0x4f65, 0x546e, 0x706f, 0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6f54, 0x3e70, 0x4d3c, 
+0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6952, 
+0x6867, 0x3e74, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6952, 0x6867, 0x3e74, 
+    IDC_BUTTON_BATTERY, 0x37c, 458, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x353e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3031, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x5465, 0x7079, 0x3e65, 0x4d3c, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x4449, 0x323e, 0x3536, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4965, 
+0x3e44, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x493e, 0x4244, 0x425f, 0x5441, 0x4554, 0x5952, 0x3c30, 0x4d2f, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 0x546e, 0x706f, 0x543e, 
+0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 
+0x6567, 0x6e4f, 0x6f54, 0x3e70, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x495f, 0x616d, 0x6567, 0x6e4f, 0x6952, 0x6867, 0x3e74, 0x4146, 0x534c, 
+0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x6e4f, 0x6952, 0x6867, 0x3e74, 
+    IDC_BUTTON_CONN, 0x37c, 473, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x353e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3031, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x5465, 0x7079, 0x3e65, 0x4d3c, 0x4346, 
+0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 0x4449, 0x323e, 0x3635, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4965, 
+0x3e44, 0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x495f, 0x616d, 0x6567, 
+0x493e, 0x4244, 0x505f, 0x574f, 0x5245, 0x505f, 0x554c, 0x5f47, 0x4944, 
+0x4353, 0x4e4f, 0x454e, 0x5443, 0x4445, 0x2f3c, 0x464d, 0x4243, 0x7475, 
+0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x495f, 0x616d, 0x6567, 0x6e4f, 0x6f54, 0x3e70, 0x5254, 0x4555, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 
+0x546e, 0x706f, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x4f65, 0x526e, 0x6769, 0x7468, 0x463e, 0x4c41, 0x4553, 0x2f3c, 
+0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 0x526e, 
+0x6769, 0x7468, "\076" 
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\remotecpu.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

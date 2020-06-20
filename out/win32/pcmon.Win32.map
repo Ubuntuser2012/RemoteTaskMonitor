@@ -1,0 +1,647 @@
+ pcmon.Win32
+
+ Timestamp is 5a52e374 (Sun Jan 07 21:20:20 2018)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00008d32H .text$mn                CODE
+ 0002:00000000 00000104H .CRT$XCA                DATA
+ 0002:00000104 00000104H .CRT$XCAA               DATA
+ 0002:00000208 00000104H .CRT$XCZ                DATA
+ 0002:0000030c 00000104H .CRT$XIA                DATA
+ 0002:00000410 00000104H .CRT$XIAA               DATA
+ 0002:00000514 00000104H .CRT$XIC                DATA
+ 0002:00000618 00000104H .CRT$XIY                DATA
+ 0002:0000071c 00000104H .CRT$XIZ                DATA
+ 0002:00000820 0000297dH .rdata                  DATA
+ 0002:000031a0 00000169H .rdata$debug            DATA
+ 0002:00003310 00000104H .rdata$sxdata           DATA
+ 0002:00003414 00000104H .rtc$IAA                DATA
+ 0002:00003518 00000104H .rtc$IZZ                DATA
+ 0002:0000361c 00000104H .rtc$TAA                DATA
+ 0002:00003720 00000104H .rtc$TZZ                DATA
+ 0002:00003828 0000016eH .xdata$x                DATA
+ 0002:00003996 00000000H .edata                  DATA
+ 0003:00000000 00000178H .data                   DATA
+ 0003:00000178 0000cf3dH .bss                    DATA
+ 0004:00000000 00000364H .idata$5                DATA
+ 0004:00000364 00000064H .idata$2                DATA
+ 0004:000003c8 00000014H .idata$3                DATA
+ 0004:000003dc 00000364H .idata$4                DATA
+ 0004:00000740 0000094dH .idata$6                DATA
+ 0005:00000000 00000169H .rsrc$01                DATA
+ 0005:00000170 000002ccH .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0000:00000000       ___guard_flags             00000000     <absolute>
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00000000       ___ImageBase               00400000     <linker-defined>
+ 0001:000003b0       _UnixTimeToFileTime        004013b0 f   util.obj
+ 0001:000003f0       _WinTimeToUnixTime         004013f0 f   util.obj
+ 0001:00000440       _addFileTime               00401440 f   util.obj
+ 0001:00000470       _atof_                     00401470 f   util.obj
+ 0001:00000660       _full_path                 00401660 f   util.obj
+ 0001:00000800       _get_num_bits              00401800 f   util.obj
+ 0001:00000820       _hexdec                    00401820 f   util.obj
+ 0001:000008b0       _localTime                 004018b0 f   util.obj
+ 0001:00000940       _logg                      00401940 f   util.obj
+ 0001:000009f0       _logg_begin                004019f0 f   util.obj
+ 0001:00000a20       _logg_end                  00401a20 f   util.obj
+ 0001:00000a50       _logt                      00401a50 f   util.obj
+ 0001:00000af0       _makeTimeString            00401af0 f   util.obj
+ 0001:00000b30       _myswprintf                00401b30 f   util.obj
+ 0001:00000b60       _mytime                    00401b60 f   util.obj
+ 0001:00000b90       _reallocf                  00401b90 f   util.obj
+ 0001:00000bc0       _splitString               00401bc0 f   util.obj
+ 0001:00000d50       _strstri                   00401d50 f   util.obj
+ 0001:00000e90       _strtime                   00401e90 f   util.obj
+ 0001:00000ef0       _subFileTime               00401ef0 f   util.obj
+ 0001:00000f90       _wcscpy2                   00401f90 f   util.obj
+ 0001:00000fc0       _wcscpy3                   00401fc0 f   util.obj
+ 0001:00000ff0       _GetNumClients             00401ff0 f   comm.obj
+ 0001:00001000       _socket_accept             00402000 f   comm.obj
+ 0001:000011c0       _socket_blocking           004021c0 f   comm.obj
+ 0001:00001220       _socket_client_connect     00402220 f   comm.obj
+ 0001:00001250       _socket_client_connect2    00402250 f   comm.obj
+ 0001:00001300       _socket_client_init        00402300 f   comm.obj
+ 0001:00001360       _socket_close_client       00402360 f   comm.obj
+ 0001:00001450       _socket_find_client        00402450 f   comm.obj
+ 0001:000014b0       _socket_is_any_client_state 004024b0 f   comm.obj
+ 0001:00001500       _socket_nonblocking        00402500 f   comm.obj
+ 0001:00001560       _socket_read               00402560 f   comm.obj
+ 0001:000015e0       _socket_read_client        004025e0 f   comm.obj
+ 0001:00001610       _socket_read_clienti       00402610 f   comm.obj
+ 0001:00001770       _socket_ready              00402770 f   comm.obj
+ 0001:000018a0       _socket_remove_overdue_clients 004028a0 f   comm.obj
+ 0001:00001a30       _socket_server_end         00402a30 f   comm.obj
+ 0001:00001c00       _socket_server_init        00402c00 f   comm.obj
+ 0001:00001dc0       _socket_set_broadcast      00402dc0 f   comm.obj
+ 0001:00001e20       _socket_set_client_state   00402e20 f   comm.obj
+ 0001:00001e60       _socket_unset_client_state 00402e60 f   comm.obj
+ 0001:00001eb0       _socket_unset_clients_state 00402eb0 f   comm.obj
+ 0001:00001ee0       _socket_write              00402ee0 f   comm.obj
+ 0001:00002030       _socket_write_client       00403030 f   comm.obj
+ 0001:00002070       _socket_write_clients      00403070 f   comm.obj
+ 0001:00002120       _winsock_end               00403120 f   comm.obj
+ 0001:00002130       _winsock_init              00403130 f   comm.obj
+ 0001:000024b0       _KillProcess               004034b0 f   cpumon.obj
+ 0001:00002570       ___GetUserKData            00403570 f   cpumon.obj
+ 0001:00002580       _alloc_parray              00403580 f   cpumon.obj
+ 0001:000025f0       _alloc_tarray              004035f0 f   cpumon.obj
+ 0001:00002660       _createToolHelpSnapshot    00403660 f   cpumon.obj
+ 0001:000026a0       _debug_ps_ack              004036a0 f   cpumon.obj
+ 0001:000026f0       _deleteToolHelpSnapshot    004036f0 f   cpumon.obj
+ 0001:00002710       _dieRtm                    00403710 f   cpumon.obj
+ 0001:00002880       _expandList                00403880 f   cpumon.obj
+ 0001:000028e0       _getPsStats                004038e0 f   cpumon.obj
+ 0001:00002ac0       _getThStats                00403ac0 f   cpumon.obj
+ 0001:00002d10       _get_ps_path               00403d10 f   cpumon.obj
+ 0001:00002e30       _get_thread_names          00403e30 f   cpumon.obj
+ 0001:00002e80       _get_thread_priority       00403e80 f   cpumon.obj
+ 0001:00002ed0       _handle_process            00403ed0 f   cpumon.obj
+ 0001:000032f0       _handle_thread             004042f0 f   cpumon.obj
+ 0001:000033a0       _increasePsList            004043a0 f   cpumon.obj
+ 0001:00003480       _increaseThList            00404480 f   cpumon.obj
+ 0001:00003560       _main                      00404560 f   cpumon.obj
+ 0001:00003f40       _process_client_request    00404f40 f   cpumon.obj
+ 0001:00004610       _processesIndex            00405610 f   cpumon.obj
+ 0001:000047c0       _readSettings              004057c0 f   cpumon.obj
+ 0001:00004c10       _readThreadsFile           00405c10 f   cpumon.obj
+ 0001:00004e00       _saveSettings              00405e00 f   cpumon.obj
+ 0001:00004ee0       _service_clients           00405ee0 f   cpumon.obj
+ 0001:00004f80       _set_thread_priority       00405f80 f   cpumon.obj
+ 0001:00004ff0       _close_dbgr_handles        00405ff0 f   debugger.obj
+ 0001:00005040       _continue_debug            00406040 f   debugger.obj
+ 0001:00005190       _continue_processing_debug_events 00406190 f   debugger.obj
+ 0001:00005290       _create_dbgr_handles       00406290 f   debugger.obj
+ 0001:00005370       _debug_ack                 00406370 f   debugger.obj
+ 0001:000053e0       _debug_check               004063e0 f   debugger.obj
+ 0001:00005470       _debug_crashed             00406470 f   debugger.obj
+ 0001:000054f0       _debug_done                004064f0 f   debugger.obj
+ 0001:00005650       _debug_process             00406650 f   debugger.obj
+ 0001:00005960       _debuger_proc@4            00406960 f   debugger.obj
+ 0001:00005b70       _delete_cinfo              00406b70 f   debugger.obj
+ 0001:00005bc0       _delete_dinfo              00406bc0 f   debugger.obj
+ 0001:00005bf0       _get_callstack             00406bf0 f   debugger.obj
+ 0001:00005c80       _get_kdump_dir             00406c80 f   debugger.obj
+ 0001:000060c0       _handle_exception          004070c0 f   debugger.obj
+ 0001:00006290       _process_frames            00407290 f   debugger.obj
+ 0001:000062d0       _set_kdump_dir             004072d0 f   debugger.obj
+ 0001:00006350       _DiscoveryServerInit       00407350 f   DiscoveryServer.obj
+ 0001:00006480       _DiscoveryServerServe      00407480 f   DiscoveryServer.obj
+ 0001:00006706       _OutputDebugStringW@4      00407706 f   kernel32:KERNEL32.dll
+ 0001:0000670c       _GetLastError@0            0040770c f   kernel32:KERNEL32.dll
+ 0001:00006712       _GetLocalTime@4            00407712 f   kernel32:KERNEL32.dll
+ 0001:00006718       _GetModuleFileNameW@12     00407718 f   kernel32:KERNEL32.dll
+ 0001:0000671e       _SystemTimeToFileTime@8    0040771e f   kernel32:KERNEL32.dll
+ 0001:00006724       _CloseHandle@4             00407724 f   kernel32:KERNEL32.dll
+ 0001:0000672a       _QueryPerformanceFrequency@4 0040772a f   kernel32:KERNEL32.dll
+ 0001:00006730       _Sleep@4                   00407730 f   kernel32:KERNEL32.dll
+ 0001:00006736       _TerminateProcess@8        00407736 f   kernel32:KERNEL32.dll
+ 0001:0000673c       _GetCurrentThreadId@0      0040773c f   kernel32:KERNEL32.dll
+ 0001:00006742       _OpenThread@12             00407742 f   kernel32:KERNEL32.dll
+ 0001:00006748       _SetThreadPriority@8       00407748 f   kernel32:KERNEL32.dll
+ 0001:0000674e       _GetThreadPriority@4       0040774e f   kernel32:KERNEL32.dll
+ 0001:00006754       _TerminateThread@8         00407754 f   kernel32:KERNEL32.dll
+ 0001:0000675a       _SuspendThread@4           0040775a f   kernel32:KERNEL32.dll
+ 0001:00006760       _ResumeThread@4            00407760 f   kernel32:KERNEL32.dll
+ 0001:00006766       _CreateProcessW@40         00407766 f   kernel32:KERNEL32.dll
+ 0001:0000676c       _GetThreadTimes@20         0040776c f   kernel32:KERNEL32.dll
+ 0001:00006772       _OpenProcess@12            00407772 f   kernel32:KERNEL32.dll
+ 0001:00006778       _GlobalMemoryStatusEx@4    00407778 f   kernel32:KERNEL32.dll
+ 0001:0000677e       _GetSystemInfo@4           0040777e f   kernel32:KERNEL32.dll
+ 0001:00006784       _GetTickCount@0            00407784 f   kernel32:KERNEL32.dll
+ 0001:0000678a       _QueryIdleProcessorCycleTime@8 0040778a f   kernel32:KERNEL32.dll
+ 0001:00006790       _SetSystemPowerState@8     00407790 f   kernel32:KERNEL32.dll
+ 0001:00006796       _CreateToolhelp32Snapshot@8 00407796 f   kernel32:KERNEL32.dll
+ 0001:0000679c       _Process32FirstW@8         0040779c f   kernel32:KERNEL32.dll
+ 0001:000067a2       _Process32NextW@8          004077a2 f   kernel32:KERNEL32.dll
+ 0001:000067a8       _Thread32First@8           004077a8 f   kernel32:KERNEL32.dll
+ 0001:000067ae       _Thread32Next@8            004077ae f   kernel32:KERNEL32.dll
+ 0001:000067b4       _Module32FirstW@8          004077b4 f   kernel32:KERNEL32.dll
+ 0001:000067ba       _Module32NextW@8           004077ba f   kernel32:KERNEL32.dll
+ 0001:000067c0       _K32GetProcessMemoryInfo@12 004077c0 f   kernel32:KERNEL32.dll
+ 0001:000067c6       _ContinueDebugEvent@12     004077c6 f   kernel32:KERNEL32.dll
+ 0001:000067cc       _WaitForDebugEvent@8       004077cc f   kernel32:KERNEL32.dll
+ 0001:000067d2       _DebugActiveProcess@4      004077d2 f   kernel32:KERNEL32.dll
+ 0001:000067d8       _SetLastError@4            004077d8 f   kernel32:KERNEL32.dll
+ 0001:000067de       _InitializeCriticalSection@4 004077de f   kernel32:KERNEL32.dll
+ 0001:000067e4       _EnterCriticalSection@4    004077e4 f   kernel32:KERNEL32.dll
+ 0001:000067ea       _LeaveCriticalSection@4    004077ea f   kernel32:KERNEL32.dll
+ 0001:000067f0       _DeleteCriticalSection@4   004077f0 f   kernel32:KERNEL32.dll
+ 0001:000067f6       _SetEvent@4                004077f6 f   kernel32:KERNEL32.dll
+ 0001:000067fc       _CreateEventW@16           004077fc f   kernel32:KERNEL32.dll
+ 0001:00006802       _CreateThread@24           00407802 f   kernel32:KERNEL32.dll
+ 0001:00006808       _WaitForMultipleObjects@16 00407808 f   kernel32:KERNEL32.dll
+ 0001:0000680e       _ExitWindowsEx@8           0040780e f   user32:USER32.dll
+ 0001:00006814       _RegCloseKey@4             00407814 f   advapi32:ADVAPI32.dll
+ 0001:0000681a       _RegOpenKeyExW@20          0040781a f   advapi32:ADVAPI32.dll
+ 0001:00006820       _RegQueryValueExW@24       00407820 f   advapi32:ADVAPI32.dll
+ 0001:00006826       _tolower                   00407826 f   MSVCRT:MSVCR120.dll
+ 0001:0000682c       _wcsrchr                   0040782c f   MSVCRT:MSVCR120.dll
+ 0001:00006832       _strtol                    00407832 f   MSVCRT:MSVCR120.dll
+ 0001:00006838       _free                      00407838 f   MSVCRT:MSVCR120.dll
+ 0001:0000683e       _malloc                    0040783e f   MSVCRT:MSVCR120.dll
+ 0001:00006844       _realloc                   00407844 f   MSVCRT:MSVCR120.dll
+ 0001:0000684a       _fclose                    0040784a f   MSVCRT:MSVCR120.dll
+ 0001:00006850       _fflush                    00407850 f   MSVCRT:MSVCR120.dll
+ 0001:00006856       _fopen                     00407856 f   MSVCRT:MSVCR120.dll
+ 0001:0000685c       _printf                    0040785c f   MSVCRT:MSVCR120.dll
+ 0001:00006862       _vsprintf                  00407862 f   MSVCRT:MSVCR120.dll
+ 0001:00006868       _fwprintf                  00407868 f   MSVCRT:MSVCR120.dll
+ 0001:0000686e       _wprintf                   0040786e f   MSVCRT:MSVCR120.dll
+ 0001:00006874       __vswprintf_c_l            00407874 f   MSVCRT:MSVCR120.dll
+ 0001:0000687a       _strftime                  0040787a f   MSVCRT:MSVCR120.dll
+ 0001:00006880       __localtime64              00407880 f   MSVCRT:MSVCR120.dll
+ 0001:00006886       __time64                   00407886 f   MSVCRT:MSVCR120.dll
+ 0001:00006890       __allmul                   00407890 f   MSVCRT:llmul.obj
+ 0001:000068d0       __ftoui3                   004078d0 f   MSVCRT:ftol3.obj
+ 0001:000068df       __ftoul3                   004078df f   MSVCRT:ftol3.obj
+ 0001:000068ee       __ftol3                    004078ee f   MSVCRT:ftol3.obj
+ 0001:000068fb       __ftol3_NaN                004078fb f   MSVCRT:ftol3.obj
+ 0001:00006913       __ftol3_work               00407913 f   MSVCRT:ftol3.obj
+ 0001:00006999       __ftol3_common             00407999 f   MSVCRT:ftol3.obj
+ 0001:00006a5b       __ftol3_arg_error          00407a5b f   MSVCRT:ftol3.obj
+ 0001:00006a6d       __ftol3_except             00407a6d f   MSVCRT:ftol3.obj
+ 0001:00006ab1       __dtoui3                   00407ab1 f   MSVCRT:ftol3.obj
+ 0001:00006ac0       __dtoul3                   00407ac0 f   MSVCRT:ftol3.obj
+ 0001:00006acf       __dtol3                    00407acf f   MSVCRT:ftol3.obj
+ 0001:00006adc       __dtol3_NaN                00407adc f   MSVCRT:ftol3.obj
+ 0001:00006af9       __dtol3_work               00407af9 f   MSVCRT:ftol3.obj
+ 0001:00006bde       __ultod3                   00407bde f   MSVCRT:ftol3.obj
+ 0001:00006c6f       __ltod3                    00407c6f f   MSVCRT:ftol3.obj
+ 0001:00006c9e       __libm_sse2_pow_precise    00407c9e f   MSVCRT:MSVCR120.dll
+ 0001:00006ca4       _memcpy                    00407ca4 f   MSVCRT:MSVCR120.dll
+ 0001:00006caa       _memset                    00407caa f   MSVCRT:MSVCR120.dll
+ 0001:00006cb0       _memmove                   00407cb0 f   MSVCRT:MSVCR120.dll
+ 0001:00006cc0       __aulldiv                  00407cc0 f   MSVCRT:ulldiv.obj
+ 0001:00006d28       _rand                      00407d28 f   MSVCRT:MSVCR120.dll
+ 0001:00006d2e       _srand                     00407d2e f   MSVCRT:MSVCR120.dll
+ 0001:00006d34       __itow                     00407d34 f   MSVCRT:MSVCR120.dll
+ 0001:00006d3a       __wtoi                     00407d3a f   MSVCRT:MSVCR120.dll
+ 0001:00006d40       _feof                      00407d40 f   MSVCRT:MSVCR120.dll
+ 0001:00006d46       _fgets                     00407d46 f   MSVCRT:MSVCR120.dll
+ 0001:00006d4c       _fprintf                   00407d4c f   MSVCRT:MSVCR120.dll
+ 0001:00006d52       _fwrite                    00407d52 f   MSVCRT:MSVCR120.dll
+ 0001:00006d58       _sscanf                    00407d58 f   MSVCRT:MSVCR120.dll
+ 0001:00006d5e       _sprintf                   00407d5e f   MSVCRT:MSVCR120.dll
+ 0001:00006d64       _fgetws                    00407d64 f   MSVCRT:MSVCR120.dll
+ 0001:00006d70       __alloca_probe             00407d70 f   MSVCRT:chkstk.obj
+ 0001:00006d70       __chkstk                   00407d70 f   MSVCRT:chkstk.obj
+ 0001:00006e9f       _NtCurrentTeb              00407e9f f i MSVCRT:crtexe.obj
+ 0001:00007051       _mainCRTStartup            00408051 f   MSVCRT:crtexe.obj
+ 0001:0000705c       __except1                  0040805c f   MSVCRT:MSVCR120.dll
+ 0001:00007062       ?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z 00408062 f   MSVCRT:unhandld.obj
+ 0001:000070a3       ___CxxSetUnhandledExceptionFilter 004080a3 f   MSVCRT:unhandld.obj
+ 0001:000070b2       __XcptFilter               004080b2 f   MSVCRT:MSVCR120.dll
+ 0001:000070b8       __amsg_exit                004080b8 f   MSVCRT:MSVCR120.dll
+ 0001:000070be       __setargv                  004080be f   MSVCRT:dllargv.obj
+ 0001:000070c2       ___getmainargs             004080c2 f   MSVCRT:MSVCR120.dll
+ 0001:000070c8       ___set_app_type            004080c8 f   MSVCRT:MSVCR120.dll
+ 0001:000070d0       __FindPESection            004080d0 f   MSVCRT:pesect.obj
+ 0001:00007120       __IsNonwritableInCurrentImage 00408120 f   MSVCRT:pesect.obj
+ 0001:000071e0       __ValidateImageBase        004081e0 f   MSVCRT:pesect.obj
+ 0001:00007212       _exit                      00408212 f   MSVCRT:MSVCR120.dll
+ 0001:00007218       __exit                     00408218 f   MSVCRT:MSVCR120.dll
+ 0001:0000721e       __cexit                    0040821e f   MSVCRT:MSVCR120.dll
+ 0001:00007224       ___security_init_cookie    00408224 f   MSVCRT:gs_support.obj
+ 0001:000072c0       __matherr                  004082c0 f   MSVCRT:merr.obj
+ 0001:000072c3       ___atonexitinit            004082c3 f   MSVCRT:atonexit.obj
+ 0001:000072ff       __onexit                   004082ff f   MSVCRT:atonexit.obj
+ 0001:000073a8       _atexit                    004083a8 f   MSVCRT:atonexit.obj
+ 0001:000073bd       __RTC_Initialize           004083bd f   MSVCRT:initsect.obj
+ 0001:000073dd       __RTC_Terminate            004083dd f   MSVCRT:initsect.obj
+ 0001:000073fe       __configthreadlocale       004083fe f   MSVCRT:MSVCR120.dll
+ 0001:00007404       __invoke_watson_if_error   00408404 f i MSVCRT:fp8.obj
+ 0001:00007424       __setdefaultprecision      00408424 f   MSVCRT:fp8.obj
+ 0001:0000744c       ___setusermatherr          0040844c f   MSVCRT:MSVCR120.dll
+ 0001:00007452       __initterm_e               00408452 f   MSVCRT:MSVCR120.dll
+ 0001:00007458       __initterm                 00408458 f   MSVCRT:MSVCR120.dll
+ 0001:00007460       __SEH_prolog4              00408460 f   MSVCRT:sehprolg4.obj
+ 0001:000074a5       __SEH_epilog4              004084a5 f   MSVCRT:sehprolg4.obj
+ 0001:000074b9       __except_handler4          004084b9 f   MSVCRT:chandler4gs.obj
+ 0001:000074dc       ?terminate@@YAXXZ          004084dc f   MSVCRT:MSVCR120.dll
+ 0001:000074e2       ___crtSetUnhandledExceptionFilter 004084e2 f   MSVCRT:MSVCR120.dll
+ 0001:000074e8       __lock                     004084e8 f   MSVCRT:MSVCR120.dll
+ 0001:000074ee       __unlock                   004084ee f   MSVCRT:MSVCR120.dll
+ 0001:000074f4       __calloc_crt               004084f4 f   MSVCRT:MSVCR120.dll
+ 0001:000074fa       ___dllonexit               004084fa f   MSVCRT:MSVCR120.dll
+ 0001:00007500       __invoke_watson            00408500 f   MSVCRT:MSVCR120.dll
+ 0001:00007506       __controlfp_s              00408506 f   MSVCRT:MSVCR120.dll
+ 0001:0000750c       @__security_check_cookie@4 0040850c f   MSVCRT:secchk.obj
+ 0001:0000751c       __except_handler4_common   0040851c f   MSVCRT:MSVCR120.dll
+ 0001:00007522       ___raise_securityfailure   00408522 f   MSVCRT:gs_report.obj
+ 0001:0000755f       ___report_gsfailure        0040855f f   MSVCRT:gs_report.obj
+ 0001:0000765a       ___report_rangecheckfailure 0040865a f   MSVCRT:gs_report.obj
+ 0001:00007666       ___report_securityfailure  00408666 f   MSVCRT:gs_report.obj
+ 0001:00007736       ___report_securityfailureEx 00408736 f   MSVCRT:gs_report.obj
+ 0001:0000784c       __crt_debugger_hook        0040884c f   MSVCRT:MSVCR120.dll
+ 0001:00007852       ___crtUnhandledException   00408852 f   MSVCRT:MSVCR120.dll
+ 0001:00007858       ___crtTerminateProcess     00408858 f   MSVCRT:MSVCR120.dll
+ 0001:0000785e       _accept@12                 0040885e f   ws2_32:WS2_32.dll
+ 0001:00007864       _bind@12                   00408864 f   ws2_32:WS2_32.dll
+ 0001:0000786a       _closesocket@4             0040886a f   ws2_32:WS2_32.dll
+ 0001:00007870       _connect@12                00408870 f   ws2_32:WS2_32.dll
+ 0001:00007876       _ioctlsocket@12            00408876 f   ws2_32:WS2_32.dll
+ 0001:0000787c       _htons@4                   0040887c f   ws2_32:WS2_32.dll
+ 0001:00007882       _inet_addr@4               00408882 f   ws2_32:WS2_32.dll
+ 0001:00007888       _listen@8                  00408888 f   ws2_32:WS2_32.dll
+ 0001:0000788e       _ntohl@4                   0040888e f   ws2_32:WS2_32.dll
+ 0001:00007894       _ntohs@4                   00408894 f   ws2_32:WS2_32.dll
+ 0001:0000789a       _recv@16                   0040889a f   ws2_32:WS2_32.dll
+ 0001:000078a0       _select@20                 004088a0 f   ws2_32:WS2_32.dll
+ 0001:000078a6       _send@16                   004088a6 f   ws2_32:WS2_32.dll
+ 0001:000078ac       _setsockopt@20             004088ac f   ws2_32:WS2_32.dll
+ 0001:000078b2       _shutdown@8                004088b2 f   ws2_32:WS2_32.dll
+ 0001:000078b8       _socket@12                 004088b8 f   ws2_32:WS2_32.dll
+ 0001:000078be       _WSAStartup@8              004088be f   ws2_32:WS2_32.dll
+ 0001:000078c4       _WSACleanup@0              004088c4 f   ws2_32:WS2_32.dll
+ 0001:000078ca       _htonl@4                   004088ca f   ws2_32:WS2_32.dll
+ 0001:000078d0       _recvfrom@24               004088d0 f   ws2_32:WS2_32.dll
+ 0001:000078d6       _sendto@24                 004088d6 f   ws2_32:WS2_32.dll
+ 0001:000078dc       _EncodePointer@4           004088dc f   kernel32:KERNEL32.dll
+ 0001:000078e2       _QueryPerformanceCounter@4 004088e2 f   kernel32:KERNEL32.dll
+ 0001:000078e8       _GetCurrentProcessId@0     004088e8 f   kernel32:KERNEL32.dll
+ 0001:000078ee       _GetSystemTimeAsFileTime@4 004088ee f   kernel32:KERNEL32.dll
+ 0001:000078f4       _DecodePointer@4           004088f4 f   kernel32:KERNEL32.dll
+ 0001:000078fa       _IsDebuggerPresent@0       004088fa f   kernel32:KERNEL32.dll
+ 0001:00007900       _IsProcessorFeaturePresent@4 00408900 f   kernel32:KERNEL32.dll
+ 0002:00000000       ___xc_a                    0040a000     MSVCRT:cinitexe.obj
+ 0002:00000208       ___xc_z                    0040a208     MSVCRT:cinitexe.obj
+ 0002:0000030c       ___xi_a                    0040a30c     MSVCRT:cinitexe.obj
+ 0002:0000071c       ___xi_z                    0040a71c     MSVCRT:cinitexe.obj
+ 0002:00000858       ??_C@_1EM@JIAKEEKE@?$AA?$FL?$AA?$CF?$AA0?$AA4?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9?$AA?$CF?$AA0?$AA2?$AAi?$AA?9@ 0040a858     util.obj
+ 0002:000008b4       ??_C@_0BD@CAJBKHIP@?$CFY?9?$CFm?9?$CFd?9?9?$CFH?9?$CFM?9?$CFS?$AA@ 0040a8b4     util.obj
+ 0002:000008cc       ??_C@_03CCGKKFHG@a?$CLt?$AA@ 0040a8cc     util.obj
+ 0002:000008d0       ??_C@_09FCIJKDPO@cemon?4log?$AA@ 0040a8d0     util.obj
+ 0002:000008dc       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 0040a8dc     util.obj
+ 0002:000008e4       ??_C@_02DKCKIIND@?$CFs?$AA@ 0040a8e4     util.obj
+ 0002:000008e8       ??_C@_1DO@EFPLHCOB@?$AAG?$AAe?$AAt?$AAM?$AAo?$AAd?$AAu?$AAl?$AAe?$AAF?$AAi?$AAl?$AAe?$AAN?$AAa?$AAm?$AAe?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040a8e8     util.obj
+ 0002:00000934       __real@3f800000            0040a934     util.obj
+ 0002:00000938       __real@4024000000000000    0040a938     util.obj
+ 0002:00000944       __real@41200000            0040a944     util.obj
+ 0002:00000948       __real@416312d000000000    0040a948     util.obj
+ 0002:00000954       ??_C@_1CG@MODGNIFD@?$AAW?$AAS?$AAA?$AAS?$AAt?$AAa?$AAr?$AAt?$AAu?$AAp?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040a954     comm.obj
+ 0002:00000984       ??_C@_1CE@CCLNFDHF@?$AAs?$AAe?$AAn?$AAd?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040a984     comm.obj
+ 0002:000009b0       ??_C@_1CG@PEEJGJGN@?$AAs?$AAe?$AAn?$AAd?$AA?$CI?$AA?$CJ?$AA?5?$AAi?$AAn?$AAc?$AAo?$AAm?$AAp?$AAl?$AAe?$AAt?$AAe?$AA?6?$AA?$AA@ 0040a9b0     comm.obj
+ 0002:000009e0       ??_C@_1CE@NMKEFGCG@?$AAr?$AAe?$AAc?$AAv?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040a9e0     comm.obj
+ 0002:00000a0c       ??_C@_1DK@CFFDLIFF@?$AAc?$AAl?$AAo?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?6?$AA?$AA@ 0040aa0c     comm.obj
+ 0002:00000a54       ??_C@_1CG@OKJEHAPN@?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA_?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA_?$AAe?$AAn?$AAd?$AA?6?$AA?$AA@ 0040aa54     comm.obj
+ 0002:00000a84       ??_C@_1CO@OKAIGIFP@?$AAc?$AAa?$AAn?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?6?$AA?$AA@ 0040aa84     comm.obj
+ 0002:00000abc       ??_C@_1DE@FOMDKOLF@?$AAi?$AAo?$AAc?$AAt?$AAl?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040aabc     comm.obj
+ 0002:00000afc       ??_C@_1DK@MGCIHDEA@?$AAb?$AAi?$AAn?$AAd?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?5?$AA?9?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?3?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040aafc     comm.obj
+ 0002:00000b44       ??_C@_1CK@HGPNCABH@?$AAl?$AAi?$AAs?$AAt?$AAe?$AAn?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040ab44     comm.obj
+ 0002:00000b78       ??_C@_1CM@MADNOPIO@?$AAl?$AAi?$AAs?$AAt?$AAe?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAo?$AAn?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040ab78     comm.obj
+ 0002:00000bac       ??_C@_1DA@BACKKFON@?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAa?$AAc?$AAc?$AAe?$AAp?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040abac     comm.obj
+ 0002:00000be8       ??_C@_1GE@JIMABGLN@?$AAa?$AAc?$AAc?$AAe?$AAp?$AAt?$AAe?$AAd?$AA?5?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AA?5?$AA?$CD?$AA?5?$AA?$CF?$AAi?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AAi@ 0040abe8     comm.obj
+ 0002:00000c60       ??_C@_1EG@JJLAHAKE@?$AAc?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAt?$AAh?$AAa?$AAn?$AA?5?$AA?$CF?$AAi?$AA?5?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt@ 0040ac60     comm.obj
+ 0002:00000cb4       ??_C@_1DM@DDLGKLOK@?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAi?$AAn?$AA?5?$AAr?$AAe?$AAc?$AAv?$AA?0?$AA?5?$AAr?$AAe?$AAt?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040acb4     comm.obj
+ 0002:00000d00       ??_C@_1EG@CEDLMFGN@?$AAc?$AAl?$AAo?$AAs?$AAe?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA?5?$AAn?$AAu?$AAm?$AA_?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AAs?$AA?5?$AA?$CF@ 0040ad00     comm.obj
+ 0002:00000d54       ??_C@_1CA@BPHIFFH@?$AAn?$AAu?$AAm?$AA_?$AAc?$AAl?$AAi?$AAe?$AAn?$AAt?$AAs?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040ad54     comm.obj
+ 0002:00000d7c       ??_C@_1DE@JMPELKOK@?$AAc?$AAa?$AAn?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040ad7c     comm.obj
+ 0002:00000dbc       ??_C@_1CG@HDJCCA@?$AAi?$AAn?$AAe?$AAt?$AA_?$AAa?$AAd?$AAd?$AAr?$AA?$CI?$AA?$CJ?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?6?$AA?$AA@ 0040adbc     comm.obj
+ 0002:00000dec       ??_C@_1CK@CBPBNADB@?$AAc?$AAo?$AAn?$AAn?$AAe?$AAc?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040adec     comm.obj
+ 0002:00000e20       ??_C@_1DA@DENMBIGK@?$AAs?$AAe?$AAt?$AAs?$AAo?$AAc?$AAk?$AAo?$AAp?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040ae20     comm.obj
+ 0002:00000e5c       ??_C@_1DC@DDCBHJCF@?$AAi?$AAo?$AAc?$AAt?$AAl?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040ae5c     comm.obj
+ 0002:00000e98       ??_C@_1CO@EGOKGPBI@?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA_?$AAr?$AAe?$AAa?$AAd?$AAy?$AA?$CI?$AA?$CJ?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040ae98     comm.obj
+ 0002:00000ed0       ??_C@_13LBAGMAIH@?$AA?6?$AA?$AA@ 0040aed0     cpumon.obj
+ 0002:00000ed4       ??_C@_09LPKCCIOJ@cemon?4txt?$AA@ 0040aed4     cpumon.obj
+ 0002:00000ee0       ??_C@_1BE@CCDFCPGL@?$AAc?$AAe?$AAm?$AAo?$AAn?$AA?4?$AAt?$AAx?$AAt?$AA?$AA@ 0040aee0     cpumon.obj
+ 0002:00000ef8       ??_C@_1EO@MIJBIFOE@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAg?$AAe?$AAt?$AA?5?$AAw?$AAo?$AAr?$AAk?$AAi?$AAn?$AAg?$AA?5?$AAd?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?5@ 0040aef8     cpumon.obj
+ 0002:00000f58       ??_C@_02BMJICGCB@rt?$AA@   0040af58     cpumon.obj
+ 0002:00000f5c       ??_C@_13HGPDMIBE@?$AA?$DP?$AA?$AA@ 0040af5c     cpumon.obj
+ 0002:00000f60       ??_C@_1MG@FEKHJCJE@?$AAN?$AAo?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?4?$AA?5?$AAY?$AAo?$AAu?$AA?5?$AAc?$AAa?$AAn?$AA?5?$AAs?$AAp?$AAe?$AAc@ 0040af60     cpumon.obj
+ 0002:00001050       ??_C@_1BO@NKKAKFGC@?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAi?$AAn?$AAg?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0040b050     cpumon.obj
+ 0002:00001074       ??_C@_1BO@GLFKKFGP@?$AAu?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040b074     cpumon.obj
+ 0002:00001098       ??_C@_1CM@EKONCNE@?$AAu?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AAn?$AAa?$AAm?$AAe?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0040b098     cpumon.obj
+ 0002:000010cc       ??_C@_1DO@OHFDLDMD@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAd?$AA?4?$AA?6?$AA?$AA@ 0040b0cc     cpumon.obj
+ 0002:00001118       ??_C@_1FA@IBINMCNL@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi@ 0040b118     cpumon.obj
+ 0002:00001178       ??_C@_06LPOPHAJE@rtmsrv?$AA@ 0040b178     cpumon.obj
+ 0002:00001180       ??_C@_06DEBEKHOP@rtmcli?$AA@ 0040b180     cpumon.obj
+ 0002:00001188       ??_C@_07OJGBNNLN@rtm?4cfg?$AA@ 0040b188     cpumon.obj
+ 0002:00001194       ??_C@_1BA@HJBAMEKO@?$AAr?$AAt?$AAm?$AA?4?$AAc?$AAf?$AAg?$AA?$AA@ 0040b194     cpumon.obj
+ 0002:000011a8       ??_C@_1BG@OLIJNHBC@?$AAs?$AAa?$AAv?$AAi?$AAn?$AAg?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0040b1a8     cpumon.obj
+ 0002:000011c4       ??_C@_02BKFDOEMK@wt?$AA@   0040b1c4     cpumon.obj
+ 0002:000011c8       ??_C@_0CN@IAMCNGEK@?$CFlu?3priority?6?$CFi?3capture_on_dev?6?$CF@ 0040b1c8     cpumon.obj
+ 0002:00001200       ??_C@_1BI@OEACMCCG@?$AAl?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0040b200     cpumon.obj
+ 0002:0000121c       ??_C@_05CIHMGJBO@?$CFi?3?$CFs?$AA@ 0040b21c     cpumon.obj
+ 0002:00001224       ??_C@_08IIJFADMF@priority?$AA@ 0040b224     cpumon.obj
+ 0002:00001230       ??_C@_1CC@FGEJKKIN@?$AAs?$AAe?$AAt?$AA?5?$AAp?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040b230     cpumon.obj
+ 0002:00001258       ??_C@_08CBFCMNKF@interval?$AA@ 0040b258     cpumon.obj
+ 0002:00001264       ??_C@_1CM@IGGFOAJN@?$AAs?$AAe?$AAt?$AA?5?$AAs?$AAn?$AAa?$AAp?$AA?5?$AAi?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040b264     cpumon.obj
+ 0002:00001298       ??_C@_07HAFPJOBC@logging?$AA@ 0040b298     cpumon.obj
+ 0002:000012a4       ??_C@_1BA@BKMGIBPB@?$AAe?$AAn?$AAa?$AAb?$AAl?$AAe?$AAd?$AA?$AA@ 0040b2a4     cpumon.obj
+ 0002:000012b8       ??_C@_1BC@LGPIFEA@?$AAd?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAd?$AA?$AA@ 0040b2b8     cpumon.obj
+ 0002:000012d0       ??_C@_1CA@NCKJGCLH@?$AAl?$AAo?$AAg?$AA?5?$AAt?$AAo?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0040b2d0     cpumon.obj
+ 0002:000012f8       ??_C@_0P@GGEAEIJE@capture_on_dev?$AA@ 0040b2f8     cpumon.obj
+ 0002:0000130c       ??_C@_1CK@LNCOGGAC@?$AAs?$AAa?$AAv?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAt?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0040b30c     cpumon.obj
+ 0002:00001340       ??_C@_09KCAFNBOA@log?$CFs?4rtm?$AA@ 0040b340     cpumon.obj
+ 0002:0000134c       ??_C@_1BE@CFBJDAHI@?$AAl?$AAo?$AAg?$AA?$CF?$AAs?$AA?4?$AAr?$AAt?$AAm?$AA?$AA@ 0040b34c     cpumon.obj
+ 0002:00001364       ??_C@_0CI@OHCEMNMB@RTM?5file?5?$CC?$CFs?$CC?5set?5to?5record?5data@ 0040b364     cpumon.obj
+ 0002:00001394       ??_C@_0M@MICKPBCA@threads?4txt?$AA@ 0040b394     cpumon.obj
+ 0002:000013a4       ??_C@_1BI@EENIJIDL@?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AAs?$AA?4?$AAt?$AAx?$AAt?$AA?$AA@ 0040b3a4     cpumon.obj
+ 0002:000013c0       ??_C@_1IA@PCCHHOA@?$AAN?$AAo?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?4?$AA?5?$AAY?$AAo?$AAu?$AA?5?$AAc?$AAa?$AAn?$AA?5?$AAs?$AAp?$AAe?$AAc@ 0040b3c0     cpumon.obj
+ 0002:0000145c       ??_C@_06BEBACANP@?$CFlu?3?$CFs?$AA@ 0040b45c     cpumon.obj
+ 0002:00001464       ??_C@_1O@PODECHNM@?$AA?$CF?$AAi?$AA?3?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 0040b464     cpumon.obj
+ 0002:00001478       ??_C@_1HC@EKKBFGIN@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAp@ 0040b478     cpumon.obj
+ 0002:00001500       ??_C@_1DE@HKBKDOAF@?$AAi?$AAn?$AAc?$AAr?$AAe?$AAa?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAp?$AAs?$AA?5?$AAa?$AAr?$AAr?$AAa?$AAy?$AA?5?$AAs?$AAi?$AAz?$AAe?$AA?6?$AA?$AA@ 0040b500     cpumon.obj
+ 0002:00001540       ??_C@_1FK@JHGKFFNC@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr@ 0040b540     cpumon.obj
+ 0002:000015ac       ??_C@_1BE@PAKAHDCL@?$AA?$CF?$AAi?$AA?5?$AA?9?$AA?$DO?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040b5ac     cpumon.obj
+ 0002:000015c8       ??_C@_1HA@NFJNHHPN@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAt@ 0040b5c8     cpumon.obj
+ 0002:00001650       ??_C@_1DE@JPLHIMDK@?$AAi?$AAn?$AAc?$AAr?$AAe?$AAa?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AA?5?$AAa?$AAr?$AAr?$AAa?$AAy?$AA?5?$AAs?$AAi?$AAz?$AAe?$AA?6?$AA?$AA@ 0040b650     cpumon.obj
+ 0002:00001690       ??_C@_1FI@KGNCKKMH@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy@ 0040b690     cpumon.obj
+ 0002:00001700       ??_C@_1FA@CCNNIALB@?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAt?$AAe?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAe?$AAr?$AAr@ 0040b700     cpumon.obj
+ 0002:00001760       ??_C@_1FE@HNMMMHMK@?$AAS?$AAe?$AAt?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?9?$AAi?$AAd?$AA?5?$AA?$CF?$AAi@ 0040b760     cpumon.obj
+ 0002:000017c8       ??_C@_1FA@EJBGEEKN@?$AAS?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAA?$AAf?$AAf?$AAi?$AAn?$AAi?$AAt?$AAy?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?9?$AAi?$AAd?$AA?5?$AA?$CF?$AAi?$AA?0?$AA?5@ 0040b7c8     cpumon.obj
+ 0002:00001828       ??_C@_1EC@DDKJKCEG@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AA?3?$AA?5?$AA?$CF?$AAi?$AA?6@ 0040b828     cpumon.obj
+ 0002:00001878       ??_C@_1EK@LFJPEHJB@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAc?$AAl?$AAo?$AAn?$AAe?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AA?3@ 0040b878     cpumon.obj
+ 0002:000018d0       ??_C@_1EO@IBOCFPH@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr@ 0040b8d0     cpumon.obj
+ 0002:00001930       ??_C@_1EO@LEFPAMMO@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAc?$AAe?$AAm?$AAo?$AAn?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr@ 0040b930     cpumon.obj
+ 0002:00001990       ??_C@_1FA@CPFAMMNK@?$AAC?$AAe?$AAS?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5@ 0040b990     cpumon.obj
+ 0002:000019f0       ??_C@_1FM@FGKJKAPP@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAn?$AAa?$AAp?$AAs?$AAh?$AAo?$AAt?$AA?4?$AA?5?$AAE?$AAr?$AAr?$AA?3?$AA?5@ 0040b9f0     cpumon.obj
+ 0002:00001a60       ??_C@_1DA@GONFPKP@?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA3?$AA2?$AAF?$AAi?$AAr?$AAs?$AAt?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?6?$AA?$AA@ 0040ba60     cpumon.obj
+ 0002:00001a9c       ??_C@_1CO@HIJODEKL@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA3?$AA2?$AAF?$AAi?$AAr?$AAs?$AAt?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?6?$AA?$AA@ 0040ba9c     cpumon.obj
+ 0002:00001ad4       ??_C@_1DO@JKIGBADO@?$AAG?$AAe?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAT?$AAi?$AAm?$AAe?$AAs?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040bad4     cpumon.obj
+ 0002:00001b20       ??_C@_1EA@IIIHLFCH@?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAi?$AAn?$AAg?$AA?5?$AAr?$AAa?$AAn?$AAd?$AAo?$AAm?$AA?$CD?$AA?5?$AAg?$AAe?$AAn?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?6?$AA?$AA@ 0040bb20     cpumon.obj
+ 0002:00001b6c       ??_C@_1BK@GAANKGGA@?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAd?$AA?6?$AA?$AA@ 0040bb6c     cpumon.obj
+ 0002:00001b90       ??_C@_1EC@FBILDOPH@?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAo?$AAk?$AA?4?$AA?5?$AAC?$AAe?$AAm?$AAo?$AAn?$AA?5?$AAv?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?5?$AA?$CF?$AAi?$AA?4?$AA?$CF?$AA0?$AA2?$AAi?$AA?6@ 0040bb90     cpumon.obj
+ 0002:00001be0       ??_C@_1HA@FDAHHHJB@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAi@ 0040bbe0     cpumon.obj
+ 0002:00001c68       ??_C@_1CE@PDMFPDAA@?$AAw?$AAi?$AAn?$AAs?$AAo?$AAc?$AAk?$AA_?$AAi?$AAn?$AAi?$AAt?$AA?5?$AAo?$AAk?$AA?4?$AA?6?$AA?$AA@ 0040bc68     cpumon.obj
+ 0002:00001c94       ??_C@_1DA@FMEKCBD@?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA_?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA_?$AAi?$AAn?$AAi?$AAt?$AA?5?$AAo?$AAk?$AA?4?$AA?6?$AA?$AA@ 0040bc94     cpumon.obj
+ 0002:00001cd0       ??_C@_1HE@BOMJIMCC@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAs@ 0040bcd0     cpumon.obj
+ 0002:00001d60       ??_C@_1HG@PCMNBLAM@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AA?$CF?$AAi?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAs@ 0040bd60     cpumon.obj
+ 0002:00001df0       ??_C@_03DOPCBAKB@a?$CLb?$AA@ 0040bdf0     cpumon.obj
+ 0002:00001df4       ??_C@_17CHOLIMHJ@?$AA1?$AA0?$AA0?$AA?$AA@ 0040bdf4     cpumon.obj
+ 0002:00001e00       ??_C@_1BA@LANPECLJ@?$AAE?$AAx?$AAi?$AAt?$AAe?$AAd?$AA?6?$AA?$AA@ 0040be00     cpumon.obj
+ 0002:00001e18       ??_C@_1EG@PJHCPOF@?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?2?$AAE?$AAr?$AAr?$AAo?$AAr?$AAR?$AAe?$AAp?$AAo?$AAr?$AAt?$AAi?$AAn?$AAg?$AA?2?$AAD?$AAu?$AAm?$AAp?$AAS?$AAe?$AAt?$AAt?$AAi?$AAn@ 0040be18     debugger.obj
+ 0002:00001e6c       ??_C@_1DE@KNINEMNF@?$AAR?$AAe?$AAg?$AAO?$AAp?$AAe?$AAn?$AAK?$AAe?$AAy?$AAE?$AAx?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?5?$AAe?$AAr?$AAr?$AA?3?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040be6c     debugger.obj
+ 0002:00001eac       ??_C@_1BM@PMOMDJNA@?$AAD?$AAu?$AAm?$AAp?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?$AA@ 0040beac     debugger.obj
+ 0002:00001ed0       ??_C@_1EM@FDPIGOIB@?$AAR?$AAe?$AAg?$AAQ?$AAu?$AAe?$AAr?$AAy?$AAV?$AAa?$AAl?$AAu?$AAe?$AAE?$AAx?$AA?5?$AAD?$AAu?$AAm?$AAp?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?5?$AAe?$AAr@ 0040bed0     debugger.obj
+ 0002:00001f30       ??_C@_1FC@LGGHJIKL@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAg?$AAd?$AAb?$AAg?$AAc?$AAt?$AAx?$AA?4?$AAd?$AAo?$AAn?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5@ 0040bf30     debugger.obj
+ 0002:00001f98       ??_C@_1FA@KGPHMICH@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAg?$AAd?$AAb?$AAg?$AAc?$AAt?$AAx?$AA?4?$AAa?$AAc?$AAk?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAe@ 0040bf98     debugger.obj
+ 0002:00001ff8       ??_C@_1FE@IJCJIENB@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAg?$AAd?$AAb?$AAg?$AAc?$AAt?$AAx?$AA?4?$AAc?$AAr?$AAa?$AAs?$AAh?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd@ 0040bff8     debugger.obj
+ 0002:00002060       ??_C@_1EC@LGMDNKJI@?$AAC?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAd?$AAe?$AAb?$AAu?$AAg?$AA?5?$AAa?$AAn?$AAy?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAe?$AAs?$AA?6@ 0040c060     debugger.obj
+ 0002:000020b0       ??_C@_1EA@CLOFCKMF@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAD?$AAE?$AAB?$AAU?$AAG?$AA_?$AAS?$AAE?$AAS?$AAS?$AAI?$AAO?$AAN?$AA?6?$AA?$AA@ 0040c0b0     debugger.obj
+ 0002:00002100       ??_C@_1EI@ENMAAMFP@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAD?$AAE?$AAB?$AAU?$AAG?$AA_?$AAP?$AAR?$AAO?$AAC?$AAE?$AAS?$AAS?$AA_?$AAA@ 0040c100     debugger.obj
+ 0002:00002158       ??_C@_1FA@FJKPLPIA@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAd?$AAe?$AAb?$AAu?$AAg?$AAe?$AAr?$AA_?$AAp@ 0040c158     debugger.obj
+ 0002:000021b8       ??_C@_1CC@EEPOGMAL@?$AA0?$AAx?$AA?$CF?$AAx?$AA?7?$AA0?$AAx?$AA?$CF?$AAx?$AA?7?$AA0?$AAx?$AA?$CF?$AAx?$AA?7?$AA?6?$AA?$AA@ 0040c1b8     debugger.obj
+ 0002:000021e0       ??_C@_1DG@MBKEFPAE@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAA?$AAC?$AAC?$AAE?$AAS?$AAS?$AA_?$AAV?$AAI?$AAO?$AAL?$AAA?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 0040c1e0     debugger.obj
+ 0002:00002220       ??_C@_1EA@KCJEJHHM@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAA?$AAR?$AAR?$AAA?$AAY?$AA_?$AAB?$AAO?$AAU?$AAN?$AAD?$AAS?$AA_?$AAE?$AAX?$AAC?$AAE?$AAE?$AAD?$AAE?$AAD?$AA?$AA@ 0040c220     debugger.obj
+ 0002:0000226c       ??_C@_1CK@GFOKFPCI@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAB?$AAR?$AAE?$AAA?$AAK?$AAP?$AAO?$AAI?$AAN?$AAT?$AA?$AA@ 0040c26c     debugger.obj
+ 0002:000022a0       ??_C@_1EA@DPJMAOIB@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAD?$AAA?$AAT?$AAA?$AAT?$AAY?$AAP?$AAE?$AA_?$AAM?$AAI?$AAS?$AAA?$AAL?$AAI?$AAG?$AAN?$AAM?$AAE?$AAN?$AAT?$AA?$AA@ 0040c2a0     debugger.obj
+ 0002:000022ec       ??_C@_1DO@EGNONNCH@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAD?$AAE?$AAN?$AAO?$AAR?$AAM?$AAA?$AAL?$AA_?$AAO?$AAP?$AAE?$AAR?$AAA?$AAN?$AAD?$AA?$AA@ 0040c2ec     debugger.obj
+ 0002:00002338       ??_C@_1DK@BEFNIBEI@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAD?$AAI?$AAV?$AAI?$AAD?$AAE?$AA_?$AAB?$AAY?$AA_?$AAZ?$AAE?$AAR?$AAO?$AA?$AA@ 0040c338     debugger.obj
+ 0002:00002380       ??_C@_1DK@JOHFNPA@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAI?$AAN?$AAE?$AAX?$AAA?$AAC?$AAT?$AA_?$AAR?$AAE?$AAS?$AAU?$AAL?$AAT?$AA?$AA@ 0040c380     debugger.obj
+ 0002:000023c8       ??_C@_1EA@GFBMCNAN@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AA_?$AAO?$AAP?$AAE?$AAR?$AAA?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 0040c3c8     debugger.obj
+ 0002:00002414       ??_C@_1CO@INIOBGA@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAO?$AAV?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 0040c414     debugger.obj
+ 0002:0000244c       ??_C@_1DE@PBANJDHK@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAS?$AAT?$AAA?$AAC?$AAK?$AA_?$AAC?$AAH?$AAE?$AAC?$AAK?$AA?$AA@ 0040c44c     debugger.obj
+ 0002:0000248c       ??_C@_1DA@LOCKLJOH@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAF?$AAL?$AAT?$AA_?$AAU?$AAN?$AAD?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 0040c48c     debugger.obj
+ 0002:000024c8       ??_C@_1DM@JDMIPLGJ@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAL?$AAL?$AAE?$AAG?$AAA?$AAL?$AA_?$AAI?$AAN?$AAS?$AAT?$AAR?$AAU?$AAC?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 0040c4c8     debugger.obj
+ 0002:00002510       ??_C@_1DA@LAKALNNI@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AA_?$AAP?$AAA?$AAG?$AAE?$AA_?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$AA@ 0040c510     debugger.obj
+ 0002:0000254c       ??_C@_1DK@EEPECJJJ@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AAT?$AA_?$AAD?$AAI?$AAV?$AAI?$AAD?$AAE?$AA_?$AAB?$AAY?$AA_?$AAZ?$AAE?$AAR?$AAO?$AA?$AA@ 0040c54c     debugger.obj
+ 0002:00002594       ??_C@_1CO@FMAJHLPF@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AAT?$AA_?$AAO?$AAV?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 0040c594     debugger.obj
+ 0002:000025cc       ??_C@_1DM@BHMFAFLP@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AA_?$AAD?$AAI?$AAS?$AAP?$AAO?$AAS?$AAI?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 0040c5cc     debugger.obj
+ 0002:00002618       ??_C@_1EG@DMGAABDE@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAN?$AAO?$AAN?$AAC?$AAO?$AAN?$AAT?$AAI?$AAN?$AAU?$AAA?$AAB?$AAL?$AAE?$AA_?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI@ 0040c618     debugger.obj
+ 0002:0000266c       ??_C@_1DG@PNCKAKMD@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAP?$AAR?$AAI?$AAV?$AA_?$AAI?$AAN?$AAS?$AAT?$AAR?$AAU?$AAC?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 0040c66c     debugger.obj
+ 0002:000026ac       ??_C@_1CM@IAIFNOBF@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAS?$AAI?$AAN?$AAG?$AAL?$AAE?$AA_?$AAS?$AAT?$AAE?$AAP?$AA?$AA@ 0040c6ac     debugger.obj
+ 0002:000026e0       ??_C@_1DC@FCIJDDJO@?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA_?$AAS?$AAT?$AAA?$AAC?$AAK?$AA_?$AAO?$AAV?$AAE?$AAR?$AAF?$AAL?$AAO?$AAW?$AA?$AA@ 0040c6e0     debugger.obj
+ 0002:0000271c       ??_C@_1BA@LEPJIIOK@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?$AA@ 0040c71c     debugger.obj
+ 0002:00002730       ??_C@_1KI@BGMDJNBA@?$AA?$CD?$AA?$CD?$AA?$CD?$AA?5?$AA?$CF?$AAi?$AA?5?$AAc?$AAh?$AAa?$AAn?$AAc?$AAe?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AAa?$AAt?$AA?5?$AAa?$AAd@ 0040c730     debugger.obj
+ 0002:00002800       ??_C@_1FM@JNHMKDOD@?$AAS?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?$FL?$AA?$CF?$AAi?$AA?$FN?$AA?0?$AA?5?$AAd?$AAe?$AAb?$AAu@ 0040c800     debugger.obj
+ 0002:00002870       ??_C@_1GK@KPOOENNK@?$AAE?$AAx?$AAi?$AAt?$AAe?$AAd?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAi?$AAd?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?$FL?$AA?$CF?$AAi@ 0040c870     debugger.obj
+ 0002:000028f0       ??_C@_1EE@FHAKOAB@?$AAE?$AAx?$AAi?$AAt?$AAe?$AAd?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAi?$AAd?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?$FL?$AA?$CF?$AAi?$AA?$FN@ 0040c8f0     debugger.obj
+ 0002:00002944       ??_C@_1DK@PHJNMOPP@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAC?$AAR?$AAA?$AAS?$AAH?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?6?$AA?$AA@ 0040c944     debugger.obj
+ 0002:0000298c       ??_C@_1DM@BMHIECBM@?$AAm?$AAa?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAC?$AAR?$AAA?$AAS?$AAH?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?4?$AA?6?$AA?$AA@ 0040c98c     debugger.obj
+ 0002:000029d4       ??_C@_1DE@FNCEJJLM@?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAc?$AAr?$AAa?$AAs?$AAh?$AA?5?$AA?$CF?$AAx?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040c9d4     debugger.obj
+ 0002:00002a18       ??_C@_1GC@BDLLOADH@?$AAW?$AAa?$AAi?$AAt?$AAF?$AAo?$AAr?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAe?$AAr?$AAr?$AA?3?$AA?$CF?$AAi?$AA?5@ 0040ca18     debugger.obj
+ 0002:00002a90       ??_C@_1GE@CJFFGJHP@?$AAC?$AAo?$AAn?$AAt?$AAi?$AAn?$AAu?$AAe?$AAD?$AAe?$AAb?$AAu?$AAg?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAe?$AAr?$AAr?$AA?3?$AA?$CF?$AAi@ 0040ca90     debugger.obj
+ 0002:00002b08       ??_C@_1GC@GEOCJNAF@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAt?$AAt?$AAa?$AAc?$AAh?$AA?5?$AAt?$AAo?$AA?5?$AAp?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAw?$AAi?$AAt?$AAh@ 0040cb08     debugger.obj
+ 0002:00002b80       ??_C@_1EO@FCMPJEPN@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAd?$AAe?$AAb?$AAu?$AAg?$AAe?$AAe?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAe?$AAr@ 0040cb80     debugger.obj
+ 0002:00002be0       ??_C@_1DA@PIDFLMCJ@?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAa?$AAc?$AAk?$AA?5?$AA?$CF?$AAx?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040cbe0     debugger.obj
+ 0002:00002c1c       ??_C@_1DO@LBDOCCKK@?$AAD?$AAe?$AAb?$AAu?$AAg?$AAA?$AAc?$AAt?$AAi?$AAv?$AAe?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAi?$AAd?$AA?5?$AA?$CF?$AAu?$AA?6?$AA?$AA@ 0040cc1c     debugger.obj
+ 0002:00002c68       ??_C@_1CI@MKOAGPAI@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?6?$AA?$AA@ 0040cc68     debugger.obj
+ 0002:00002c98       ??_C@_1DC@BMJPEHON@?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAd?$AAo?$AAn?$AAe?$AA?5?$AA?$CF?$AAx?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$CF?$AAi?$AA?6?$AA?$AA@ 0040cc98     debugger.obj
+ 0002:00002cd8       ??_C@_1GG@CBMIAEFM@?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAD?$AAP?$AA?5?$AAd?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv@ 0040ccd8     DiscoveryServer.obj
+ 0002:00002d58       ??_C@_1FI@KAALOPDA@?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAb?$AAi?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAD?$AAP?$AA?5?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAo?$AAc?$AAk@ 0040cd58     DiscoveryServer.obj
+ 0002:00002dc8       ??_C@_1EG@NBOAGFNM@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAb?$AAo?$AAu?$AAn?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AA?$CF@ 0040cdc8     DiscoveryServer.obj
+ 0002:00002e20       ??_C@_1FC@CKPLABON@?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AAs?$AAe?$AAr?$AAv?$AAe?$AA?5?$AAr?$AAe?$AAc?$AAv?$AAf?$AAr?$AAo?$AAm?$AA?5@ 0040ce20     DiscoveryServer.obj
+ 0002:00002e88       ??_C@_1FI@FLBFICLB@?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAs?$AAe?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAD?$AAP?$AA?5?$AAd?$AAi?$AAs?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAp?$AAa?$AAc?$AAk@ 0040ce88     DiscoveryServer.obj
+ 0002:00002f84       ?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB 0040cf84     MSVCRT:unhandld.obj
+ 0002:00002f88       ?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB 0040cf88     MSVCRT:unhandld.obj
+ 0002:00002f8c       ?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB 0040cf8c     MSVCRT:unhandld.obj
+ 0002:00002f90       ?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB 0040cf90     MSVCRT:unhandld.obj
+ 0002:00002f94       ?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB 0040cf94     MSVCRT:unhandld.obj
+ 0002:00002fa0       __load_config_used         0040cfa0     MSVCRT:loadcfg.obj
+ 0002:00003310       ___safe_se_handler_table   0040d310     <linker-defined>
+ 0002:00003414       ___rtc_iaa                 0040d414     MSVCRT:initsect.obj
+ 0002:00003518       ___rtc_izz                 0040d518     MSVCRT:initsect.obj
+ 0002:0000361c       ___rtc_taa                 0040d61c     MSVCRT:initsect.obj
+ 0002:00003720       ___rtc_tzz                 0040d720     MSVCRT:initsect.obj
+ 0003:00000050       ___defaultmatherr          0040e050     MSVCRT:merr.obj
+ 0003:00000060       ___globallocalestatus      0040e060     MSVCRT:xthdloc.obj
+ 0003:00000064       ___native_dllmain_reason   0040e064     MSVCRT:natstart.obj
+ 0003:00000068       ___security_cookie         0040e068     MSVCRT:gs_cookie.obj
+ 0003:0000006c       ___security_cookie_complement 0040e06c     MSVCRT:gs_cookie.obj
+ 0003:0000cd50       __commode                  0041ad50     MSVCRT:xncommod.obj
+ 0003:0000cd54       __dowildcard               0041ad54     MSVCRT:wildcard.obj
+ 0003:0000cd58       __newmode                  0041ad58     MSVCRT:_newmode.obj
+ 0003:0000cd5c       __fmode                    0041ad5c     MSVCRT:xtxtmode.obj
+ 0003:0000d080       ___native_startup_lock     0041b080     <common>
+ 0003:0000d090       ___native_startup_state    0041b090     <common>
+ 0003:0000d094       ___onexitend               0041b094     <common>
+ 0003:0000d0a4       ___onexitbegin             0041b0a4     <common>
+ 0003:0000d0a8       ___dyn_tls_init_callback   0041b0a8     <common>
+ 0004:00000000       __imp__RegOpenKeyExW@20    0041c000     advapi32:ADVAPI32.dll
+ 0004:00000004       __imp__RegCloseKey@4       0041c004     advapi32:ADVAPI32.dll
+ 0004:00000008       __imp__RegQueryValueExW@24 0041c008     advapi32:ADVAPI32.dll
+ 0004:0000000c       \177ADVAPI32_NULL_THUNK_DATA 0041c00c     advapi32:ADVAPI32.dll
+ 0004:00000038       __imp__SystemTimeToFileTime@8 0041c038     kernel32:KERNEL32.dll
+ 0004:0000003c       __imp__CloseHandle@4       0041c03c     kernel32:KERNEL32.dll
+ 0004:00000040       __imp__QueryPerformanceFrequency@4 0041c040     kernel32:KERNEL32.dll
+ 0004:00000044       __imp__Sleep@4             0041c044     kernel32:KERNEL32.dll
+ 0004:00000048       __imp__TerminateProcess@8  0041c048     kernel32:KERNEL32.dll
+ 0004:0000004c       __imp__GetCurrentThreadId@0 0041c04c     kernel32:KERNEL32.dll
+ 0004:00000050       __imp__OpenThread@12       0041c050     kernel32:KERNEL32.dll
+ 0004:00000054       __imp__SetThreadPriority@8 0041c054     kernel32:KERNEL32.dll
+ 0004:00000058       __imp__GetThreadPriority@4 0041c058     kernel32:KERNEL32.dll
+ 0004:0000005c       __imp__TerminateThread@8   0041c05c     kernel32:KERNEL32.dll
+ 0004:00000060       __imp__SuspendThread@4     0041c060     kernel32:KERNEL32.dll
+ 0004:00000064       __imp__ResumeThread@4      0041c064     kernel32:KERNEL32.dll
+ 0004:00000068       __imp__CreateProcessW@40   0041c068     kernel32:KERNEL32.dll
+ 0004:0000006c       __imp__GetThreadTimes@20   0041c06c     kernel32:KERNEL32.dll
+ 0004:00000070       __imp__OpenProcess@12      0041c070     kernel32:KERNEL32.dll
+ 0004:00000074       __imp__GlobalMemoryStatusEx@4 0041c074     kernel32:KERNEL32.dll
+ 0004:00000078       __imp__GetSystemInfo@4     0041c078     kernel32:KERNEL32.dll
+ 0004:0000007c       __imp__GetTickCount@0      0041c07c     kernel32:KERNEL32.dll
+ 0004:00000080       __imp__QueryIdleProcessorCycleTime@8 0041c080     kernel32:KERNEL32.dll
+ 0004:00000084       __imp__SetSystemPowerState@8 0041c084     kernel32:KERNEL32.dll
+ 0004:00000088       __imp__CreateToolhelp32Snapshot@8 0041c088     kernel32:KERNEL32.dll
+ 0004:0000008c       __imp__GetModuleFileNameW@12 0041c08c     kernel32:KERNEL32.dll
+ 0004:00000090       __imp__Process32NextW@8    0041c090     kernel32:KERNEL32.dll
+ 0004:00000094       __imp__Thread32First@8     0041c094     kernel32:KERNEL32.dll
+ 0004:00000098       __imp__Thread32Next@8      0041c098     kernel32:KERNEL32.dll
+ 0004:0000009c       __imp__Module32FirstW@8    0041c09c     kernel32:KERNEL32.dll
+ 0004:000000a0       __imp__Module32NextW@8     0041c0a0     kernel32:KERNEL32.dll
+ 0004:000000a4       __imp__K32GetProcessMemoryInfo@12 0041c0a4     kernel32:KERNEL32.dll
+ 0004:000000a8       __imp__ContinueDebugEvent@12 0041c0a8     kernel32:KERNEL32.dll
+ 0004:000000ac       __imp__WaitForDebugEvent@8 0041c0ac     kernel32:KERNEL32.dll
+ 0004:000000b0       __imp__DebugActiveProcess@4 0041c0b0     kernel32:KERNEL32.dll
+ 0004:000000b4       __imp__SetLastError@4      0041c0b4     kernel32:KERNEL32.dll
+ 0004:000000b8       __imp__InitializeCriticalSection@4 0041c0b8     kernel32:KERNEL32.dll
+ 0004:000000bc       __imp__EnterCriticalSection@4 0041c0bc     kernel32:KERNEL32.dll
+ 0004:000000c0       __imp__LeaveCriticalSection@4 0041c0c0     kernel32:KERNEL32.dll
+ 0004:000000c4       __imp__DeleteCriticalSection@4 0041c0c4     kernel32:KERNEL32.dll
+ 0004:000000c8       __imp__SetEvent@4          0041c0c8     kernel32:KERNEL32.dll
+ 0004:000000cc       __imp__CreateEventW@16     0041c0cc     kernel32:KERNEL32.dll
+ 0004:000000d0       __imp__CreateThread@24     0041c0d0     kernel32:KERNEL32.dll
+ 0004:000000d4       __imp__WaitForMultipleObjects@16 0041c0d4     kernel32:KERNEL32.dll
+ 0004:000000d8       __imp__IsDebuggerPresent@0 0041c0d8     kernel32:KERNEL32.dll
+ 0004:000000dc       __imp__DecodePointer@4     0041c0dc     kernel32:KERNEL32.dll
+ 0004:000000e0       __imp__GetLocalTime@4      0041c0e0     kernel32:KERNEL32.dll
+ 0004:000000e4       __imp__GetLastError@0      0041c0e4     kernel32:KERNEL32.dll
+ 0004:000000e8       __imp__Process32FirstW@8   0041c0e8     kernel32:KERNEL32.dll
+ 0004:000000ec       __imp__OutputDebugStringW@4 0041c0ec     kernel32:KERNEL32.dll
+ 0004:000000f0       __imp__GetSystemTimeAsFileTime@4 0041c0f0     kernel32:KERNEL32.dll
+ 0004:000000f4       __imp__GetCurrentProcessId@0 0041c0f4     kernel32:KERNEL32.dll
+ 0004:000000f8       __imp__QueryPerformanceCounter@4 0041c0f8     kernel32:KERNEL32.dll
+ 0004:000000fc       __imp__EncodePointer@4     0041c0fc     kernel32:KERNEL32.dll
+ 0004:00000100       __imp__IsProcessorFeaturePresent@4 0041c100     kernel32:KERNEL32.dll
+ 0004:00000104       \177KERNEL32_NULL_THUNK_DATA 0041c104     kernel32:KERNEL32.dll
+ 0004:00000158       __imp__realloc             0041c158     MSVCRT:MSVCR120.dll
+ 0004:0000015c       __imp__fclose              0041c15c     MSVCRT:MSVCR120.dll
+ 0004:00000160       __imp__fflush              0041c160     MSVCRT:MSVCR120.dll
+ 0004:00000164       __imp__fopen               0041c164     MSVCRT:MSVCR120.dll
+ 0004:00000168       __imp__printf              0041c168     MSVCRT:MSVCR120.dll
+ 0004:0000016c       __imp__vsprintf            0041c16c     MSVCRT:MSVCR120.dll
+ 0004:00000170       __imp__fwprintf            0041c170     MSVCRT:MSVCR120.dll
+ 0004:00000174       __imp__wprintf             0041c174     MSVCRT:MSVCR120.dll
+ 0004:00000178       __imp___vswprintf_c_l      0041c178     MSVCRT:MSVCR120.dll
+ 0004:0000017c       __imp__strftime            0041c17c     MSVCRT:MSVCR120.dll
+ 0004:00000180       __imp___localtime64        0041c180     MSVCRT:MSVCR120.dll
+ 0004:00000184       __imp___time64             0041c184     MSVCRT:MSVCR120.dll
+ 0004:00000188       __imp___libm_sse2_pow_precise 0041c188     MSVCRT:MSVCR120.dll
+ 0004:0000018c       __imp__memcpy              0041c18c     MSVCRT:MSVCR120.dll
+ 0004:00000190       __imp__malloc              0041c190     MSVCRT:MSVCR120.dll
+ 0004:00000194       __imp__memmove             0041c194     MSVCRT:MSVCR120.dll
+ 0004:00000198       __imp__rand                0041c198     MSVCRT:MSVCR120.dll
+ 0004:0000019c       __imp__srand               0041c19c     MSVCRT:MSVCR120.dll
+ 0004:000001a0       __imp___itow               0041c1a0     MSVCRT:MSVCR120.dll
+ 0004:000001a4       __imp___wtoi               0041c1a4     MSVCRT:MSVCR120.dll
+ 0004:000001a8       __imp__feof                0041c1a8     MSVCRT:MSVCR120.dll
+ 0004:000001ac       __imp__fgets               0041c1ac     MSVCRT:MSVCR120.dll
+ 0004:000001b0       __imp__fprintf             0041c1b0     MSVCRT:MSVCR120.dll
+ 0004:000001b4       __imp__fwrite              0041c1b4     MSVCRT:MSVCR120.dll
+ 0004:000001b8       __imp__sscanf              0041c1b8     MSVCRT:MSVCR120.dll
+ 0004:000001bc       __imp__sprintf             0041c1bc     MSVCRT:MSVCR120.dll
+ 0004:000001c0       __imp__fgetws              0041c1c0     MSVCRT:MSVCR120.dll
+ 0004:000001c4       __imp___except1            0041c1c4     MSVCRT:MSVCR120.dll
+ 0004:000001c8       __imp___XcptFilter         0041c1c8     MSVCRT:MSVCR120.dll
+ 0004:000001cc       __imp___amsg_exit          0041c1cc     MSVCRT:MSVCR120.dll
+ 0004:000001d0       __imp____getmainargs       0041c1d0     MSVCRT:MSVCR120.dll
+ 0004:000001d4       __imp____set_app_type      0041c1d4     MSVCRT:MSVCR120.dll
+ 0004:000001d8       __imp__exit                0041c1d8     MSVCRT:MSVCR120.dll
+ 0004:000001dc       __imp___exit               0041c1dc     MSVCRT:MSVCR120.dll
+ 0004:000001e0       __imp___cexit              0041c1e0     MSVCRT:MSVCR120.dll
+ 0004:000001e4       __imp___configthreadlocale 0041c1e4     MSVCRT:MSVCR120.dll
+ 0004:000001e8       __imp____setusermatherr    0041c1e8     MSVCRT:MSVCR120.dll
+ 0004:000001ec       __imp___initterm_e         0041c1ec     MSVCRT:MSVCR120.dll
+ 0004:000001f0       __imp___initterm           0041c1f0     MSVCRT:MSVCR120.dll
+ 0004:000001f4       __imp____initenv           0041c1f4     MSVCRT:MSVCR120.dll
+ 0004:000001f8       __imp___fmode              0041c1f8     MSVCRT:MSVCR120.dll
+ 0004:000001fc       __imp___commode            0041c1fc     MSVCRT:MSVCR120.dll
+ 0004:00000200       __imp_?terminate@@YAXXZ    0041c200     MSVCRT:MSVCR120.dll
+ 0004:00000204       __imp____crtSetUnhandledExceptionFilter 0041c204     MSVCRT:MSVCR120.dll
+ 0004:00000208       __imp___lock               0041c208     MSVCRT:MSVCR120.dll
+ 0004:0000020c       __imp___unlock             0041c20c     MSVCRT:MSVCR120.dll
+ 0004:00000210       __imp___calloc_crt         0041c210     MSVCRT:MSVCR120.dll
+ 0004:00000214       __imp____dllonexit         0041c214     MSVCRT:MSVCR120.dll
+ 0004:00000218       __imp___onexit             0041c218     MSVCRT:MSVCR120.dll
+ 0004:0000021c       __imp___invoke_watson      0041c21c     MSVCRT:MSVCR120.dll
+ 0004:00000220       __imp___controlfp_s        0041c220     MSVCRT:MSVCR120.dll
+ 0004:00000224       __imp___except_handler4_common 0041c224     MSVCRT:MSVCR120.dll
+ 0004:00000228       __imp___crt_debugger_hook  0041c228     MSVCRT:MSVCR120.dll
+ 0004:0000022c       __imp____crtUnhandledException 0041c22c     MSVCRT:MSVCR120.dll
+ 0004:00000230       __imp____crtTerminateProcess 0041c230     MSVCRT:MSVCR120.dll
+ 0004:00000234       __imp__tolower             0041c234     MSVCRT:MSVCR120.dll
+ 0004:00000238       __imp__wcsrchr             0041c238     MSVCRT:MSVCR120.dll
+ 0004:0000023c       __imp__strtol              0041c23c     MSVCRT:MSVCR120.dll
+ 0004:00000240       __imp__free                0041c240     MSVCRT:MSVCR120.dll
+ 0004:00000244       __imp__memset              0041c244     MSVCRT:MSVCR120.dll
+ 0004:00000248       \177MSVCR120_NULL_THUNK_DATA 0041c248     MSVCRT:MSVCR120.dll
+ 0004:000002a4       __imp__ExitWindowsEx@8     0041c2a4     user32:USER32.dll
+ 0004:000002a8       \177USER32_NULL_THUNK_DATA 0041c2a8     user32:USER32.dll
+ 0004:000002d4       __imp__listen@8            0041c2d4     ws2_32:WS2_32.dll
+ 0004:000002d8       __imp__ntohl@4             0041c2d8     ws2_32:WS2_32.dll
+ 0004:000002dc       __imp__ntohs@4             0041c2dc     ws2_32:WS2_32.dll
+ 0004:000002e0       __imp__recv@16             0041c2e0     ws2_32:WS2_32.dll
+ 0004:000002e4       __imp__select@20           0041c2e4     ws2_32:WS2_32.dll
+ 0004:000002e8       __imp__send@16             0041c2e8     ws2_32:WS2_32.dll
+ 0004:000002ec       __imp__setsockopt@20       0041c2ec     ws2_32:WS2_32.dll
+ 0004:000002f0       __imp__shutdown@8          0041c2f0     ws2_32:WS2_32.dll
+ 0004:000002f4       __imp__socket@12           0041c2f4     ws2_32:WS2_32.dll
+ 0004:000002f8       __imp__inet_addr@4         0041c2f8     ws2_32:WS2_32.dll
+ 0004:000002fc       __imp__WSACleanup@0        0041c2fc     ws2_32:WS2_32.dll
+ 0004:00000300       __imp__htonl@4             0041c300     ws2_32:WS2_32.dll
+ 0004:00000304       __imp__recvfrom@24         0041c304     ws2_32:WS2_32.dll
+ 0004:00000308       __imp__sendto@24           0041c308     ws2_32:WS2_32.dll
+ 0004:0000030c       __imp__connect@12          0041c30c     ws2_32:WS2_32.dll
+ 0004:00000310       __imp__closesocket@4       0041c310     ws2_32:WS2_32.dll
+ 0004:00000314       __imp__bind@12             0041c314     ws2_32:WS2_32.dll
+ 0004:00000318       __imp__accept@12           0041c318     ws2_32:WS2_32.dll
+ 0004:0000031c       __imp__htons@4             0041c31c     ws2_32:WS2_32.dll
+ 0004:00000320       __imp__WSAStartup@8        0041c320     ws2_32:WS2_32.dll
+ 0004:00000324       __imp__ioctlsocket@12      0041c324     ws2_32:WS2_32.dll
+ 0004:00000328       \177WS2_32_NULL_THUNK_DATA 0041c328     ws2_32:WS2_32.dll
+ 0004:00000364       __IMPORT_DESCRIPTOR_KERNEL32 0041c364     kernel32:KERNEL32.dll
+ 0004:00000378       __IMPORT_DESCRIPTOR_USER32 0041c378     user32:USER32.dll
+ 0004:0000038c       __IMPORT_DESCRIPTOR_ADVAPI32 0041c38c     advapi32:ADVAPI32.dll
+ 0004:000003a0       __IMPORT_DESCRIPTOR_MSVCR120 0041c3a0     MSVCRT:MSVCR120.dll
+ 0004:000003b4       __IMPORT_DESCRIPTOR_WS2_32 0041c3b4     ws2_32:WS2_32.dll
+ 0004:000003c8       __NULL_IMPORT_DESCRIPTOR   0041c3c8     kernel32:KERNEL32.dll

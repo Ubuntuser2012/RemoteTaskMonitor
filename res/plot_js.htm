@@ -1,0 +1,64 @@
+var graph_num = 0;
+
+function horizontal_lines(r, X, Y, dX, maxY, data, labels)
+{
+   for(var x = dX; x < Y; x += dX) {//horizontal lines
+      var c = "#333";//(x > dX) ? "#333" : "#f00";
+      r.path("M0 "+x+"L"+X*dX+" "+x).attr({stroke: c, "stroke-width": 1, "stroke-linejoin": "round"});
+   }
+   setTimeout(function(){vertical_lines(r, X, Y, dX, maxY, data, labels);}, 0);
+}
+
+function vertical_lines(r, X, Y, dX, maxY, data, labels)
+{
+   for(var x = 0; x < dX*X; x += dX*10) {//vertical lines
+      var c = "#333"
+         var t = 0;
+      if((x%(dX*10))==0)
+         t=5;
+      r.path("M"+x+" 0L"+x+" "+(Y+t)).attr({stroke: c, "stroke-width": 1, "stroke-linejoin": "round"});
+   }
+   setTimeout(function(){data_plot(r, X, Y, dX, maxY, data, labels);}, 0);
+}
+
+function data_plot(r, X, Y, dX, maxY, data, labels)
+{
+   var pt = "M0 "+Y;
+   for(var x=0, i=0; x<dX*X; x+=dX, i++ ) {//data plot
+      pt += "L"+x+" ";
+      pt+= Y-(data[i]*Y/maxY);
+   }
+   pt+= "L"+(x-=dX)+" "+Y;
+   //r.path("M0 100L50 10L100 80L150 70L200 90L250 30L300 20L390 100").attr({stroke: "#0f0", "stroke-width": 3, "stroke-linejoin": "round", fill : "#0f0", "fill-opacity": .3});
+   r.path(pt).attr({stroke: "#0f0", "stroke-width": 3, "stroke-linejoin": "round", fill : "#0f0", "fill-opacity": .3});
+   r.path("z").attr({stroke: "#0f0", "stroke-width": 0, fill : "#0f0", "fill-opacity": .3});
+
+   setTimeout(function(){put_labels(r, X, Y, dX, maxY, data, labels);}, 0);
+}
+
+function put_labels(r, X, Y, dX, maxY, data, labels)
+{
+   var txt = {font: '12px Helvetica, Arial'};
+   for(var x=0, i=0; i<labels.length; x+=(dX*20), i+=20 ) {//labels
+      r.text(x, Y+20, labels[i]).attr(txt).attr({fill: "#000"});//.rotate(-60)
+   }
+}
+
+function drawGraph(canvas, data, labels)
+{
+   var Y=100, dX=10, maxY=100, X=data.length;
+   var r = Raphael(canvas, (X-1)*dX, Y+50);  
+   r.rect(0, 0, X*dX, Y, 3).attr("fill", "#000"); 
+   
+   setTimeout(function(){horizontal_lines(r, X, Y, dX, maxY, data, labels);}, 0);
+}
+
+function change_category_selbox(fn)
+{
+	if(fn)
+	{
+		var loc=fn+".html";
+		window.location=loc;
+	}
+}
+

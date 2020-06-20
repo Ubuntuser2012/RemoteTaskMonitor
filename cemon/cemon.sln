@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cemon", "cemon.vcproj", "{3D3AE740-2954-4DD9-9712-776AA7D2249E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|CPMSDK (x86) = Debug|CPMSDK (x86)
+		Debug|Intel Atom E38xx SDK (x86) = Debug|Intel Atom E38xx SDK (x86)
+		Debug|Intel E660 SDK (x86) = Debug|Intel E660 SDK (x86)
+		Debug|IX_PAY_SDK_R6 (ARMV4I) = Debug|IX_PAY_SDK_R6 (ARMV4I)
+		Debug|Smartphone 2003 (ARMV4) = Debug|Smartphone 2003 (ARMV4)
+		Debug|Toradex_CE700 (ARMv4I) = Debug|Toradex_CE700 (ARMv4I)
+		Debug|Vincell CE7 SDK (ARMv4I) = Debug|Vincell CE7 SDK (ARMv4I)
+		Release|CPMSDK (x86) = Release|CPMSDK (x86)
+		Release|Intel Atom E38xx SDK (x86) = Release|Intel Atom E38xx SDK (x86)
+		Release|Intel E660 SDK (x86) = Release|Intel E660 SDK (x86)
+		Release|IX_PAY_SDK_R6 (ARMV4I) = Release|IX_PAY_SDK_R6 (ARMV4I)
+		Release|Smartphone 2003 (ARMV4) = Release|Smartphone 2003 (ARMV4)
+		Release|Toradex_CE700 (ARMv4I) = Release|Toradex_CE700 (ARMv4I)
+		Release|Vincell CE7 SDK (ARMv4I) = Release|Vincell CE7 SDK (ARMv4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|CPMSDK (x86).ActiveCfg = Debug|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|Intel Atom E38xx SDK (x86).ActiveCfg = Debug|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|Intel E660 SDK (x86).ActiveCfg = Debug|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|IX_PAY_SDK_R6 (ARMV4I).ActiveCfg = Debug|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|Smartphone 2003 (ARMV4).ActiveCfg = Debug|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|Smartphone 2003 (ARMV4).Build.0 = Debug|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|Smartphone 2003 (ARMV4).Deploy.0 = Debug|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|Toradex_CE700 (ARMv4I).ActiveCfg = Debug|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Debug|Vincell CE7 SDK (ARMv4I).ActiveCfg = Debug|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|CPMSDK (x86).ActiveCfg = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|CPMSDK (x86).Build.0 = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|CPMSDK (x86).Deploy.0 = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Intel Atom E38xx SDK (x86).ActiveCfg = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Intel Atom E38xx SDK (x86).Build.0 = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Intel Atom E38xx SDK (x86).Deploy.0 = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Intel E660 SDK (x86).ActiveCfg = Release|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|IX_PAY_SDK_R6 (ARMV4I).ActiveCfg = Release|CPMSDK (x86)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|IX_PAY_SDK_R6 (ARMV4I).Build.0 = Release|CPMSDK (x86)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|IX_PAY_SDK_R6 (ARMV4I).Deploy.0 = Release|CPMSDK (x86)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Smartphone 2003 (ARMV4).ActiveCfg = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Smartphone 2003 (ARMV4).Build.0 = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Smartphone 2003 (ARMV4).Deploy.0 = Release|Smartphone 2003 (ARMV4)
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Toradex_CE700 (ARMv4I).ActiveCfg = Release|Win32
+		{3D3AE740-2954-4DD9-9712-776AA7D2249E}.Release|Vincell CE7 SDK (ARMv4I).ActiveCfg = Release|IX_PAY_SDK_R6 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
