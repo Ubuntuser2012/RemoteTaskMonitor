@@ -79,26 +79,6 @@ Select one or more processes or threads, and right click, to see a list of opera
 -   Alert you when a process or thread exceeds a set CPU threshold
 -   Alert you when memory falls below a set threshold
 
-### Thread Names
-
-You can also display names for the threads by specifying the names in threads.txt file following in format:
-
-  
-
-<thread id>:<thread name>
-
-<thread id>:<thread name>
-
-<thread id>:<thread name>
-
-  
-
-(Remove the < and >)
-
-  
-
-Each line must be terminated by new line carriage return characters and the thread name must be less than 30 characters. The  _threads.txt_  file should be copied to the file system in the device.
-
 ### Real Time Plots
 
 The graph shows the overall CPU and memory usage as a function of time. You can also add and remove individual processes and threads.
