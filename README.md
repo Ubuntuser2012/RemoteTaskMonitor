@@ -2,13 +2,15 @@
 
 A Task Manager for Windows Embedded Devices
 
+![logo.png](res/web/logo.png)
+
 Have you been struggling to monitor your apps on Windows embedded devices? Do you wish there was an easy way to check their CPU and memory usage?
 
   
 Now there is!
 
-Have you been struggling to monitor your apps on Windows embedded devices? Do you wish there was an easy way to check their CPU and memory usage?
 
+![slides.png](res/web/slides.png)
   
 
 Now there is!
