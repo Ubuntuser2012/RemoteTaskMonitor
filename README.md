@@ -46,11 +46,11 @@ WinCE 5, WinCE 6, Windows Embedded Compact 7 (WEC 7)
 
 ### CPU and Memory Utilization
 
-![remote_task_monitor_processes_tab.jpg](https://www.osletek.com/.site_files/2186/remote_task_monitor_processes_tab.jpg)
+![remote_task_monitor_processes_tab.jpg](res/web/remote_task_monitor_processes_tab.jpg)
 
 ### Processes & Threads
 
-![remote_task_monitor_threads.jpg](https://www.osletek.com/.site_files/2186/remote_task_monitor_threads.jpg)
+![remote_task_monitor_threads.jpg](res/web/remote_task_monitor_threads.jpg)
 
   
 
@@ -58,7 +58,7 @@ Select one or more processes or threads, and right click, to see a list of opera
 
   
 
-![remote_task_monitor_context_menu.jpg](https://www.osletek.com/.site_files/2186/remote_task_monitor_context_menu.jpg)
+![remote_task_monitor_context_menu.jpg](res/web/remote_task_monitor_context_menu.jpg)
 
 ### Operations
 
@@ -103,7 +103,7 @@ The graph shows the overall CPU and memory usage as a function of time. You can 
 
   
 
-![remote_task_monitor_cpu_graphs_real_time](https://www.osletek.com/.site_files/2186/remote_task_monitor_cpu_graphs_real_time.jpg)
+![remote_task_monitor_cpu_graphs_real_time](res/web/remote_task_monitor_cpu_graphs_real_time.jpg)
 
 ### Reports
 
@@ -119,7 +119,7 @@ In the Processes tab, right click on the process or thread to add it to the repo
 
   
 
-![remote_task_monitor_html_report.jpg](https://www.osletek.com/.site_files/2186/remote_task_monitor_html_report.jpg)
+![remote_task_monitor_html_report.jpg](res/web/remote_task_monitor_html_report.jpg)
 
   
 
@@ -131,7 +131,7 @@ The  _log.csv_  file conatins all the CPU usage statistics for the session.
 
   
 
-![history.jpg](https://www.osletek.com/.site_files/2186/history.jpg)
+![history.jpg](res/web/history.jpg)
 
 ### Crash Watch
 
@@ -143,11 +143,11 @@ The crash watch tool in RTM monitors your app for any kind of violation that wou
 
   
 
-![crash1.png](https://www.osletek.com/.site_files/2186/crash1.png)
+![crash1.png](res/web/crash1.png)
 
   
 
-![crash2.png](https://www.osletek.com/.site_files/2186/crash2.png)
+![crash2.png](res/web/crash2.png)
 
 ### CPU Watch
 
@@ -155,7 +155,7 @@ You can put a process or thread on CPU watch, when process takes CPU more than t
 
   
 
-![pscpuwatch.png](https://www.osletek.com/.site_files/2186/pscpuwatch.png)
+![pscpuwatch.png](res/web/pscpuwatch.png)
 
   
 
@@ -163,7 +163,7 @@ There is also an overall CPU watch, when the total CPU exceeds the set value, yo
 
   
 
-![cpuwatch.png](https://www.osletek.com/.site_files/2186/cpuwatch.png)
+![cpuwatch.png](res/web/cpuwatch.png)
 
 ### Memory Watch
 
@@ -171,7 +171,7 @@ You can also put a process on memory watch, when process consumes more memory th
 
   
 
-![memwatch.png](https://www.osletek.com/.site_files/2186/memwatch.png)
+![memwatch.png](res/web/memwatch.png)
 
 ### Remote Task Monitor Automation using Python
 
@@ -253,4 +253,4 @@ Here is an example script that opens a connections to target device, starts capt
 ### Who has Used Remote Task Monitor
 
 
-![www.wmf.de.jpg](https://www.osletek.com/.site_files/2186/www.wmf.de.jpg)![www.komatsu.png](https://www.osletek.com/.site_files/2186/www.komatsu.png)![www.westint.com.jpg](https://www.osletek.com/.site_files/2186/www.westint.com.jpg)![www.traka.com.png](https://www.osletek.com/.site_files/2186/www.traka.com.png)![www.tox-de.com.jpg](https://www.osletek.com/.site_files/2186/www.tox-de.com.jpg)![www.touchstargroup.com.jpg](https://www.osletek.com/.site_files/2186/www.touchstargroup.com.jpg)![www.t-online.de.jpg](https://www.osletek.com/.site_files/2186/www.t-online.de.jpg)![www.spec.fr.jpg](https://www.osletek.com/.site_files/2186/www.spec.fr.jpg)![www.saitweb.info.jpg](https://www.osletek.com/.site_files/2186/www.saitweb.info.jpg)![www.robocom.com.jpg](https://www.osletek.com/.site_files/2186/www.robocom.com.jpg)![www.oxymat.sk.jpg](https://www.osletek.com/.site_files/2186/www.oxymat.sk.jpg)![www.melittassytemservice.de.jpg](https://www.osletek.com/.site_files/2186/www.melittassytemservice.de.jpg)![www.macio.de.jpg](https://www.osletek.com/.site_files/2186/www.macio.de.jpg)![www.jdmconsulting.com.jpg](https://www.osletek.com/.site_files/2186/www.jdmconsulting.com.jpg)![www.ikerlan.es.jpg](https://www.osletek.com/.site_files/2186/www.ikerlan.es.jpg)![www.ge.com.jpg](https://www.osletek.com/.site_files/2186/www.ge.com.jpg)![www.gdstatcom.com.jpg](https://www.osletek.com/.site_files/2186/www.gdstatcom.com.jpg)![www.emerson.com.jpg](https://www.osletek.com/.site_files/2186/www.emerson.com.jpg)![www.deere.com.jpg](https://www.osletek.com/.site_files/2186/www.deere.com.jpg)![www.danphone.com.jpg](https://www.osletek.com/.site_files/2186/www.danphone.com.jpg)![www.cummins.com.jpg](https://www.osletek.com/.site_files/2186/www.cummins.com.jpg)![www.cat.com.jpg](https://www.osletek.com/.site_files/2186/www.cat.com.jpg)![www.beckhoff.com.jpg](https://www.osletek.com/.site_files/2186/www.beckhoff.com.jpg)![www.aditus.de.jpg](https://www.osletek.com/.site_files/2186/www.aditus.de.jpg)![thermalproductsolutions.com.png](https://www.osletek.com/.site_files/2186/thermalproductsolutions.com.png)![scr.co.il.png](https://www.osletek.com/.site_files/2186/scr.co.il.png)![reiland.de.jpg](https://www.osletek.com/.site_files/2186/reiland.de.jpg)![mtdata.com.au.jpg](https://www.osletek.com/.site_files/2186/mtdata.com.au.jpg)![loadrite-trimble-logo.png](https://www.osletek.com/.site_files/2186/loadrite-trimble-logo.png)![erkadi.com.jpg](https://www.osletek.com/.site_files/2186/erkadi.com.jpg)
+![www.wmf.de.jpg](res/web/www.wmf.de.jpg)![www.komatsu.png](res/web/www.komatsu.png)![www.westint.com.jpg](res/web/www.westint.com.jpg)![www.traka.com.png](res/web/www.traka.com.png)![www.tox-de.com.jpg](res/web/www.tox-de.com.jpg)![www.touchstargroup.com.jpg](res/web/www.touchstargroup.com.jpg)![www.t-online.de.jpg](res/web/www.t-online.de.jpg)![www.spec.fr.jpg](res/web/www.spec.fr.jpg)![www.saitweb.info.jpg](res/web/www.saitweb.info.jpg)![www.robocom.com.jpg](res/web/www.robocom.com.jpg)![www.oxymat.sk.jpg](res/web/www.oxymat.sk.jpg)![www.melittassytemservice.de.jpg](res/web/www.melittassytemservice.de.jpg)![www.macio.de.jpg](res/web/www.macio.de.jpg)![www.jdmconsulting.com.jpg](res/web/www.jdmconsulting.com.jpg)![www.ikerlan.es.jpg](res/web/www.ikerlan.es.jpg)![www.ge.com.jpg](res/web/www.ge.com.jpg)![www.gdstatcom.com.jpg](res/web/www.gdstatcom.com.jpg)![www.emerson.com.jpg](res/web/www.emerson.com.jpg)![www.deere.com.jpg](res/web/www.deere.com.jpg)![www.danphone.com.jpg](res/web/www.danphone.com.jpg)![www.cummins.com.jpg](res/web/www.cummins.com.jpg)![www.cat.com.jpg](res/web/www.cat.com.jpg)![www.beckhoff.com.jpg](res/web/www.beckhoff.com.jpg)![www.aditus.de.jpg](res/web/www.aditus.de.jpg)![thermalproductsolutions.com.png](res/web/thermalproductsolutions.com.png)![scr.co.il.png](res/web/scr.co.il.png)![reiland.de.jpg](res/web/reiland.de.jpg)![mtdata.com.au.jpg](res/web/mtdata.com.au.jpg)![loadrite-trimble-logo.png](res/web/loadrite-trimble-logo.png)![erkadi.com.jpg](res/web/erkadi.com.jpg)
