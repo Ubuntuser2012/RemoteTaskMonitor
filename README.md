@@ -20,9 +20,10 @@ Now there is!
 -   Plot graphs in real time for the memory and CPU usage of processes and threads
 -   Generate reports for offline viewing
 -   Send you email alerts when CPU is high, memory is low, or if a process on target device crashes
--   Gives you the call stack of a crashing process to help you locate the offending code
+-   Gives you the call stack of
+ a crashing process to help you locate the offending code
 
-![remote_task_monitor_device_tab.jpg](https://www.osletek.com/.site_files/2186/remote_task_monitor_device_tab.jpg)
+![remote_task_monitor_device_tab.jpg](res/web/remote_task_monitor_device_tab.jpg)
 
 ### Automatically Discovers and Connects to Device
 
